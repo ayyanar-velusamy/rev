@@ -1,0 +1,1051 @@
+Bug title,Description,Reporter,Created date,Due date,Status,Assignee,Severity,Department,Type,Is it reproducible,Flag,Comments
+SP1::LXP::R1::Loader is missing in All loading pages,"Summary:
+Loader is missing in loading pages
+
+Replication Steps:
+1. Launch the URL.
+2. Click on sign in 
+3. Verify there is no loader and ,display submitting when click on sign in 
+
+Expected Result:
+Should display loader
+
+Note:
+Kindly check in all loading pages",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::No color change in Forgot password link mouse hover,"Summary:
+No color change in Forgot password link mouse hover
+
+Replication Steps:
+1. Launch the URL.
+2. Click on forgot password link
+3. Verify there is no mouse hover color change in link
+
+Expected Result:
+When a user do mouse hover on the Links, it should be highlighted with color change
+
+NOTE:Kindly check in over all application",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Client side validation is not as per document for invalid mail ID,"Summary:
+Client side validation is not as per document for invalid mail ID
+
+Replication Steps:
+1. Launch the URL.
+2. Enter  invalid email address in email field
+3.Press enter key 
+4.Verify the validation 
+
+Expected Result:
+It should display as per the validation document
+
+NOTE:Kindly check in all email fields ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Submit button is not getting  color changed after action,"Summary:
+Submit button is not getting  color changed after action
+
+Replication Steps:
+1. Launch the URL.
+2.click forgot password link
+3. Enter  invalid email address in forgot password page
+4.Click submit button
+5.Verify the color change is still remains 
+
+Expected Result:
+It should back to original color when there is no mouse hover action 
+
+NOTE:Kindly check in all ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Invalid toast message on set password  - CSRF Token mismatch,"Summary:
+Invalid toast message on set password  - CSRF Token mismatch
+
+Replication Steps:
+1.Launch the url
+2. Leave application idle for some times
+3. enter valid credentials
+5.Click on submit
+6.Verify it display CSRF token mismatch
+
+Expected Result:
+It should not display CSRF token mismatch",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Validation Incorrect,Rarely,Internal,
+SP1::LXP::R1::Forgot password link is not as per design,"Summary:
+Forgot password link is not as per design
+
+Replication Steps:
+1. Launch the URL.
+2.Verify the forgot password link
+3.Verify the line below forgot password
+Expected Result:
+It should be as per design
+
+NOTE:Kindly check in all with the underline word with g letter",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Major,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Logo alignment is not as per design,"Summary:
+Logo alignment is not as per design
+
+Replication Steps:
+1. Launch the URL.
+2.Verify the logo alignment in sign in page
+
+Expected Result:
+It should be as per design
+
+NOTE:Kindly check in all pages",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Place holder should get move up when the password is already saved in fire fox browser,"Summary:
+Place holder should get move up when the password is already saved in fire fox browser
+
+Replication Steps:
+1. Launch the URL. in Firefox
+2.Enter valid credentials
+3.Click save password
+4.Click Signout
+5.Choose the same mail id form suggestion drop down
+6.Verify the placeholder is not getting moved up
+
+Expected Result:
+It should get moved up  password field",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Add toast message in center to the page,"Summary:
+Add toast message in center to the page
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click sign in 
+4.Verify the toast message is displayed in right top corner
+
+Expected Result:
+It should aligned in center and should be dynamic
+
+NOTE:Kindly check in all pages",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,baskar.dev@velaninfo.com,Moderate,API,UI/Usability,Always,Internal,
+SP1::LXP::R1::Need tool tip in close icon,"Summary:
+Need tool tip in close icon
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click sign in 
+4.Click sign out
+5.Verify there is no tool tip in  close icon   in alert pop up
+Expected Result:
+It should display tool tip
+
+NOTE:Kindly update tool tip in all required places and check init caps also",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::More space between remember me and sign in button,"Summary:
+More space between remember me and sign in button
+
+Replication Steps:
+1. Launch the URL
+2..Verify there is More space between remember me and sign in button
+Expected Result:
+It should display as per design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Allow spaces in email ID,"Summary:
+Allowing spaces in email ID
+
+Replication Steps:
+1. Launch the URL
+2.Enter space in email id
+3..Verify it is allowing spaces
+Expected Result:
+It should not allow spaces
+
+NOTE:Kindly check in all email fields",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Major,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::419 error in signout ,"Summary:
+419 error in signout 
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click sign in 
+4.Click sign out
+
+Expected Result:
+It  should not display unexpected error message",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,UI/Usability,Rarely,Internal,
+SP1::LXP::R1::Add validation as Please verify your mail for login before set password,"Summary:
+Add validation as Please verify your mail for login before set password
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Sign in as admin
+4.Add user 
+5.Enter login user before set password
+
+Expected Result:
+It should display validation as ""Please verify your mail""",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,baskar.dev@velaninfo.com,Moderate,API,UI/Usability,Always,Internal,
+SP1::LXP::R1::404 page is not as per design,"Summary:
+404 page is not as per design
+
+Replication Steps:
+1. Launch the URL
+2.Enter invalid data in URL
+3.Verify the 404 page
+
+Expected Result:
+It should display as per design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Go to dashboard is displayed and redirected to Sign in page in 404,"Summary:
+Go to dashboard is displayed and redirected to Sign in page in 404
+
+Replication Steps:
+1. Launch the URL
+2.Enter invalid data in URL
+3.Verify the 404 page
+4.Verify there is go to dashboard button and redirected to sign in 
+
+Expected Result:
+Confirm the button name ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Welcome dashboard should be expand in default,"Summary:
+Welcome dashboard should be expand in default
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Verify the Modules name are in collapse
+
+Expected Result:
+It should be in expand in default",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,ramesh.dev@velaninfo.com,Minor,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::No Session expired page,"Summary:
+There is no session expired page
+
+
+
+
+Expected Result:
+Kindly check and confirm whether we need session expired page. Also mention the time out timings ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Mail ID for LXP team and report  to mail ID should get from client,"Summary:
+Mail ID for LXP team and report  to mail ID should get from client
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Sign in as admin
+4.Add user
+5.Verify the welcome mail 
+
+Expected Result:
+Kindly check and confirm the mail details",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Allow to other user login on copy the set password  link and paste to other user logged in ,"Summary:
+Allow to other user login on copy the set password  link and paste to other user logged in 
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Sign in as admin
+4.Add user 
+5.Verify the welcome mail and click set password in same browser
+6.It is redirected to already logged in user
+Expected Result:
+It should not redirected to welcome dashboard",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::Screen is not as per design - organisation ,"Summary:
+Screen is not as per design
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.There is scroll in modules and organization chart
+Expected Result:
+Confirm the design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::There is no option for horizontal scroll in inside the organization chart,"Summary:
+There is no option for horizontal scroll in inside the organization chart
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Verify there is no horizontal scroll in inside the organization chart
+Expected Result:
+Need clarification",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Chart should get scroll when click on grade,"Summary:
+Chart should get scroll when click on grade
+
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Click grade and user scroll option
+6.Verify there is no scroll
+Expected Result:
+It should  get scroll",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Allowed to forgot password page before set password ,"Summary:
+Allowed to forgot password page before set password 
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Add user with valid details
+5.Sign out and click forgot password
+6.Enter created user mail ID
+7.Verify it is allowed to go reset password page
+Expected Result:
+It should not allow to go reset password page before set password",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Unable to edit default Grade,"Summary:
+Unable to edit default Grade
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Click grade 
+6.Verify there is no edit option for default grade
+Expected Result:
+It should allow to edit",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::Client side validation is added as toast message in organization chart,"Summary:
+Client side validation is added as toast message in organization chart
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Enter invalid data
+6.Click save
+7.Verify the validation as displayed as toast message
+Expected Result:
+Confirm the flow",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Maximum restriction is not available in added grade,"Summary:
+Maximum restriction is not available in added grade
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Add grade in chart
+6.Verify the maximum limit restriction is not available for the added grade
+Expected Result:
+It should have length restriction ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Accepts duplication on captions,"Summary:
+Accepts duplication on captions
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Add grade in chart with small letters
+6.Add new grade as same name with capital characters 
+7.Verify it is allowed to add
+Expected Result:
+It should not allow to add same grade name",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Major,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Grade is displayed as node name in duplicate validation ,"Summary:
+Grade is displayed as node name in duplicate validation 
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Add grade in chart 
+6.Add new grade as same name 
+7.Verify the validation display as ""Node Name already exists""
+Expected Result:
+It should display grade duplicate validation",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Grade is not display for add grade for first scroll option in scroll down,"Summary:
+Grade is not display for add grade for first scroll option in scroll down
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Add grade in chart till grade
+6.Now add new grade as 7th grade
+7.Verify it is hiding below
+Expected Result:
+It should display when choose grade",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Unable to add same node name in same grade,"Summary:
+Unable to add same node name in same grade
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in 
+4.Click organization chart from organization structure 
+5.Add grade in chart 
+6.Add organization for the grade 
+7.Choose same organization name for the same grade with different parent node(Previous grade)
+Expected Result:
+It should allow to add organization for the same name
+
+NOTE:Kindly check this  scenario",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Major,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Font color is not as per style guide in Organization tree,"Summary:
+Font color is not as per style guide in Organization tree
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click organization chart from organization structure
+5.Verify the font color
+Expected Result:
+It should be as per style guide",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::In IE Browser User list page is not displayed sometimes,"Summary:
+In IE Browser User list page is not displayed sometimes
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Verify there is no record shown in user page
+Expected Result:
+It should display the record ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::Button below  full access is not as per design in Add role,"Summary:
+Button below  full access is not as per design in Add role
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management in organization structure
+5.Verify Full access 
+
+Expected Result:
+It should display as per the design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Permission and role font color is not as per style guide in add role,"Summary:
+Permission and role font color is not as per style guide in add role
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management in organization structure
+5.Verify Font color
+
+Expected Result:
+It should display as per the style guide
+
+NOTE:Check in Edit and view page also",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Change Reset to Restore button,"Summary:
+Change Reset to Restore button
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management in organization structure
+5.Click edit role in list
+6.Verify the Reset button
+
+Expected Result:
+It should be as Restore
+
+NOTE:Check in Edit and view page also",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Confirm lengthy data can be in dotted or table can change dynamically ,"Summary:
+Confirm lengthy data can be in dotted or table can change dynamically kindly check for first name and last name also
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5.Click  add role in list
+6.Add lengthy data
+7.Verify the alignment
+
+Expected Result:
+Confirm the design
+
+NOTE:kindly check for first name and last name also in add user",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,UI/Usability,Always,Internal,
+SP1::LXP::R1::Allow to choose modules in view ,"Summary:
+Allow to choose modules in view 
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5.Click  view role in list
+6.Verify the application allow to minimize the modules 
+
+Expected Result:
+It should not allow to access in view page",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Disabled button is not as per design in View Role,"Summary:
+Disabled button is not as per design in View Role
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5.Click  view role in list
+6.Verify the button color
+
+Expected Result:
+It should be as per design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::check the single character search,"Summary:
+check the single character search
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Check the search using single characters 
+6.Verify it is showing irrelevant records
+
+Expected Result:
+It should get search based on the given characters",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Search function is applied for actions also,"Summary:
+Search function is applied for actions also
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Check the search using  characters entered in actions
+
+
+Expected Result:
+Need clarification whether it is applicable to action button names",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Minor,BA,Functionality,Always,Internal,
+SP1::LXP::R1::In between spaces in Peers/Colleagues in design,"Summary:
+In between spaces in Peers/Colleagues in design
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5.Check the no spaces in Peers/Colleagues
+
+
+Expected Result:
+It should be as per design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::No need reset alert pop up,"Summary:
+No need reset alert pop up
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5. click edit button
+6.Enter details and click reset
+7.Verify there is alert pop up
+
+
+Expected Result:
+No need alert pop up for Reset option",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Unable to delete user in IE and firefox,"Summary:
+Unable to delete user in IE and firefox
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.click delete button
+6.Verify delete is not working
+
+
+Expected Result:
+It should get delete in all browsers
+
+NOTE: 1.Kindly check in User role delete also
+2.Unable to delete next record in Chrome",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::Alignment missing in import user,"Summary:
+Alignment missing in import user
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.click import user button
+6.Add csv file with lengthy text in file name
+7.Verify  the text alignment 
+
+
+Expected Result:
+It should be in same filed",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::No set password page for email update,"Summary:
+No set password page for email update
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.click edit button
+6.Change user mail ID
+7..Verify  there is no option to set password for email update
+
+Expected Result:
+Need clarification",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Logout is overlapping with add role in User Roles Management List,"Summary:
+Logout is overlapping with add role in User Roles Management List
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5.click sign out button
+6..Verify  it is overlapping with the  button below
+
+Expected Result:
+It should not get overlapped
+NOTE:Kindly check in user management also",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Picture is saved when click on clear button ,"Summary:
+Picture is saved when click on clear button 
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.click  add user button
+6.Choose picture and click save button below
+7.Click clear button
+8.Verify there is no option for clear the image
+
+Expected Result:
+It should get clear",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Alignment is missing in  user management lis page for wide screen kindly check in all pages ,"Summary:
+Alignment is missing in  user management lis page for wide screen kindly check in all pages 
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Verify the alignment for buttons above list page
+
+Expected Result:
+It should be as per design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Grade should be from top organization,"Summary:
+Grade should be from top organisation
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Click add user button
+6.Verify the grade option is showing from second grade
+
+Expected Result:
+It should show from first grade",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+"SP1::LXP::R1::Ph  no shows Phone Number cannot be less than 7 digits,Phone Number should contain only numbers","Summary:
+Ph  no shows Phone Number cannot be less than 7 digits,Phone Number should contain only numbers
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Click add user button
+6.Enter in phone number field with special characters and numeric
+7.Verify it is showing Phone Number cannot be less than 7 digits,Phone Number should contain only numbers
+Expected Result:
+It  should not allow to enter special characters
+
+NOTE:
+1.Also showing validation message for spaces
+2.Kindly check validation message also for alphabets ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Validation Incorrect,Always,Internal,
+"SP1::LXP::R1::Grade validation should not have ""a"" and Init caps in Grade","Summary:
+Grade validation should not have ""a"" and Init caps in Grade
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Click add user button
+6.Click save 
+7.Verify it is showing validation as ""Please choose a grade""
+Expected Result:
+It  should be as per document with init caps",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Validation message is display when click on clear,"Summary:
+Validation message is display when click on clear
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Click add user button
+6.Click save 
+7.Verify is showing after click  clear button
+Expected Result:
+It  should get cleared",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Functionality,Always,Internal,
+SP1::LXP::R1::Delete user pop up should have full stop in between application and instead,"Summary:
+Delete user pop up should have full stop in between application and instead
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Click delete button
+6.Verify the pop up message
+Expected Result:
+It should have full stop in between application and instead",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,ramesh.dev@velaninfo.com,Minor,Front End,Validation Incorrect,Always,Internal,
+SP1::LXP::R1::Deleted user is still logged in ,"Summary:
+Delete user pop up should have full stop in between application and instead
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Click delete button
+6.Verify the user is still logged in 
+Expected Result:
+It should not allow to logged in ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Pop up for Active emp is not as per validation document in user role,"Summary:
+Pop up for Active emp is not as per validation document in user role
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5.Click delete button for already assigned role
+6.Verify the toast message content display as ""<Role name>Role Assigned to User, So Unable to Delete""
+Expected Result:
+It should be as per validation document",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Unable to delete role if there is no employees,"Summary:
+Unable to delete role if there is no employees
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management 
+5.Add role for the new user in user management
+6.Delete the user in user management
+7.Click Delete button for the same role
+8.Verify it is not allowing to delete
+Expected Result:
+It should get delete if there is no record",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::Application allowed to go set password page if user is deleted already,"Summary:
+Application allowed to go set password page if user is deleted already
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Add new user 
+6.Delete the user before set password
+7.Click set password button fro the deleted user from mail
+8.Verify it is allowing to add set password
+Expected Result:
+It should get move to error page",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::confirm we can have email notification for delete,"Summary:
+confirm we can have email notification for delete
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Add new user 
+6.Delete the user 
+Expected Result:
+Kindly confirm we can have email notification for delete",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Allowed to set password for inactive user,"Summary:
+Allowed to set password for inactive user
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Add new user with inactive
+6.It is allowing to add set password
+Expected Result:
+Kindly confirm the scenario",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1:: Default inactive user is saved as active user,"Summary:
+Default inactive user is saved as active user
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.Add new user with inactive status
+6.Verify it is saved as active employee in list page
+Expected Result:
+It should be inactive",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Confirm the design on Import user error pop up,"Summary:
+Confirm the design on Import user error pop up
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management 
+5.click import user button
+6.Add csv file with improper format
+7.Verify  the pop up
+
+Expected Result:
+Confirm the design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,UI/Usability,Always,Internal,
+SP1::LXP::R1::Inactive role is allowed to add in add user,"Summary:
+Inactive role is allowed to add in add user
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management
+5.change role to inactive status from edit 
+6.Verify it is allowed to add inactive role in user management  add user page
+Expected Result:
+It should not show in add user page",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::Import user pop up for import zip is not as per design,"Summary:
+Import user pop up for import zip is not as per design
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Click import user
+6.Verify the pop it is not as per design for Import zip field
+Expected Result:
+It should be as per design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::While Import showing blank error toast message,"Summary:
+While Import showing blank error toast message
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Click import user
+6.Add CSV and ZIP file
+Expected Result:
+It is not allowing to add and shows blank toast message",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Major,API,Functionality,Always,Internal,
+SP1::LXP::R1::Not allowed to add already deleted role name,"Summary:
+Not allowed to add already deleted role name
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management
+5.Add new role
+6.Delete the same role
+7. Verify it is not allowed to add it as new role
+Expected Result:
+It should allow  to add",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Click on edit button in view page not redirected to view on back,"Summary:
+Click on edit button in view page not redirected to view on back
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user role management
+5.Click view role
+6.Delete the same role
+7. Verify it is not allowed to add it as new role
+Expected Result:
+It should navigate to view page
+
+NOTE:Check in User management also",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Validation for pic error should be in defined error message color,"Summary:
+Validation for pic error should be in defined error message color
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Click add user
+6.Click upload picture
+7.Choose picture more than its length
+8. Verify the error message color
+Expected Result:
+It should be in default error messages color",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Drop down font color is not as per design in Add user,"Summary:
+Drop down font color is not as per design in Add user
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Click add user
+7. Verify the drop down font  color is not as per style guide
+Expected Result:
+It should be as per style guide",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Upload picture button font and background color is not as per style guide,"Summary:
+Upload picture button font and background color is not as per style guide
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Click add user
+6. Verify the upload picture font and background color
+Expected Result:
+It should be as per style guide",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::User grade should not allow to come again as select,"Summary:
+User grade should not allow to come again as select
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Click add user
+6.Choose grade 
+7.Verify it is allowing to choose select again
+Expected Result:
+It should not allow to select default  again",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Suggestion,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::No spaces in between mandatory symbol and grade in add user page,"Summary:
+No spaces in between mandatory symbol and grade in add user page
+Replication Steps:
+1. Launch the URL
+2.Enter valid credentials
+3.Click Sign in
+4.Click user management
+5.Click add user
+6. Verify no spaces between mandatory and grade
+Expected Result:
+It should be as per design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::The copy rights font size is not same as the design.,"Summary:
+The copy rights font size is not same as the design.
+Replication Steps:
+1. Launch the URL
+2. Click ""Forgot Password"" link
+3. See the Copyrights font size 
+Expected Result:
+The copy rights font size should be same for all over the application as per the design",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Initial focus is missing- Reset Password,"Summary:
+Initial focus is missing on Reset Password page
+Replication Steps:
+1. Launch URL
+2. Click ""Forgot Password"" click and input your registered email ID
+3. Go to registered email account and go to reset password link page 
+Expected Result:
+The first field ""Enter New Password"" of reset password page should be focused initially.
+
+
+Note:
+
+Check this initial focus function on all pages like add user and add role",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Press leads to scroll up - Organization Chart,"Summary:
+Press leads to scroll up - Organization Chart.
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click ""Organization Structure"" on side menu and select Organization chart
+4. Press F12 in keyboard twice 
+
+Expected Result:
+The side menu should be listed fully when you pressed F12 twice ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Remove validation for sub division remove is not as per success message document - Organization Chart,"Summary:
+Remove validation for sub division remove is not as per success message document - Organization Chart
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click ""Organization Structure"" on side menu and select Organization chart
+4. Remove anyone of the parent node 
+
+Expected Result:
+The alert should say ""To remove this node, please remove all its sub-divisions first""",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+"SP1::LXP::R1::Data table ""Show"" button is not look like design  ","Summary:
+Data table ""Show"" button is deviated from actual design  .
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click ""Organization Structure"" on side menu and select Organization chart
+4. Check the ""Show"" button on pagination
+
+Expected Result:
+Data table ""Show"" button is deviated from acutal design ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::The oval highlighter is available on pagination Prev & Next's count value  ,"Summary:
+The oval highlighter is available on pagination Prev & Next's count value
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click ""Organization Structure"" on side menu and select Organization chart
+4. Check the pagination Prev & Next's count value   
+
+Expected Result:
+The oval share highlighter should be removed from pagination Prev & Next's count value",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Minor,Front End,UI/Usability,Always,Internal,
+"SP1::LXP::R1::User cannot access reports on side menu using ""TAB"" function ","Summary:
+User cannot access reports on side menu using ""TAB"" function 
+ 
+
+Replication Steps:
+
+1. Launch URL on Firefox
+2. Login into portal with valid credentials
+3. Use ""TAB"" key to access all side menus 
+
+Expected Result:
+The TAB key function should work on all side menu selection ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Notification icon & color is not as per style guide,"Summary:
+Notification icon & color is not as per style guide
+.
+
+Replication Steps:
+
+1. Launch URL
+2. Login into portal with valid credentials
+3. Check the Notification icon  color
+
+Expected Result:
+The Notification icon  color should follow the design style guide ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+"SP1::LXP::R1::The ""Status"" toggle is not working in IE browser ","Summary:
+The ""Status"" toggle is not working in IE browser
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Go to User Management List
+4. Client ""Add User"" button
+5. Check the Inactive & Active status 
+
+Expected Result:
+The ""Status"" toggle should allow the user to active or inactive the user ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Major,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Show per page calculation is incorrect,"Summary:
+Show per page calculation is incorrect
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click user management
+4.Check the show per page record for 11 records
+5.It is displaying incorrect values as  11 of 11  in second page
+
+Expected Result:
+It should be 1 of 11",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,UI/Usability,Always,Internal,
+SP1::LXP::R1::Import user allowed to add template with invalid format,"Summary:
+Import user allowed to add template with invalid format
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click User management
+4.click import user
+5.Import csv file with the invalid templates
+6.Validation is not as per the input template name
+
+Expected Result:
+Need clarification",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Major,BA,Functionality,Always,Internal,
+SP1::LXP::R1::Allowed for doing actions in record  saving,"Summary:
+Allowed for doing actions in record  saving
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click User management
+4.Add user
+5.Click save
+6.Do actions after click save
+7.Verify it is allow to edit 
+Expected Result:
+It should not allow to do action in saving",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Functionality,Always,Internal,
+SP1::LXP::R1::Role name validation is not as per document,"Summary:
+Role name validation is not as per document
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click ""User management""
+4. GO to Add user page
+5. Click enter
+6. Verify the validation
+
+
+Expected Result:
+It should be as per validation document",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Functionality,Always,Internal,
+SP1::LXP::R1::unable to add same first name last name with different mail id in add user,"Summary:
+Unable to add same first name last name with different mail id in add user
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click User management
+4. Click add user
+5.Add first name and last name as another existing user
+6.Verify it is not allowing to add and displays as ""The given data is invalid""
+
+Expected Result:
+It should allow to add ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,baskar.dev@velaninfo.com,Moderate,API,Functionality,Always,Internal,
+SP1::LXP::R1::Need clarification on Session expired time out,"Summary:
+Need clarification on Session expired time out
+
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+
+
+Expected Result:
+Confirm the session expired time out  ",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Clarification Required,martin.ba@velaninfo.com,Moderate,BA,Functionality,Always,Internal,
+SP1::LXP::R1::TAB is not showing properly in safari,"Summary:
+TAB is not showing properly in 
+Replication Steps:
+1. Launch URL
+2. Login into portal with valid credentials
+3. Click user management 
+4.verify the highlighter using TAB key
+
+
+Expected Result:
+It should display evenly 
+NOTE:TAB key is not moving to all modules",vishnu.testing@velaninfo.com,7/1/2020,13/1/2020,Open,ramesh.dev@velaninfo.com,Moderate,Front End,Functionality,Always,Internal,
