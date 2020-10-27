@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->name('index');
+Route::get('/about-us', 'PagesController@about')->name('about-us');
+Route::get('/history', 'PagesController@history')->name('history');
+Route::get('/quality-measures', 'PagesController@quality_measures')->name('quality-measures');
+ 
 
 Route::get('/admin', function () { return redirect('login');  /*return view('welcome'); */ });
 Auth::routes(['register'=>false]);

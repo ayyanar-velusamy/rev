@@ -101,12 +101,12 @@
               <img src="{{ asset('revival/images/logo-wide.png') }}" alt="">
             </a>
             <ul class="menuzord-menu">
-            <li class="active"><a href="#home">Home</a>
+            <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}">Home</a>
               </li>
-              <li><a href="#home">About Us</a>
+              <li class="{{ request()->is('about-us') ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
                 <ul class="dropdown">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Quality Measures</a></li>
+                  <li><a href="{{ route('history')}}" class="{{ request()->is('history') ? 'active' : '' }}">History</a></li>
+                  <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('quality-measures') ? 'active' : '' }}" href="#">Quality Measures</a></li>
                 </ul>
               </li>
               <li ><a href="#home">Our Services</a>

@@ -42,6 +42,6 @@ class UserTableSeeder extends Seeder
 		$user->save();
 		
 		$role = Role::where('name','User')->first();
-		$user->assignRole($role->name 
+		$user->assignRole($role->name); 
     }
 }

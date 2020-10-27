@@ -321,8 +321,9 @@ iframe {
   border: none;
   width: 100%;
 }
+
 .lead {
-  font-size: 18px;
+  font-size: 18px; 
 }
 .text-highlight {
   background: none repeat scroll 0 0 #111111;
@@ -507,7 +508,7 @@ ul.list-border-bottom.no-padding li:last-child {
   margin: 5px 10px 5px 0;
   text-align: center;
   width: 28px;
-}
+} 
 .list-icon.square li i {
   background: #c0c0c0;
   color: #555555;
@@ -7125,3 +7126,50 @@ blockquote p {
   height: 42px;
   margin-right: 10px;
 }
+
+/*custom**/
+.rev-p {
+  font-size: 18px;
+  line-height: 25px !important;
+  text-align: justify;
+  font: 16px Verdana;
+  color: #484848;
+  padding: 15px 0px 0 0px;
+}
+
+.list-img {
+  margin: 5px 0px;
+  font: 16px verdana;
+}
+.list-img li {
+	font: 16px Verdana;
+	color: #484848;
+	padding: 5px 0px 0 0px;
+	margin: 0;
+}
+.list-img li img { 
+  margin: 0px 10px 5px 0; 
+}
+.list-img li a{
+	color: #1F386B;
+	text-decoration: none;
+	font: 16px verdana;
+}
+.list-img li a:hover{
+	text-decoration: none;
+    color: #E41937;
+}
+.widget ul.list li{
+	font-size: 16px; 
+    color: #484848;
+}
+.sidebar ul li i{
+	color: #1F386B;
+	margin-right:5px;
+}
+.sidebar ul li a{
+	color: #484848;
+}
+
+ 
+

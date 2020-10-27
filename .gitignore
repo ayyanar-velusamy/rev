@@ -1,0 +1,6 @@
+.htaccess
+.htaccess-old
+index.php
+config/*
+vendor/*
+storage/*
