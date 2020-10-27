@@ -610,8 +610,8 @@ section {
 }
 section > .container,
 section > .container-fluid {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;  
 }
 /* -------- Background Video ---------- */
 .bg-video {
@@ -7128,18 +7128,17 @@ blockquote p {
 }
 
 /*custom**/
-.rev-p {
+/* .rev-p {
   font-size: 18px;
   line-height: 25px !important;
   text-align: justify;
   font: 16px Verdana;
   color: #484848;
   padding: 15px 0px 0 0px;
-}
+} */  
 
 .list-img {
-  margin: 5px 0px;
-  font: 16px verdana;
+  font-size: 18px; 
 }
 .list-img li {
 	font: 16px Verdana;
@@ -7159,7 +7158,7 @@ blockquote p {
 	text-decoration: none;
     color: #E41937;
 }
-.widget ul.list li{
+/* .widget ul.list li{
 	font-size: 16px; 
     color: #484848;
 }
@@ -7169,7 +7168,7 @@ blockquote p {
 }
 .sidebar ul li a{
 	color: #484848;
-}
+} */
 
  
 

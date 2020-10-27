@@ -1,12 +1,26 @@
-<div class="col-md-4 col-sm-12 col-xs-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-<div class="widget sidebar">
-	<h3 class="widget-title line-bottom">SERVICES <span class="text-theme-color-2">WE OFFER</span></h3> 
-	<ul class="list list-divider list-border">
-	  <li><a class="faa-parent animated-hover" href="#"> <i class="fa fa-plus-square fa-lg faa-tada "></i>&nbsp;Nursing Services</a></li> 
-	  <li><a class="faa-parent animated-hover" href="#"> <i class="fa fa-plus-square fa-lg faa-tada "></i>&nbsp;Home Health Aide Services</a></li> 
-	  <li><a class="faa-parent animated-hover" href="#"> <i class="fa fa-plus-square fa-lg faa-tada "></i>&nbsp;Physical, Occupational and Speech Therapy</a></li> 
-	  <li><a class="faa-parent animated-hover" href="#"> <i class="fa fa-plus-square fa-lg faa-tada "></i>&nbsp;Revival University</a></li> 
-	  <li><a class="faa-parent animated-hover" href="#"> <i class="fa fa-plus-square fa-lg faa-tada "></i>&nbsp;Waiver Program</a></li> 
-	</ul>
-  </div> 
+<div class="col-md-4 col-sm-12 col-xs-12 wow fadeInRigth" data-wow-duration="1s" data-wow-delay="0.3s">
+  <div class="border-10px p-10 pt-0 pb-0 mt-30">
+	<div class="icon-box icon-left iconbox-theme-colored pb-0 pt-30">
+	  <a class="icon  icon-bordered icon-circled icon-border-effect mr-20 mt-10 effect-circled pull-left flip" href="#">
+		<i class="fa fa-stethoscope"></i>
+	  </a>
+	  <h5 class="icon-box-title mb-5"><a href="#">Health Care</a></h5>
+	  <p class="text-gray">Lorem ipsum dolor sit amet conse ctetur.</p>
+	</div>
+	<div class="icon-box icon-left iconbox-theme-colored pb-0 pt-30">
+	  <a class="icon  icon-bordered icon-circled icon-border-effect mr-20 mt-10 effect-circled pull-left flip" href="#">
+		<i class="fa fa-home"></i>
+	  </a>
+	  <h5 class="icon-box-title mb-5"><a href="#">Home Care</a></h5>
+	  <p class="text-gray">Lorem ipsum dolor sit amet conse ctetur.</p>
+	</div>
+	<div class="icon-box icon-left iconbox-theme-colored pb-0 pt-30">
+	  <a class="icon  icon-bordered icon-circled icon-border-effect mr-20 mt-10 effect-circled pull-left flip" href="#">
+		<i class="fa fa-heartbeat"></i>
+	  </a>
+	  <h5 class="icon-box-title mb-5"><a href="#">Intensive Care</a></h5>
+	  <p class="text-gray">Lorem ipsum dolor sit amet conse ctetur.</p>
+	</div>
+	
+  </div>
 </div>

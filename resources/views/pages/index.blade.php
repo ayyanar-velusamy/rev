@@ -69,32 +69,7 @@
 For your home care services dilemma, you can trust only one name: <b>Revival Homecare Agency</b>. Our agency exists to provide you and our community with health services that bring comfort in a familiar setting, your home. Our competent staff and employees have been serving the people of Virginia and Maryland for years. Keeping your loved one healthy and relaxed is our top priority. For more information about our services, please call us at 888-225-6905.</p>
               
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="border-10px p-10 pt-0 pb-0 mt-30">
-                <div class="icon-box icon-left iconbox-theme-colored pb-0 pt-30">
-                  <a class="icon  icon-bordered icon-circled icon-border-effect mr-20 mt-10 effect-circled pull-left flip" href="#">
-                    <i class="fa fa-stethoscope"></i>
-                  </a>
-                  <h5 class="icon-box-title mb-5"><a href="#">Health Care</a></h5>
-                  <p class="text-gray">Lorem ipsum dolor sit amet conse ctetur.</p>
-                </div>
-                <div class="icon-box icon-left iconbox-theme-colored pb-0 pt-30">
-                  <a class="icon  icon-bordered icon-circled icon-border-effect mr-20 mt-10 effect-circled pull-left flip" href="#">
-                    <i class="fa fa-home"></i>
-                  </a>
-                  <h5 class="icon-box-title mb-5"><a href="#">Home Care</a></h5>
-                  <p class="text-gray">Lorem ipsum dolor sit amet conse ctetur.</p>
-                </div>
-                <div class="icon-box icon-left iconbox-theme-colored pb-0 pt-30">
-                  <a class="icon  icon-bordered icon-circled icon-border-effect mr-20 mt-10 effect-circled pull-left flip" href="#">
-                    <i class="fa fa-heartbeat"></i>
-                  </a>
-                  <h5 class="icon-box-title mb-5"><a href="#">Intensive Care</a></h5>
-                  <p class="text-gray">Lorem ipsum dolor sit amet conse ctetur.</p>
-                </div>
-                
-              </div>
-            </div>
+            @include('pages.common.sidebar') 
           </div>
         </div>
       </div>
@@ -178,98 +153,7 @@ For your home care services dilemma, you can trust only one name: <b>Revival Hom
 
     <!-- Section: Mission -->
    
-    <!-- Section: courses -->
-    <section>
-      <div class="container pt-70 pb-40">
-        <div class="section-title text-center">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <h2 class="mt-0 line-height-1 text-center text-uppercase mb-10 text-black-333">Our <span class="text-theme-color-2"> Services</span></h2>
-              <p>Here are the Services We offer!</p>
-            </div>
-          </div>
-        </div>
-        <div class="row multi-row-clearfix">
-          <div class="col-md-12">
-            <div class="owl-carousel-3col owl-nav-top" data-dots="true">
-              <div class="item">
-                <div class="project mb-30 border-2px">
-                  <div class="thumb">
-                    <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/nursing_services_bg.jpg') }}">
-                    <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="#"><span>Read More</span> </a>
-                    </div>
-                  </div>
-                  <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="#" class="text-white">Nursing Services</a></h4>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="project mb-30 border-2px">
-                  <div class="thumb">
-                    <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/health_care_aide.jpg')}}">
-                    <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="#"><span>Read More</span> </a>
-                    </div>
-                  </div>
-                  <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="#" class="text-white">Home Health Aide Services</a></h4>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="project mb-30 border-2px">
-                  <div class="thumb">
-                    <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/physical.jpg') }}">
-                    <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="#"><span>Read More</span> </a>
-                    </div>
-                  </div>
-                  <div class="project-details p-15 pt-15 pb-5 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="#" class="text-white">Physical Occupational and Speech therapy</a></h4>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="project mb-30 border-2px">
-                  <div class="thumb">
-                    <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/revival_university.jpg') }}">
-                    <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="#"><span>Read More</span> </a>
-                    </div>
-                  </div>
-                  <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="#" class="text-white">Revival University</a></h4>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="project mb-30 border-2px">
-                  <div class="thumb">
-                    <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/waiver.jpg') }}">
-                    <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="#"><span>Read More</span> </a>
-                    </div>
-                  </div>
-                  <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="#" class="text-white">Waiver Program</a></h4>
-                    
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    @include('pages.common.service') 
     
     <!-- Divider: Funfact -->
     <section class="divider parallax layer-overlay" data-bg-img="{{ asset('revival/images/bg/revival2.jpg') }}" data-parallax-ratio="0.5">

@@ -5,10 +5,9 @@
      @include('pages.common.slider') 
     <!-- Section: About -->
     <section id="about">
-      <div class="container pb-70">
+      <div class="container">
         <div class="section-content">
-          <div class="row">
-		    @include('pages.common.sidebar') 
+          <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
               <h2 class="text-uppercase mt-0">About <span class="text-theme-color-2">Us</span></h2> 
 			  <ul class="list-img">
@@ -23,11 +22,12 @@
 			  </ul>
 			  <p class="rev-p">Staying at home enables one to maintain social ties and involvement with community, friends, and family. This preserves a sense of independence and security for the patient. In many cases, the consistency of home health care can eliminate the need for hospitalization altogether.<br>We have the ability to provide appropriate medical and non-medical care to you and your family. If you prefer remaining in the home rather than in institutional settings, <b>Revival Homecare Agency</b> is here to help. We are dedicated to providing the highest quality of healthcare in the comfort of your own home. With a team approach to address your needs, we offer holistic care plans that consider your physical, psychological and spiritual needs as a patient.</p>
             </div>
-            
+             @include('pages.common.sidebar') 
           </div>
         </div>
       </div>
-    </section>  
+    </section> 
+	@include('pages.common.service') 	
   </div>
   <!-- end main-content -->
   @endsection 
