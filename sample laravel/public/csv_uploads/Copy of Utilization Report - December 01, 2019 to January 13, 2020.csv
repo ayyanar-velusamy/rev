@@ -1,8 +1,0 @@
-S.No,Employee ID,Employee Name,Sub Team,Total Days Present,Overall Task Time Spent Hours(Client+ Velan),Total Hours Spent on Clients,Total Hours Spent on Velan,Total Hours Spent on Break,Reworks Points Count,Clients Projects Utilization in Percentage,Velan Projects Utilization in Percentage,Overall Utilization in Percentage
-1,VIS-2058,Muthu kumar K,Red,1,00:00:00,00:00:00,00:00:00,00:00:00,0,0 %,0 %,0 %
-2,VIS-2021,Emp,Red,1,94:49:14,94:49:14,00:00:00,08:20:00,0,1185.26 %,0 %,1185.26 %
-3,VIS-2291,Naveen,Blue,4,42:31:35,29:30:35,13:01:00,00:00:00,0,92.22 %,40.68 %,132.89 %
-4,VIS-2292,Banu,Black,3,69:07:47,00:02:14,69:05:33,00:24:19,2,0.16 %,287.89 %,288.04 %
-5,VIS-2293,Bala,Red,3,00:04:27,00:03:58,00:00:29,00:21:39,0,0.28 %,0.03 %,0.31 %
-6,VIS-2294,Jacklin,Blue,3,120:18:46,120:18:46,00:00:00,00:00:03,0,501.3 %,0 %,501.3 %
-7,VIS-2000,Naveen,,2,96:12:02,00:00:00,96:12:02,00:00:00,0,0 %,601.25 %,601.25 %
