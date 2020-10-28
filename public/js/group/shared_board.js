@@ -43,7 +43,7 @@ function resetPost(){
 
 function editPost(post_id) {
 	resetPost();
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetRequest(APP_URL+'groups/get_post/'+post_id,function(response){
 		if(response.status){
 			$('#groupPostAddForm').attr('action',APP_URL+'groups/update_post/'+post_id);
@@ -53,7 +53,7 @@ function editPost(post_id) {
 			$('.editBtn_'+post_id).hide();
 		}
 		setTimeout(function(){
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},700)		
 	})
 }

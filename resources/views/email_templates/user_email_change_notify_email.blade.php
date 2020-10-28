@@ -26,15 +26,15 @@
                 <tr> 
                     <td align="center" style="padding: 13px 0 13px 0; ">
                         <a href="{{url('/')}}" target="_blank">
-                            <img src="{{asset('images/template/lxplogo.png') }}" alt="LXP logo"/>
+                            <img src="{{asset('images/template/revlogo.png') }}" alt="rev logo"/>
                         </a>
                     </td>
                 </tr>
                  <tr>
                     <td>
                         <div class="banner" style="position:relative;">
-							<img src="{{asset('images/template/lxp_banner.png') }}" alt="LXP Banner"/>
-							<h1 style="color:#fff; font-size:35px; position:absolute; left:0px;right:0px; text-align:center; top:20%;"><span style="display:block; color:#bbdc00; font-size:20px; line-height:20px;height: 20px;"></span> Learning Experience Platform </h1>
+							<img src="{{asset('images/template/rev_banner.png') }}" alt="rev Banner"/>
+							<h1 style="color:#fff; font-size:35px; position:absolute; left:0px;right:0px; text-align:center; top:20%;"><span style="display:block; color:#bbdc00; font-size:20px; line-height:20px;height: 20px;"></span> Revival </h1>
 						<div>
                     </td>
                 </tr>
@@ -62,7 +62,7 @@
 								<tr>
                                    <td style="padding-bottom:10px;">
                                          <span style="text-align:left; display:block; margin:0 auto; font-size: 14px;color:#323232;">Thanks,</span>
-                                         <span style="text-align:left; display:block; margin:0 auto; font-size: 14px;color:#323232;">Learning Experience Platform</span>
+                                         <span style="text-align:left; display:block; margin:0 auto; font-size: 14px;color:#323232;">Revival</span>
                                     </td>
                                 </tr>
                             </tbody>

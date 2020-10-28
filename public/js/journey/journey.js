@@ -334,7 +334,7 @@ function loadEditMilestone(milestone_id){
 
 
 function getAssigndMilestoneDetail(id){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	getMilestonePostData = {};
 	getMilestonePostData['action'] = 'view';
 	getMilestonePostData['category'] = (window.location.href.indexOf("assigned") > -1) ? 'owner':'user';
@@ -342,19 +342,19 @@ function getAssigndMilestoneDetail(id){
 		$('#loadMilstoneAddModal').html(response);
 		getMilestonePostData = {};
 		setTimeout(function () {
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500);
 	});
 }
 
 function getMilestoneDetail(id){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	getMilestonePostData['category'] = (window.location.href.indexOf("assigned") > -1) ? 'owner':'user';
 	sendGetHtmlRequest(APP_URL+'milestone/'+id,getMilestonePostData,function(response){
 		$('#loadMilstoneAddModal').html(response);
 		getMilestonePostData = {};
 		setTimeout(function () {
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500);
 	});
 }
@@ -377,12 +377,12 @@ function loadEditBackfillMilestone(milestone_id){
 
 
 function getBackfillMilestoneDetail(id){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetHtmlRequest(APP_URL+'get_backfill_milestone/'+id,getMilestonePostData,function(response){
 		$('#loadPassportMilstoneAddModal').html(response);
 		getMilestonePostData = {};
 		setTimeout(function () {
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500);
 	});
 }
@@ -520,26 +520,26 @@ function journeyAllAssignees(journey_id, journey_type_id){
 	//alert(journey_id);
 	$('#allAssigneeModalTitle').text('All Assignees');
 	$('#allAssigneesModal').modal('show');
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetRequest(APP_URL+'journeys/'+journey_id+'/all_assignee', function (response) {
         if(response.status) {
 			//showMessage(response.message, "success", "toastr");
 			setAssignedJourneyAssigee(response.data);
         }
-		lxp_submit_loader(false);
+		rev_submit_loader(false);
     });	
 }
 
 function journeyTotalAssignees(journey_id, journey_type_id){
 	$('#allAssigneeModalTitle').text('Total Assignees');
 	$('#allAssigneesModal').modal('show');
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetRequest(APP_URL+'journeys/'+journey_id+'/total_assignee', function (response) {
         if(response.status) {
 			//showMessage(response.message, "success", "toastr");
 			setPredifinedJourneyAssigee(response.data);
         }
-		lxp_submit_loader(false);
+		rev_submit_loader(false);
     });	
 }
 

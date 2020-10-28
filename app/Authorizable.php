@@ -38,13 +38,13 @@ trait Authorizable
     }
 	
 	private function appSkipPermissionRestriction($ability,$parameters){
-		if($this->lxpSkip($ability,$parameters)){
+		if($this->revSkip($ability,$parameters)){
 			return true;
 		}
 		return false;
 	}
 	
-	private function lxpSkip($ability, $parameters)
+	private function revSkip($ability, $parameters)
     {
 		if($ability == "add_organizations"){
 			if((auth()->user()->hasAnyPermission(['edit_organizations','delete_organizations']))){

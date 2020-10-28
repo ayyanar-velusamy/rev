@@ -44,7 +44,7 @@ $(document).on('keyup change','#dataTableSearch', function () {
 });
 
 function renderContentBlock(){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 
 	var data = {
 		'content_name'	:filterByLibraryId,
@@ -58,7 +58,7 @@ function renderContentBlock(){
 	sendGetHtmlRequest(APP_URL+'library_block_list',data,function(response){
 		$('#loadContentBlock').html(response);
 		setTimeout(function () {
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500);
 	});
 }
@@ -322,7 +322,7 @@ $(document).click(function (e) {
 
 $(document).on('submit','#contentAssignForm', function(e){
 	e.preventDefault();
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
     let url = $(this).attr('action');
 	var data = $('#contentAssignForm').serializeArray();
 	
@@ -354,7 +354,7 @@ $(document).on('submit','#contentAssignForm', function(e){
 		  //showMessage(response.message, "error", "toastr");
 	   }
 	   setTimeout(function(){
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500)
     });
 });

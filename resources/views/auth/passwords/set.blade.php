@@ -46,7 +46,7 @@
 									</button>
 								</div>
 							</form>
-							<p class="copyright">© {{date('Y')}} Learning Experience Platform</p>
+							<p class="copyright">© {{date('Y')}} Revival</p>
 						</div>
 					</div>
                 </div>

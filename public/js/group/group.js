@@ -65,13 +65,13 @@ function addMember(group_id){
 }
 
 function get_user_list(){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetRequest(APP_URL+'/groups/member_list/'+activeGroupId, function (response) {
         if(response.status) {
             //showMessage(response.message, "success", "toastr");
 			setUserDropdownList(response.data);
         }
-		lxp_submit_loader(false);
+		rev_submit_loader(false);
     });	
 }
 

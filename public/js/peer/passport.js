@@ -9,12 +9,12 @@ $(function(){
 
 
 function passportDataCount(){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetRequest(APP_URL+'passport/'+passportUserId+'/milestone_count', function (response) {
         if(response.status) {
 			setPassportDataCount(response.data);
         }
-		lxp_submit_loader(false);
+		rev_submit_loader(false);
     });	
 }
 	
