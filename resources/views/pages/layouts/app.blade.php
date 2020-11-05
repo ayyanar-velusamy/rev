@@ -65,10 +65,10 @@
   </div>
   
   <!-- Header -->
-  <header id="header" class="header">
-    <div class="header-top bg-theme-color-2 sm-text-center">
-      <div class="container">
-        <div class="row">
+<header id="header" class="header">
+  <div class="header-top bg-theme-color-2 sm-text-center">
+    <div class="container">
+      <div class="row">
           <div class="col-md-8">
             <div class="widget no-border m-0">
               <ul class="list-inline">
@@ -77,7 +77,7 @@
                 <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope text-white"></i> <a class="text-white" href="mailto:info@revivalhha.com">&nbsp;info@revivalhha.com</a> </li>
               </ul>
             </div>
-          </div>
+        </div>
 
           <div class="col-md-4">
             <div class="widget no-border m-0">
@@ -103,13 +103,16 @@
             <ul class="menuzord-menu">
             <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}">Home</a>
               </li>
-              <li class="{{ request()->is('about-us') ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
+              <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
                 <ul class="dropdown">
-                  <li><a href="{{ route('history')}}" class="{{ request()->is('history') ? 'active' : '' }}">History</a></li>
-                  <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('quality-measures') ? 'active' : '' }}" href="#">Quality Measures</a></li>
+                  <li><a href="{{ route('history')}}" class="{{ request()->is('home-health-care-history') ? 'active' : '' }}">History</a></li>
+                  <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('home-health-care-quality-measures') ? 'active' : '' }}" href="#">Quality Measures</a></li>
                 </ul>
               </li>
-              <li ><a href="#home">Our Services</a>
+              <li class="{{ (request()->is('home-health-care-our-services') || request()->is('home-health-care-nursing-services') || request()->is('home-health-care-home-health-aide-and-home-maker-services') || request()->is('home-health-care-physical-occupational-and-speech-therapy') || request()->is('home-health-care-revival-university') || request()->is('home-health-care-waiver-program'))
+                            ? 'active' : '' }}">
+                  <a href="{{ route('our-services')}}" >Our Services</a>
+               </li>
               </li>
               <li ><a href="#home">Careers</a>
               </li>
@@ -136,11 +139,10 @@
             <p class="font-16 mb-10">Revival Homecare Agency. Our agency exists to provide you and our community with health services that bring comfort in a familiar setting, your home.</p>
             <a class="font-14" href="#"><i class="fa fa-angle-double-right text-theme-colored"></i> Submit your referrals</a>
             <ul class="styled-icons icon-dark mt-20">
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="10"><a href="#" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" data-wow-offset="10"><a href="#" data-bg-color="#02B0E8"><i class="fa fa-twitter"></i></a></li>
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".3s" data-wow-offset="10"><a href="#" data-bg-color="#05A7E3"><i class="fa fa-skype"></i></a></li>
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s" data-wow-offset="10"><a href="#" data-bg-color="#A11312"><i class="fa fa-google-plus"></i></a></li>
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10"><a href="#" data-bg-color="#C22E2A"><i class="fa fa-youtube"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="10"><a href="https://www.facebook.com/profile.php?id=100006944495423"  target="_blank" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" data-wow-offset="10"><a href="https://www.instagram.com/revivalhomecare/" target="_blank" data-bg-color="#02B0E8"><i class="fa fa-instagram"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s" data-wow-offset="10"><a href="https://www.linkedin.com/company/revival-homecare-agency/" target="_blank" data-bg-color="#A11312"><i class="fa fa-linkedin"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10"><a href="https://twitter.com/revivalhomecare?s=11" target="_blank" data-bg-color="#02B0E8"><i class="fa fa-twitter"></i></a></li>
             </ul>
           </div>
         </div>

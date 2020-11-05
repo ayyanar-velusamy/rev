@@ -28,6 +28,37 @@ class PagesController extends Controller
         return view('pages.quality-measures');
         
     }
+	public function our_services()
+    {
+        return view('pages.our-services');
+        
+    }
+	public function nursing_services()
+    {
+        return view('pages.nursing-services');
+        
+    }
+	public function health_aid_services()
+    {
+        return view('pages.health-aid-services');
+        
+    }
+	public function physical_occupational_services()
+    {
+        return view('pages.physical-occupational-services');
+        
+    }
+	public function revival_university()
+    {
+        return view('pages.revival-university');
+        
+    }
+	public function waiver_program()
+    {
+        return view('pages.waiver-program');
+        
+    }
+	
 	
 	
 }
