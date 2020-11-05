@@ -261,6 +261,66 @@ $(document).on('click','#userAddFormSubmit, #userEditFormSubmit' ,function(){
 	});
 });
 
+$(document).on('click','#pageAddFormSubmit, #pageEditFormSubmit' ,function(){ 
+	jQuery("#pageAddForm, #pageEditForm").validate({
+		rules: {
+			title: {
+				required: true,
+				minlength:1,
+				maxlength: 40,
+				lettersonly:true
+			},
+			meta_description: {
+				required: true
+			},
+			meta_keyword: {
+				required: true
+			},
+			content_en: {
+				required: true
+			},
+			content_fr: {
+				required: true
+			},			
+		},
+
+		messages: {
+			title: {
+				required:"Page Title cannot be empty",
+				maxlength:"Page Title cannot exceed 40 characters",
+				lettersonly:"Page Title should contain only alphabets", 
+			},
+			meta_description: {
+				required:"Meta Description cannot be empty", 
+			},
+			meta_keyword: {
+				required:"Meta Keyword cannot be empty", 
+			}, 
+			content_en: {
+				required:"content cannot be empty",  
+			},
+			content_fr: {
+				required:"content Description cannot be empty", 
+			}			
+		},
+		errorElement: "span",
+		errorPlacement: function(error, element) {
+			
+			$('span.removeclass-valid').remove();
+            var placement = $(element).data('error');
+			if (placement) {
+				$(placement).append(error)
+			 } else {
+				if(element.hasClass('select2') && element.next('.select2-container').length) {
+					error.insertAfter(element.next('.select2-container'));
+				}else{
+					error.insertAfter(element);
+				}
+			}  
+		}
+	});
+});
+
 // $('form#userAddForm').on('submit', function(event) {
 	// $('select.select_level').each(function() {
 			// $(this).rules("add", 

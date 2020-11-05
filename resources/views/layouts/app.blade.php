@@ -167,12 +167,17 @@
 <script src="{{ asset('js/highcharts.js') }}"></script> 
 <script src="{{ asset('js/custom.js') }}"></script> 
 <script src="{{ asset('js/validation.js') }}"></script> 
-
-@if(Request::route()->getName()  == 'organization-chart.index')
-<script src="{{ asset('js/jquery-orgchart.js') }}"></script> 
-@endif
+<script src="{{ asset('plugins/ckeditor/ckeditor.js') }}"></script> 
 
 <script type="text/javascript">
+    $(document).ready(function () {
+        //$('.ckeditor').ckeditor();
+    });
+	
+</script>
+
+<script type="text/javascript">
+
 	$.ajaxSetup({
 		headers: {
 		'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

@@ -26,8 +26,8 @@ Route::get('verify/email/{token}', 'Auth\ResetPasswordController@verifyEmail');
 
 Route::group(['middleware'=>'auth'], function(){	
 	Route::get('/home', 'DashboardController@index')->name('home');
-	Route::resource('/dashboard', 'DashboardController');
-		
+	Route::resource('/dashboard', 'DashboardController'); 
+	
 	//User management
 	Route::get('/user_list', 'UserController@ajax_list')->name('user_list');
 	Route::put('/users/status/{id}', 'UserController@status')->name('users.status');
@@ -40,6 +40,11 @@ Route::group(['middleware'=>'auth'], function(){
 	Route::post('/change_password', 'UserController@change_password')->name('change_password');
 	Route::post('/profile_update', 'UserController@profile_update')->name('users.profile_update');
 	Route::resource('users', 'UserController');
+	
+	//Page management
+	Route::get('/page_list', 'PageManagementController@ajax_list')->name('page_list'); 
+	Route::put('/pages/status/{id}', 'PageManagementController@status')->name('pages.status');
+	Route::resource('pages', 'PageManagementController');    
 	
 	
 	//Role management

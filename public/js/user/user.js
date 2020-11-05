@@ -407,3 +407,129 @@ function copyLinkFunction() {
   //alert("Copied the text: " + copyText.value);
   showMessage("Link Copied", "success", "toastr");
 }	
+
+/*upload croppie for account setting page*/
+ 
+imgUrl = '';
+img_data  = [];
+var imgCroppie = (function() {  
+	function profileUp() { 
+		var $uploadCrop5;
+		$('#userprofile').empty(); 	
+		function readFile(input) {
+ 			if (input.files && input.files[0]) {
+	            var reader = new FileReader();
+	            
+	            reader.onload = function (e) {
+					$('.add-user').addClass('ready');
+					$('.account-wrap').show();
+					$('#userprofile .cr-image').attr('src', '');
+					$('#userprofile .cr-image').css({'opacity' : '','transform': '', 'transform-origin': ''});
+					
+						$uploadCrop5.croppie('bind', {
+							url: e.target.result
+						}).then(function(){
+							console.log('jQuery bind complete');
+							$('.uploadLabel').hide();
+							$('.add-user ul.list-inline').show(); 
+							$('.add-user .table-small-img-outer').hide();
+							//$('.profile-wrap').show();
+						});
+					
+	            }
+	            reader.readAsDataURL(input.files[0]);
+	        }
+	        else {
+		        
+		    }
+			$('#profile-adminImg').hide();
+		}
+		if($("#userprofile").length > 0){
+			$uploadCrop5 = $('#userprofile').croppie({
+				viewport: {
+					width: 150,
+					height: 150,
+					type: 'circle'
+				},
+				boundary: {
+					width: 160,
+					height: 160
+				},
+				enforceBoundary: true,
+				enableOrientation: true,
+				showZoomer: false,
+				enableExif: false,
+				enableZoom:true,
+				mouseWheelZoom:false
+			});
+		}
+		
+		$('.crop-save').on('click', function (ev) {
+			
+				$uploadCrop5.croppie('result', {
+					type: 'blob',
+					size: 'viewport',
+					format:'jpg,png,jpeg'
+				}).then(function (resp) {
+					profile_image_data = image_data = resp;
+					var urlCreator = window.URL || window.webkitURL;
+					console.log(image_data);
+					imgUrl = urlCreator.createObjectURL(image_data);
+					$('#profile-adminImg').attr('src',imgUrl);
+					$('#profile-adminImg').show();
+					$('.account-wrap').hide();
+					$('.add-user ul').hide();
+					$('.uploadLabel').show();
+					$('.add-user .table-small-img-outer').show();
+				});
+			
+		});
+		$('.crop-cancel').click(function(){
+			$('.account-wrap').hide();
+			$('.add-user ul').hide();
+			$('#profile-adminImg').show();
+			$('.uploadLabel').show();
+			$('.add-user').removeClass('ready');
+			$('.profileAdmin').val('');
+			$('.add-user .table-small-img-outer').show();
+		});
+		
+	
+		 $(document).on('change','.profileAdmin',function () {
+			var extension = $('.profileAdmin').val().replace(/^.*\./, '');
+			if($('.profileAdmin').val() != "") {
+				if($.inArray(extension, ['png','jpg','jpeg','JPG','PNG','JPEG']) != -1) {
+					var size = $('.profileAdmin')[0].files[0].size;
+					if(size >= 5000000) {
+						$('.add-user .error').html('Image size cannot exceed 5 MB');
+						return false;
+					} else if(size <= 10000) {
+						$('.add-user .error').html('Image size must be more than 10 KB');
+						return false;
+					} else {
+						readFile(this);
+						$('.add-user .error').html('');
+					}
+				} else {
+					$('.add-user .error').html('File format should accept only JPEG,PNG.');
+					return false;
+				}
+			}
+		});
+	}
+
+	function init() {
+		profileUp();
+	}
+
+	return {
+		init: init
+	};
+})();
+ 
+
+$('.account-user #profile-adminImg').on('click',function(){
+	$('#profile-user').click();
+});
+
+imgCroppie.init();  

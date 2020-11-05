@@ -247,7 +247,7 @@ $('.account-user #profile-adminImg').on('click',function(){
 	$('#profile-user').click();
 });
 
-imgCroppie.init();
+//imgCroppie.init();
 
 /*Import Modal Pop input file type filed */
 $('.import_file #bulkimphrcsv').change(function() {
