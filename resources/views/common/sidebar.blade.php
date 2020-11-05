@@ -29,7 +29,7 @@
 	</div>
 	<div class="side_footer text-center col-sm-12 padding-none">
 		<span>&copy;</span>
-		<span class="text-upper">{{ date('Y') }} LXP</span>
+		<span class="text-upper">{{ date('Y') }} Revival</span>
 	</div>
 </div>
  

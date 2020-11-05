@@ -41,7 +41,7 @@ function activeAssignTab(active_tab){
 
 $(document).on('submit','#journeyAssignForm', function(e){
 	e.preventDefault();
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
     let url = $(this).attr('action');
 	var data = $('#journeyAssignForm').serializeArray();
 	
@@ -74,7 +74,7 @@ $(document).on('submit','#journeyAssignForm', function(e){
 		  //showMessage(response.message, "error", "toastr");
 	   }
 	   setTimeout(function(){
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500)
     });
 });

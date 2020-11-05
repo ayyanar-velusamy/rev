@@ -19,11 +19,11 @@ function loadPassportViewMilestone(milestone_id){
 }
 
 function getPassportMilestoneDetail(id){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetHtmlRequest(APP_URL+'milestone_detail/'+id+'/'+requestUserId,{'action':'view'},function(response){
 		$('#loadPassportMilstoneAddModal').html(response);	
 		setTimeout(function () {
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500);
 	});
 }

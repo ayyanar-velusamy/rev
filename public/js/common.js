@@ -232,7 +232,7 @@ function loadingSubmitButton(selector) {
 	var button = $(selector);
 	var text = "Submitting...";
 
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	
 	if (button.width() < 20) {
 		text = "...";
@@ -253,7 +253,7 @@ function loadingSubmitButton(selector) {
 function unloadingSubmitButton(selector) {
 	var button = $(selector);
 	
-	lxp_submit_loader(false);
+	rev_submit_loader(false);
 	
 	if (!button.is("input")) {
 		button.html(button.attr("data-prev-text"));
@@ -265,7 +265,7 @@ function unloadingSubmitButton(selector) {
 	}
 }
 
-function lxp_submit_loader(show){
+function rev_submit_loader(show){
 	if(show){
 		$(".preloaderOne").css({'display':'block'});
 	}else{

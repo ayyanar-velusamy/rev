@@ -16,7 +16,7 @@
 				<p>Sorry! The page you requested could not be found</p>
 				<a href="{{ route('dashboard.index')}}" class="btn btn-green">go back to dashboard</a>
 			</div>
-			<p class="copyrights">© 2020 Learning Experience Platform</p>
+			<p class="copyrights">© 2020 Revival</p>
 		</div>
 	</div>
 </body>

@@ -70,7 +70,7 @@
         // Default error handler
         if (typeof opt.error != "function") {
             opt.error = function(jqXHR, textStatus, errorThrown) {
-				lxp_submit_loader(false);
+				rev_submit_loader(false);
 				if(jqXHR.status == 401){
 					resetBackConfirmAlert();
 					window.location.reload(true);
@@ -208,7 +208,7 @@
 						},1500);						
 					}
                     else {
-						lxp_submit_loader(false);
+						rev_submit_loader(false);
 						
 						if (opt.blockUI) {
 							$.easyUnblockUI(opt.container);
@@ -254,7 +254,7 @@
 							window.location.reload(true);
 						},2500);						
 					}else {
-						lxp_submit_loader(false);
+						rev_submit_loader(false);
                         if (typeof response.message != "undefined") {
                             showResponseMessage(response.message, "error");
 							callback(response)
@@ -363,7 +363,7 @@
 
         function loadingButton(selector) {
             var button = $(opt.container).find(selector);
-			lxp_submit_loader(true);
+			rev_submit_loader(true);
 			
             var text = "Submitting...";
 

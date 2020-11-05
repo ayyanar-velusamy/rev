@@ -25,7 +25,7 @@ $(document).on('submit','form',function(e){
 
 
 function milstoneView(milestone_id){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	getRequestedMilestoneDetail(milestone_id, disabled=true);
 	
 	$(".daterangepicker").daterangepicker("clearRange");
@@ -38,7 +38,7 @@ function getRequestedMilestoneDetail(id, disabled){
 			setRequesteMilestoneModalValue(response.data, disabled);
 		}
 		setTimeout(function(){
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},700)
 	}})
 }

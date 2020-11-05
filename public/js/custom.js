@@ -557,7 +557,7 @@ $(document).on('click','#milstoneEditModalRestore', function(e){
 });
 
 function setMilestoneEditNote(milestone_id){
-	lxp_submit_loader(true);
+	rev_submit_loader(true);
 	sendGetRequest(APP_URL+'milestone/'+milestone_id+'/notes',function(response){
 		if(response.status){
 			$('#milestoneEditNotesForm').attr('action',APP_URL+'milestone/'+response.data.id+'/notes');
@@ -566,10 +566,10 @@ function setMilestoneEditNote(milestone_id){
 			$('#inputMilstoneEditNote').val(response.data.notes);
 			$('#inputEditMilstoneTitle').val(response.data.title);
 			$('#milstoneNotesEdit').modal('show');
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		}
 		setTimeout(function(){
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500)
 	})
 }
@@ -590,12 +590,12 @@ $(document).on('submit','#milestoneEditNotesForm', function(e){
        if(response.status){
 			showMessage(response.message, "success", "toastr");
 			$('#milstoneNotesEdit').modal('hide');
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 	   }else{
 		  showMessage(response.message, "error", "toastr");
 	   }
 	   setTimeout(function(){
-			lxp_submit_loader(false);
+			rev_submit_loader(false);
 		},500)
     });
 });
@@ -635,7 +635,7 @@ function catchPaste(evt, elem, callback) {
 
 function get_meta_tags(fetchURL){
 	$("#inputURLName").prop('disabled', true).val(fetchURL);
-	lxp_submit_loader(true);	
+	rev_submit_loader(true);	
 	var data = "url="+encodeURIComponent(fetchURL);
 	$.ajax({
 		type: "GET",
@@ -684,7 +684,7 @@ function setMetaValue(tags){
 	}
 	
 	setTimeout(function(){
-		lxp_submit_loader(false);
+		rev_submit_loader(false);
 		$("#inputURLName").prop('disabled', false);
 	},300)
 }

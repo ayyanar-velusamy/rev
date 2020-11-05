@@ -45,7 +45,7 @@
 									<p>Back to <a href="{{route('login')}}">Sign In</a></p>
 								</div>
 							</form>
-							<p class="copyright">©{{date('Y')}} Learning Experience Platform</p>
+							<p class="copyright">©{{date('Y')}} Revival</p>
 						</div>
 					</div>
 				</div>
