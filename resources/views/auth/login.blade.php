@@ -4,15 +4,14 @@
 <div class="login-page login-ml">
     <div class="container">
         <div class="row login-content-center">
-            <div class="col-md-12 login-wrap">
+            <div class="col-md-8 login-wrap">
 				<!--<div class="card-header">{{ __('Login') }}</div>-->
 				<div class="row">
-					<div class="col-sm-12 col-md-8 login-card-left">
+					<div class="col-sm-12 col-md-12 login-card-left">
 						<div class="login-inner">
 							<img src="{{ asset('images/logo.png')}}" alt="logo" class="" />
 							<!-- <h1>{{ __('Login') }}</h1> -->
-							<h1>Sign In</h1>
-							@if (session('success'))
+							<h1>Sign In</h1>@if (session('success'))
 								<div class="alert alert-success" role="alert">
 									{{ session('success') }}
 								</div>
@@ -68,7 +67,7 @@
 									@endif
 								</div>
 							</form>
-							<p class="copyright">© {{date('Y')}} Learning Experience Platform</p>
+							<p class="copyright">© {{date('Y')}} Revival</p>
 						</div>
 					</div>
 				</div>

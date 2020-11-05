@@ -8,6 +8,13 @@
 			</a>
 		</li>
 		
+		<li class="left_menu_list dashboard {{ request()->is('manage_page*') ? 'active' : '' }}">
+			<a href="" tabindex="1">
+				<i class="fa fa-file-text-o " title="Manage Page"></i>
+				<h5 class="fw600">CMS</h5>
+			</a>
+		</li>
+		
 		 
 		
 		@can('view_users')

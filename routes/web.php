@@ -12,9 +12,16 @@
 */
 
 Route::get('/', 'PagesController@index')->name('index');
-Route::get('/about-us', 'PagesController@about')->name('about-us');
-Route::get('/history', 'PagesController@history')->name('history');
-Route::get('/quality-measures', 'PagesController@quality_measures')->name('quality-measures');
+Route::get('/home-health-care-about-us', 'PagesController@about')->name('about-us');
+Route::get('/home-health-care-history', 'PagesController@history')->name('history');
+Route::get('/home-health-care-quality-measures', 'PagesController@quality_measures')->name('quality-measures');
+
+Route::get('/home-health-care-our-services', 'PagesController@our_services')->name('our-services');
+Route::get('/home-health-care-nursing-services', 'PagesController@nursing_services')->name('nursing-services');
+Route::get('/home-health-care-home-health-aide-and-home-maker-services', 'PagesController@health_aid_services')->name('health-aid-services');
+Route::get('/home-health-care-physical-occupational-and-speech-therapy', 'PagesController@physical_occupational_services')->name('physical-occupational-services');
+Route::get('/home-health-care-revival-university', 'PagesController@revival_university')->name('revival-university');
+Route::get('/home-health-care-waiver-program', 'PagesController@waiver_program')->name('waiver-program');
  
 
 Route::get('/admin', function () { return redirect('login');  /*return view('welcome'); */ });
