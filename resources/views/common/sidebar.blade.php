@@ -18,12 +18,20 @@
 		 
 		
 		@can('view_users')
-		<!--li class="left_menu_list user_management {{ request()->is('users*') ? 'active' : '' }}">
+		 <li class="left_menu_list user_management {{ request()->is('pages*') ? 'active' : '' }}">
+			<a title="Page Management" href="{{ route('pages.store')}}"  tabindex="2">
+				<i class="icon-user"></i>
+				<h5 class="fw600">Pages Management</h5>
+			</a>
+		</li>
+		@endcan 
+		@can('view_users')
+		<li class="left_menu_list user_management {{ request()->is('users*') ? 'active' : '' }}">
 			<a title="User Management" href="{{ route('users.index')}}"  tabindex="3">
 				<i class="icon-user"></i>
 				<h5 class="fw600">User Management</h5>
 			</a>
-		</li-->
+		</li>
 		@endcan 
 	</ul>
 	</div>

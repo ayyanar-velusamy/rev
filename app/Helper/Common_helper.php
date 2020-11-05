@@ -215,6 +215,15 @@ function back_url($url = ""){
       }
 	}
 	
+	function banner_image($file_name){
+	  // if($file_name != "" && file_exists( public_path().'/storage/user-uploads/avatar/'.$file_name)){
+	  if($file_name != ""){
+        return url('storage/app/public/banner-uploads/'.$file_name);
+      }else{
+         return asset('images/user_profile.png');
+      }
+	}
+	
 	
 	function file_get_contents_curl($url)
 	{
