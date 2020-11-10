@@ -119,7 +119,174 @@
                 style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
               </div>
             </li>
+<!-- SLIDE 3 -->
+<li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="{{ asset('revival/images/bg/revival_bg4.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <!-- LAYERS -->
+ <!-- LAYER NR. 1 -->
+ <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                id="rs-1-layer-1"
+				data-x="['left']"
+                data-hoffset="['0']"
+                data-y="['middle']"
+                data-voffset="['30']" 
+                data-fontsize="['100']"
+                data-lineheight="['110']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
+              </div>
 
+              
+
+              <!-- LAYER NR. 3 -->
+              <div class="tp-caption tp-resizeme text-white" 
+                id="rs-1-layer-3"
+
+                data-x="['left']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['150']"
+                data-fontsize="['16']"
+                data-lineheight="['28']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
+              </div>
+            </li>
+<!-- SLIDE 4 -->
+<li data-index="rs-4" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="{{ asset('revival/images/bg/revival_bg5.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <!-- LAYERS -->
+ <!-- LAYER NR. 1 -->
+ <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                id="rs-1-layer-1"
+				data-x="['left']"
+                data-hoffset="['0']"
+                data-y="['middle']"
+                data-voffset="['30']" 
+                data-fontsize="['100']"
+                data-lineheight="['110']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
+              </div>
+
+              
+
+              <!-- LAYER NR. 3 -->
+              <div class="tp-caption tp-resizeme text-white" 
+                id="rs-1-layer-3"
+
+                data-x="['left']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['150']"
+                data-fontsize="['16']"
+                data-lineheight="['28']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
+              </div>
+            </li>
+<!-- SLIDE 5 -->
+<li data-index="rs-5" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="{{ asset('revival/images/bg/revival_bg6.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <!-- LAYERS -->
+ <!-- LAYER NR. 1 -->
+ <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                id="rs-1-layer-1"
+				data-x="['left']"
+                data-hoffset="['0']"
+                data-y="['middle']"
+                data-voffset="['30']" 
+                data-fontsize="['100']"
+                data-lineheight="['110']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1000" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
+              </div>
+
+              
+
+              <!-- LAYER NR. 3 -->
+              <div class="tp-caption tp-resizeme text-white" 
+                id="rs-1-layer-3"
+
+                data-x="['left']"
+                data-hoffset="['35']"
+                data-y="['middle']"
+                data-voffset="['150']"
+                data-fontsize="['16']"
+                data-lineheight="['28']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;s:500"
+                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                data-start="1400" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on"
+                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
+              </div>
+            </li>
            
 
           </ul>
