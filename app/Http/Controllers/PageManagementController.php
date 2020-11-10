@@ -143,6 +143,7 @@ class PageManagementController extends BaseController
         if ($request->hasFile('image')) {
             $page->image = $this->bannerUpload($request);
         } 
+		 
 		if($page->save()){  
 			$this->response['status']   = true;
 			$this->response['message']  = str_replace("{page}",$request->title,__('message.page_update_success'));

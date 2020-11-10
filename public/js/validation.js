@@ -321,6 +321,43 @@ $(document).on('click','#pageAddFormSubmit, #pageEditFormSubmit' ,function(){
 	});
 });
 
+$(document).on('click','#sliderAddFormSubmit, #sliderEditFormSubmit' ,function(){ 
+	jQuery("#sliderAddForm, #sliderEditForm").validate({
+		rules: {
+			name: {
+				required: true,
+				minlength:1,
+				maxlength: 40,
+				lettersonly:true
+			}
+		},
+
+		messages: {
+			name: {
+				required:"Slider Name cannot be empty",
+				maxlength:"Slider Name cannot exceed 40 characters",
+				lettersonly:"Slider Name should contain only alphabets",  
+			}
+			 		
+		},
+		errorElement: "span",
+		errorPlacement: function(error, element) {
+			
+			$('span.removeclass-valid').remove();
+            var placement = $(element).data('error');
+			if (placement) {
+				$(placement).append(error)
+			 } else {
+				if(element.hasClass('select2') && element.next('.select2-container').length) {
+					error.insertAfter(element.next('.select2-container'));
+				}else{
+					error.insertAfter(element);
+				}
+			}  
+		}
+	});
+});
+
 // $('form#userAddForm').on('submit', function(event) {
 	// $('select.select_level').each(function() {
 			// $(this).rules("add", 

@@ -6,19 +6,28 @@
 				<i class="icon-dashboard" title="Dashboard"></i>
 				<h5 class="fw600">Dashboard</h5>
 			</a>
-		</li>
-		
-				
-		@can('view_users')
+		</li>  
 		 <li class="left_menu_list user_management {{ request()->is('pages*') ? 'active' : '' }}">
-			<a title="Page Management" href="{{ route('pages.store')}}"  tabindex="2">
+			<a title="Page Management" href="{{ route('pages.index')}}"  tabindex="2">
 				<i class="icon-user"></i>
 				<h5 class="fw600">Pages Management</h5>
 			</a>
 		</li>
+		<li class="left_menu_list slider_management {{ request()->is('sliders*') ? 'active' : '' }}">
+			<a title="Slider Management" href="{{ route('sliders.index')}}"  tabindex="2">
+				<i class="icon-user"></i>
+				<h5 class="fw600">Slider Management</h5>
+			</a>
+		</li>
+		 
+		@can('view_users')
+		<li class="left_menu_list user_management {{ request()->is('users*') ? 'active' : '' }}">
+			<a title="User Management" href="{{ route('users.index')}}"  tabindex="3">
+				<i class="icon-user"></i>
+				<h5 class="fw600">User Management</h5>
+			</a>
+		</li>
 		@endcan 
-		
-		
 	</ul>
 	</div>
 	<div class="side_footer text-center col-sm-12 padding-none">

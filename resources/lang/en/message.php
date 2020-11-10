@@ -47,6 +47,15 @@ return [
 	'page_delete_success' 			=> '{page} Deleted Successfully',
     'page_delete_failed'  			=> '{page} Delete Failed',
 	
+	'slider_create_success' 			=> '{slider} Added Successfully',
+    'slider_create_failed'  			=> '{slider} Add Failed',
+	'slider_update_success' 			=> '{slider} Updated Successfully',
+    'slider_update_failed'  			=> '{slider} Update Failed',
+	'slider_activate_success'  			=> '{slider} Activated Successfully',
+    'slider_inactivate_success'  		=> '{slider} Inactivated Successfully',
+	'slider_delete_success' 			=> '{slider} Deleted Successfully',
+    'slider_delete_failed'  			=> '{slider} Delete Failed',
+	
 	'group_admin_user_inactive' 	=> '{username} has dependencies', //'Group Admin Not Allowed to Inactivate',	
 	'approval_pending_user_inactive'=> '{username} has dependencies', //'{username} Has Pending Approval,So Not Allowed to Inactivate',
 	'group_admin_user_delete' 		=> '{username} has dependencies', //'Group Admin Not Allowed to Delete',	

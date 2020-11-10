@@ -13,25 +13,25 @@
 			{{ method_field('PUT') }}
 			<div class="white-box">	
 				<div class="white-box-head">	
-					<h2>Edit Page</h2>
+					<h2>Edit Page </h2>
 				</div>
 				<div class="white-content"> 
 					<div class="inner-content form-all-input">
 						<div class="row">
-							<div class="col-md-12">
-								<div class="add-banner text-center"> 
-								@if($page->image != "")
-									<img width=1000 height=400 src="{{ banner_image($page->image) }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
-								@else
-									<img width=1000 height=400 src="{{asset('images/user_profile.png') }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
-								@endif
+							<div class="col-md-12"> 
+								<div class="add-banner text-center">
+									@if($page->image != "")
+										<img width=1000 height=400 src="{{ banner_image($page->image) }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
+									@else
+										<img width=1000 height=400 src="{{asset('images/user_profile.png') }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
+									@endif 
 									<div class="table-small-img-outer">
 										<div class="table-small-img">
 										</div>
 									</div>
 									<div class="text-center account-img acc-upload"> 
 											<label for="profile-user" class="fw600 uploadLabel profile_upload">Change Picture</label>
-										<input id="profile-user" name="image" class="profileAdmin" type="file" accept="image/*"/>
+										<input id="profile-user" name="image" class="profileAdmin" type="file" accept="image/*" />
 									</div>
 									<div class="banner-wrap">
 										<div id="bannerUpload" ></div> 
@@ -41,8 +41,7 @@
 										<li><a href="javascript:" class="crop-cancel btn-grey btn">Cancel</a></li>
 									</ul>
 									<p class="error"></p>
-								</div>
-								<!--<input type="file" class="form-control" name="multi_banners[]" multiple />-->
+								</div>  
 							</div>
 						</div>
 						<div class="row">
