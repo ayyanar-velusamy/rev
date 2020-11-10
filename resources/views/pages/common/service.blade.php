@@ -17,11 +17,11 @@
                   <div class="thumb">
                     <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/nursing_services_bg.jpg') }}">
                     <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="/home-health-care-nursing-services"><span>Read More</span> </a>
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="{{route('nursing-services')}}"><span>Read More</span> </a>
                     </div>
                   </div>
                   <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="/home-health-care-nursing-services" class="text-white">Nursing Services</a></h4>
+                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="{{route('nursing-services')}}" class="text-white">Nursing Services</a></h4>
                     
                   </div>
                 </div>
@@ -31,11 +31,11 @@
                   <div class="thumb">
                     <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/health_care_aide.jpg')}}">
                     <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="/home-health-care-home-health-aide-and-home-maker-services"><span>Read More</span> </a>
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="{{route('health-aid-services')}}"><span>Read More</span> </a>
                     </div>
                   </div>
                   <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="/home-health-care-home-health-aide-and-home-maker-services" class="text-white">Home Health Aide Services</a></h4>
+                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="{{route('health-aid-services')}}" class="text-white">Home Health Aide Services</a></h4>
                     
                   </div>
                 </div>
@@ -45,11 +45,11 @@
                   <div class="thumb">
                     <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/physical.jpg') }}">
                     <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="/home-health-care-physical-occupational-and-speech-therapy"><span>Read More</span> </a>
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="{{route('physical-occupational-services')}}"><span>Read More</span> </a>
                     </div>
                   </div>
                   <div class="project-details p-15 pt-15 pb-5 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="/home-health-care-physical-occupational-and-speech-therapy" class="text-white">Physical Occupational and Speech therapy</a></h4>
+                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="{{route('physical-occupational-services')}}" class="text-white">Physical Occupational and Speech therapy</a></h4>
                     
                   </div>
                 </div>
@@ -59,11 +59,11 @@
                   <div class="thumb">
                     <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/revival_university.jpg') }}">
                     <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="/home-health-care-revival-university"><span>Read More</span> </a>
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="{{route('revival-university')}}"><span>Read More</span> </a>
                     </div>
                   </div>
                   <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="/home-health-care-revival-university" class="text-white">Revival University</a></h4>
+                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="{{route('revival-university')}}" class="text-white">Revival University</a></h4>
                     
                   </div>
                 </div>
@@ -74,11 +74,11 @@
                   <div class="thumb">
                     <img class="img-fullwidth" alt="" src="{{ asset('revival/images/services/waiver.jpg') }}">
                     <div class="hover-link">
-                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="/home-health-care-waiver-program"><span>Read More</span> </a>
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-14" href="{{route('waiver-program')}}"><span>Read More</span> </a>
                     </div>
                   </div>
                   <div class="project-details p-25 pt-25 pb-20 text-center bg-theme-colored">
-                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="/home-health-care-waiver-program" class="text-white">Waiver Program</a></h4>
+                    <h4 class="font-weight-700 text-uppercase mt-0"><a href="{{route('waiver-program')}}" class="text-white">Waiver Program</a></h4>
                     
                   </div>
                 </div>

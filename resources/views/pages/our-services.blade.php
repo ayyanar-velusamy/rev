@@ -9,7 +9,7 @@
             <!-- SLIDE 1 -->
             <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/bg.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/quality.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <img src="{{ asset('revival/images/bg/our_services.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
               <!-- LAYERS -->
 
               <!-- LAYER NR. 1 
@@ -182,9 +182,9 @@
               <p>Our skilled professionals are courteous, supportive and friendly. They have been carefully screened and regularly receive specialized training. We want you to feel comfortable when you allow our staff into your homes.</p>
               <p>Our services include but are not limited to:</p>
               <ul class="list-img">
-              <li><a href="/home-health-care-nursing-services"><img src="{{ asset('revival/images/list-icon.png') }}">Nursing Services</a></li>
-              <li><a href="/home-health-care-home-health-aide-and-home-maker-services"><img src="{{ asset('revival/images/list-icon.png') }}">Home Health Aide and Home Maker Services</a></li>
-              <li><a href="/home-health-care-physical-occupational-and-speech-therapy"><img src="{{ asset('revival/images/list-icon.png') }}">Physical, Occupational and Speech Therapy</a></li>
+              <li><a href="{{route('nursing-services')}}"><img src="{{ asset('revival/images/list-icon.png') }}">Nursing Services</a></li>
+              <li><a href="{{route('health-aid-services')}}"><img src="{{ asset('revival/images/list-icon.png') }}">Home Health Aide and Home Maker Services</a></li>
+              <li><a href="{{route('physical-occupational-services')}}"><img src="{{ asset('revival/images/list-icon.png') }}">Physical, Occupational and Speech Therapy</a></li>
               </ul>
             </div> 
 			@include('pages.common.sidebar') 
@@ -192,6 +192,47 @@
         </div>
       </div>
     </section>  
+    <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row equal-height">
+          <div class="col-sm-6 col-md-6 xs-pull-none bg-theme-colored wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="pt-60 pb-40 pl-90 pr-160 p-md-30">
+              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Why Choose Us?</h2>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none"> 
+                  <i class="fa fa-wheelchair text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">World Best Service</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-user text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Professional Staffs</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-money text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Low Cost Services</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 p-0 bg-img-cover wow fadeInRight hidden-xs" data-bg-img="{{ asset('revival/images/bg/why_choose.jpg') }}" data-wow-duration="1s" data-wow-delay="0.3s">
+          </div>
+        </div>
+      </div>
+    </section> 
+
     @include('pages.common.service') 
   </div>
   <!-- end main-content -->
