@@ -53,6 +53,11 @@ Route::group(['middleware'=>'auth'], function(){
 	Route::put('/pages/status/{id}', 'PageManagementController@status')->name('pages.status');
 	Route::resource('pages', 'PageManagementController');    
 	
+	//Page management
+	Route::get('/slider_list', 'SliderController@ajax_list')->name('slider_list'); 
+	Route::put('/sliders/status/{id}', 'SliderController@status')->name('sliders.status');
+	Route::resource('sliders', 'SliderController');    
+	
 	
 	//Role management
 	Route::get('/role_list', 'RoleController@ajax_list')->name('role_list');

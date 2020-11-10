@@ -1,6 +1,9 @@
 $(document).ready(function() {
-	$.fn.dataTable.ext.errMode = 'none';  
+	$.fn.dataTable.ext.errMode = 'none'; 
+	
 });  
+
+
 
 bannerImgUrl = '';
 banner_img_data  = [];
@@ -125,28 +128,3 @@ var bannerImgCroppie = (function() {
 // });
 
 bannerImgCroppie.init();
-
- $(function() {
-// Multiple images preview with JavaScript
-var multiImgPreview = function(input, imgPreviewPlaceholder) {
-
-	if (input.files) {
-		var filesAmount = input.files.length;
-
-		for (i = 0; i < filesAmount; i++) {
-			var reader = new FileReader();
-
-			reader.onload = function(event) {
-				$($.parseHTML('<img>')).attr('src', event.target.result).appendTo(imgPreviewPlaceholder);
-			}
-
-			reader.readAsDataURL(input.files[i]);
-		}
-	}
-
-};
-
-$('#bannerImages').on('change', function() {
-	multiImgPreview(this, 'div.imgPreview');
-});
-});   
