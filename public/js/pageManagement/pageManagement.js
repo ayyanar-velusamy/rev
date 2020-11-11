@@ -12,7 +12,7 @@ $(document).on('submit','form',function(e){
 		let messagePosition = 'toastr';
 		$.easyAjax({
 			url: url,
-			container	: target,
+			container : target,
 			type: "POST",
 			redirect: true,
 			disableButton: true,

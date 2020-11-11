@@ -4,7 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PagesController extends Controller
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail; 
+ 
+use App\Http\Requests\StoreEnquiryPost;
+
+use App\Mail\EnquiryMail;
+  
+
+class PagesController extends Controller  
 {
     //
     public function index()
@@ -57,8 +65,26 @@ class PagesController extends Controller
     {
         return view('pages.waiver-program');
         
-    }
+    } 
 	
-	
-	
+	public function enquiry(StoreEnquiryPost $request)
+	{ 
+		$enquiry = [
+			'name' => $request->name,
+			'email' => $request->email,
+			'phone' => $request->phone,
+			'comment' => $request->comment 
+		];
+		$inserted = DB::table('enquiries')->insert($enquiry);  
+		
+        if($inserted){ 
+			Mail::to($request->email)->send(new EnquiryMail($enquiry));		
+			$this->response['status']   = true;  
+			$this->response['message']  = str_replace("{enquiry}",$request->title,__('message.enquiry_save_success'));  
+		}else{
+			$this->response['status']   = false;
+			$this->response['message']  = str_replace("{enquiry}",$request->title." ".$request->title,__('message.enquiry_save_failed'));
+		} 
+        return $this->response();  
+	} 
 }

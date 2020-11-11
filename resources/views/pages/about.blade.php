@@ -197,26 +197,28 @@
           <div class="col-md-7 wow fadeInLeft">
             <div class="p-40 pl-0">
               <!-- Reservation Form Start-->
-              <form id="reservation_form" name="reservation_form" class="reservation-form" method="post" action=""><h3 class="mt-0 line-bottom mb-40">Contact Us today for<span class="text-theme-color-2"> Free Consultaton!</span></h3>
+              <form id="reservation_form" name="reservation_form" class="reservation-form" method="post" action="{{route('enquiry')}}"><h3 class="mt-0 line-bottom mb-40">Contact Us today for<span class="text-theme-color-2"> Free Consultaton!</span></h3>
+			  @csrf
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group mb-30">
-                      <input placeholder="Enter Name" type="text" id="reservation_name" name="reservation_name" required="" class="form-control">
+                      <input placeholder="Enter Name" type="text" id="name" name="name" required="" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group mb-30">
-                      <input placeholder="Email" type="text" id="reservation_email" name="reservation_email" class="form-control" required="">
+                      <input placeholder="Email" type="text" id="email" name="email" class="form-control" required="">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group mb-30">
-                      <input placeholder="Phone" type="text" id="reservation_phone" name="reservation_phone" class="form-control" required="">
+                      <input placeholder="Phone" type="text" id="phone" name="phone" class="form-control" required="">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="form-group mb-30">
-                      <textarea placeholder="Question/Comment" id="question" name="Question/Comment" required="" class="form-control"></textarea>
+                      <textarea placeholder="Question/Comment" id="comment" name="comment" required="" class="form-control"></textarea>
+					  <label id="question-error" class="error" for="question"></label>
                     </div>
                   </div>
                   
@@ -227,29 +229,41 @@
                     </div>
                   </div>
                 </div>
-              </form>
-              
-
+              </form> 
               
               <script type="text/javascript">
                 $("#reservation_form").validate({
                   submitHandler: function(form) {
+					 let url = $('#reservation_form').attr('action'); 
                     var form_btn = $(form).find('button[type="submit"]');
                     var form_result_div = '#form-result';
                     $(form_result_div).remove();
-                    form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                    form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'); 
                     var form_btn_old_msg = form_btn.html();
                     form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
                     $(form).ajaxSubmit({
+					  url: url,
                       dataType:  'json',
-                      success: function(data) {
-                        if( data.status == 'true' ) {
+                      success: function(data) { 
+                        if( data.status) { 
                           $(form).find('.form-control').val('');
-                        }
+                        } 
                         form_btn.prop('disabled', false).html(form_btn_old_msg);
                         $(form_result_div).html(data.message).fadeIn('slow');
                         setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
-                      }
+                      },
+					  error: function(error) { 
+					   var keys = Object.keys(error.responseJSON.errors);
+					    for (var i = 0; i < keys.length; i++) { 
+							if($('#'+keys[i]+'-error').length == 0){
+							 $("#reservation_form").find("#"+keys[i]).closest(".form-group").append('<label id="'+keys[i]+'-error" class="error" >'+error.responseJSON.errors[keys[i]][0]+'</label>');
+							}
+						}  
+						// form_btn.prop('disabled', false).html(form_btn_old_msg);
+                        // $(form_result_div).html(error.responseJSON.message).fadeIn('slow');
+                        // setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+					    
+					  }
                     });
                   }
                 });

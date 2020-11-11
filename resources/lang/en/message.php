@@ -4,6 +4,10 @@ return [
 	"something_went_wrong"			=>	"Something Went Wrong!",
 	"unauthorized_access"			=>	"Unauthorized Access!",
 	
+	//Pages Module
+	'enquiry_save_success' 			=> '{enquiry} Form Submitted Successfully',
+    'enquiry_save_failed'  			=> '{enquiry} Form Submit Failed',
+	
 	//Auth module
 	"login_success"					=>  "Hello {username}, You have Successfully signed in",
 	"logout_success"				=>  "Sign out Successful",
