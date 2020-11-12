@@ -58,6 +58,21 @@ class PagesController extends Controller
         return view('pages.waiver-program');
         
     }
+    public function careers()
+    {
+        return view('pages.careers');
+        
+    }
+    public function resources()
+    {
+        return view('pages.resources');
+        
+    }
+    public function contact()
+    {
+        return view('pages.contact');
+        
+    }
 	
 	
 	
