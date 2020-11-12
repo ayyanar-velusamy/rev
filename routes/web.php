@@ -22,10 +22,10 @@ Route::get('/home-health-care-home-health-aide-and-home-maker-services', 'PagesC
 Route::get('/home-health-care-physical-occupational-and-speech-therapy', 'PagesController@physical_occupational_services')->name('physical-occupational-services');
 Route::get('/home-health-care-revival-university', 'PagesController@revival_university')->name('revival-university');
 Route::get('/home-health-care-waiver-program', 'PagesController@waiver_program')->name('waiver-program');
-
 Route::get('/home-health-care-careers', 'PagesController@careers')->name('careers');
 Route::get('/home-health-care-resources', 'PagesController@resources')->name('resources');
 Route::get('/home-health-care-contact-us', 'PagesController@contact')->name('contact');
+Route::post('/enquiry', 'PagesController@enquiry')->name('enquiry');
  
 
 Route::get('/admin', function () { return redirect('login');  /*return view('welcome'); */ });
@@ -57,10 +57,14 @@ Route::group(['middleware'=>'auth'], function(){
 	Route::put('/pages/status/{id}', 'PageManagementController@status')->name('pages.status');
 	Route::resource('pages', 'PageManagementController');    
 	
-	//Page management
+	//Slider management
 	Route::get('/slider_list', 'SliderController@ajax_list')->name('slider_list'); 
 	Route::put('/sliders/status/{id}', 'SliderController@status')->name('sliders.status');
-	Route::resource('sliders', 'SliderController');    
+	Route::resource('sliders', 'SliderController');
+
+	//Slider management
+	Route::get('/enquiry_list', 'EnquiryController@ajax_list')->name('enquiry_list');  
+	Route::resource('enquiries', 'EnquiryController');    
 	
 	
 	//Role management
