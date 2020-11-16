@@ -101,14 +101,14 @@
               <img src="{{ asset('revival/images/logo-wide.png') }}" alt="">
             </a>
             <ul class="menuzord-menu">
-            <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}">Home</a>
-              </li>
+			<li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}">Home</a> </li>
               <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
                 <ul class="dropdown">
                   <li><a href="{{ route('history')}}" class="{{ request()->is('home-health-care-history') ? 'active' : '' }}">History</a></li>
                   <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('home-health-care-quality-measures') ? 'active' : '' }}" href="#">Quality Measures</a></li>
                 </ul>
               </li>
+			  
               <li class="{{ (request()->is('home-health-care-our-services') || request()->is('home-health-care-nursing-services') || request()->is('home-health-care-home-health-aide-and-home-maker-services') || request()->is('home-health-care-physical-occupational-and-speech-therapy') || request()->is('home-health-care-revival-university') || request()->is('home-health-care-waiver-program'))
                             ? 'active' : '' }}">
                   <a href="{{ route('our-services')}}" >Our Services</a>
@@ -203,8 +203,8 @@
 <!-- end wrapper --> 
 
 <!-- Footer Scripts --> 
-<!-- JS | Custom script for all pages --> 
-<script src="{{ asset('revival/js/custom.js') }}"></script>
+<!-- JS | Custom script for all pages 
+<script src="{{ asset('revival/js/custom.js') }}"></script>--> 
 
 
 <script type="text/javascript" src="{{ asset('revival/js/revolution-slider/js/extensions/revolution.extension.actions.min.js') }}"></script> 

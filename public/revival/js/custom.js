@@ -158,7 +158,7 @@ var REVIVAL = {};
         init: function() {
             REVIVAL.bmiCalculator.init();
             REVIVAL.initialize.TM_fixedFooter();
-            REVIVAL.initialize.TM_datePicker();
+            // REVIVAL.initialize.TM_datePicker();
             REVIVAL.initialize.TM_ddslick();
             REVIVAL.initialize.TM_sliderRange();
             // REVIVAL.initialize.TM_loadBSParentModal();
@@ -170,7 +170,7 @@ var REVIVAL = {};
             REVIVAL.initialize.TM_resizeFullscreen();
             REVIVAL.initialize.TM_prettyPhoto_lightbox();
             REVIVAL.initialize.TM_nivolightbox();
-            REVIVAL.initialize.TM_fitVids();
+            REVIVAL.initialize.TM_fitVids(); 
             REVIVAL.initialize.TM_YTPlayer();
             REVIVAL.initialize.TM_equalHeightDivs();
         },
