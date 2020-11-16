@@ -9,7 +9,7 @@
         <div class="section-content">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title text-white text-center">Maryland Office</h2> 
+              <h2 class="title text-white text-center">Richmond Office</h2> 
             </div>
           </div>
         </div>
@@ -60,68 +60,41 @@
           <div class="col-md-8">
             <h3 class="line-bottom mt-0 mb-20">Interested in discussing?</h3>
             <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error optio in quia ipsum quae neque alias eligendi, nulla nisi. Veniam ut quis similique culpa natus dolor aliquam officiis ratione libero. Expedita asperiores aliquam provident amet dolores.</p>
-            <!-- Contact Form -->
-            <form id="contact_form" name="contact_form" class="" action="" method="post"> 
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name" required="">
+			<!-- Reservation Form Start-->
+              <form id="reservation_form" name="reservation_form" class="reservation-form" method="post" action="{{route('enquiry')}}">
+			  @csrf
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group mb-30">
+                      <input placeholder="Enter Name" type="text" id="name" name="name" required="" class="form-control">
+					  <input type="hidden" id="form_name" name="form_name" value="Richmond Office" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <input placeholder="Email" type="text" id="email" name="email" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <input placeholder="Phone" type="text" id="phone" name="phone" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-30">
+                      <textarea placeholder="Question/Comment" id="comment" name="comment" required="" class="form-control"></textarea>
+					  <label id="question-error" class="error" for="question"></label>
+                    </div>
+                  </div> 
+                  <div class="col-sm-12">
+                    <div class="form-group mb-0 mt-0">
+                      <input name="form_botcheck" class="form-control" type="hidden" value="">
+                      <button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-flat border-left-theme-color-2-4px" data-loading-text="Please wait...">Submit Now</button>
+					  <button type="reset" class="btn btn-flat btn-theme-colored btn-lg border-left-theme-color-2-4px">Reset</button>  
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
-                  </div>
-                </div>
-              </div>
-                
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                <button type="submit" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait...">Send your message</button>
-                <button type="reset" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Reset</button>
-              </div>
-            </form>
-
-            <!-- Contact Form Validation-->
-            <script type="text/javascript">
-              $("#contact_form").validate({
-                submitHandler: function(form) {
-                  var form_btn = $(form).find('button[type="submit"]');
-                  var form_result_div = '#form-result';
-                  $(form_result_div).remove();
-                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                  var form_btn_old_msg = form_btn.html();
-                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                  $(form).ajaxSubmit({
-                    dataType:  'json',
-                    success: function(data) {
-                      if( data.status == 'true' ) {
-                        $(form).find('.form-control').val('');
-                      }
-                      form_btn.prop('disabled', false).html(form_btn_old_msg);
-                      $(form_result_div).html(data.message).fadeIn('slow');
-                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
-                    }
-                  });
-                }
-              });
-            </script>
+              </form>  
           </div>
         </div>
       </div>

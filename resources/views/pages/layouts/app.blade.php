@@ -130,12 +130,12 @@
   @yield('content')
 
    <!-- Footer -->
-   <footer id="footer" class="footer bg-white-222" data-bg-img="images/footer-bg.png">
+   <footer id="footer" class="footer bg-white-222" data-bg-img="{{ asset('revival/images/footer-bg.png')}}">
     <div class="container pt-70 pb-40">
       <div class="row">
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <img class="mt-10 mb-15" alt="" src="asset('revival/images/logo-wide-white.png') }}">
+            <img alt="" src="{{ asset('revival/images/logo-wide-white_new.png')}}">
             <p class="font-16 mb-10">Revival Homecare Agency. Our agency exists to provide you and our community with health services that bring comfort in a familiar setting, your home.</p>
             <a class="font-14" href="#"><i class="fa fa-angle-double-right text-theme-colored"></i> Submit your referrals</a>
             <ul class="styled-icons icon-dark mt-20">
@@ -215,6 +215,7 @@
 <script type="text/javascript" src="{{ asset('revival/js/revolution-slider/js/extensions/revolution.extension.navigation.min.js') }}"></script> 
 <script type="text/javascript" src="{{ asset('revival/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js') }}"></script> 
 <script type="text/javascript" src="{{ asset('revival/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js') }}"></script> 
+<script type="text/javascript" src="{{ asset('revival/js/custom.js') }}"></script> 
 
 </body>
 

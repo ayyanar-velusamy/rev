@@ -71,9 +71,24 @@ class PagesController extends Controller
         return view('pages.find-location');  
         
     }	
-	public function company_contact_form()
+	public function maryland_contact_form()
     {
-        return view('pages.company-contact-form');  
+        return view('pages.maryland-contact-form');  
+        
+    } 
+	public function annandale_contact_form()
+    {
+        return view('pages.annandale-contact-form');  
+        
+    } 
+	public function richmond_contact_form()
+    {
+        return view('pages.richmond-contact-form');  
+        
+    } 
+	public function houston_contact_form()
+    {
+        return view('pages.houston-contact-form');  
         
     } 
     public function careers()
@@ -95,6 +110,7 @@ class PagesController extends Controller
 	public function enquiry(StoreEnquiryPost $request)
 	{ 
 		$enquiry = [
+			'form_name' => (!empty($request->form_name))? $request->form_name : "Contact Form",
 			'name' => $request->name,
 			'email' => $request->email,
 			'phone' => $request->phone,
@@ -103,7 +119,7 @@ class PagesController extends Controller
 		$inserted = DB::table('enquiries')->insert($enquiry);  
 		
         if($inserted){ 
-			Mail::to($request->email)->send(new EnquiryMail($enquiry));		
+			//Mail::to($request->email)->send(new EnquiryMail($enquiry));		
 			$this->response['status']   = true;  
 			$this->response['message']  = str_replace("{enquiry}",$request->title,__('message.enquiry_save_success'));  
 		}else{

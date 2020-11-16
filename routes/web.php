@@ -23,7 +23,10 @@ Route::get('/home-health-care-physical-occupational-and-speech-therapy', 'PagesC
 Route::get('/home-health-care-revival-university', 'PagesController@revival_university')->name('revival-university');
 Route::get('/home-health-care-waiver-program', 'PagesController@waiver_program')->name('waiver-program'); 
 Route::get('/home-health-care-find-location', 'PagesController@find_location')->name('find-location');
-Route::get('/home-health-care-company-contact-form', 'PagesController@company_contact_form')->name('company-contact-form'); 
+Route::get('/home-health-care-maryland-contact-form', 'PagesController@maryland_contact_form')->name('maryland-contact-form'); 
+Route::get('/home-health-care-annandale-contact-form', 'PagesController@annandale_contact_form')->name('annandale-contact-form'); 
+Route::get('/home-health-care-richmond-contact-form', 'PagesController@richmond_contact_form')->name('richmond-contact-form'); 
+Route::get('/home-health-care-houston-contact-form', 'PagesController@houston_contact_form')->name('houston-contact-form'); 
 Route::get('/home-health-care-careers', 'PagesController@careers')->name('careers');
 Route::get('/home-health-care-resources', 'PagesController@resources')->name('resources');
 Route::get('/home-health-care-contact-us', 'PagesController@contact')->name('contact'); 

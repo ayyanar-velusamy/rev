@@ -161,8 +161,8 @@ var REVIVAL = {};
             REVIVAL.initialize.TM_datePicker();
             REVIVAL.initialize.TM_ddslick();
             REVIVAL.initialize.TM_sliderRange();
-            REVIVAL.initialize.TM_loadBSParentModal();
-            REVIVAL.initialize.TM_demoSwitcher();
+            // REVIVAL.initialize.TM_loadBSParentModal();
+            // REVIVAL.initialize.TM_demoSwitcher();
             REVIVAL.initialize.TM_platformDetect();
             REVIVAL.initialize.TM_onLoadPopupPromoBox();
             REVIVAL.initialize.TM_customDataAttributes();
@@ -2187,5 +2187,44 @@ var REVIVAL = {};
 
     //call function before document ready
     REVIVAL.initialize.TM_preLoaderClickDisable();
+	
+	//Enquiry Form Validation-->
+	$("#reservation_form").validate({
+	  submitHandler: function(form) {
+		 let url = $('#reservation_form').attr('action'); 
+		var form_btn = $(form).find('button[type="submit"]');
+		var form_result_div = '#form-result';
+		$(form_result_div).remove();
+		form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'); 
+		var form_btn_old_msg = form_btn.html();
+		form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+		$(form).ajaxSubmit({
+		  url: url,
+		  dataType:  'json',
+		  success: function(data) { 
+			if( data.status) { 
+			  $(form).find('.form-control').val('');
+			} 
+			form_btn.prop('disabled', false).html(form_btn_old_msg);
+			$(form_result_div).html(data.message).fadeIn('slow');
+			setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+		  },
+		  error: function(error) { 
+		   var keys = Object.keys(error.responseJSON.errors);
+			for (var i = 0; i < keys.length; i++) { 
+				if($('#'+keys[i]+'-error').length == 0){
+				 $("#reservation_form").find("#"+keys[i]).closest(".form-group").append('<label id="'+keys[i]+'-error" class="error" >'+error.responseJSON.errors[keys[i]][0]+'</label>');
+				}else{
+					$('#'+keys[i]+'-error').text(error.responseJSON.errors[keys[i]][0]).show();
+				}
+			}  
+			 form_btn.prop('disabled', false).html(form_btn_old_msg);
+			// $(form_result_div).html(error.responseJSON.message).fadeIn('slow');
+			// setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+			
+		  }
+		});
+	  }
+	});
 
 })(jQuery);
