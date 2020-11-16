@@ -184,7 +184,7 @@
 							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-592-3644</li>
 							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
 							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('company-contact-form')}}">Read More →</a>
+							<a class="text-white font-weight-600 fl-r" href="{{ route('maryland-contact-form')}}">Read More →</a>
 						  </div>
 						</div>
 					  </div>
@@ -201,7 +201,7 @@
 							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
 							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
 							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('company-contact-form')}}">Read More →</a>
+							<a class="text-white font-weight-600 fl-r" href="{{ route('annandale-contact-form')}}">Read More →</a>
 						  </div>
 						</div>
 					  </div>
@@ -218,7 +218,7 @@
 							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
 							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
 							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('company-contact-form')}}">Read More →</a>
+							<a class="text-white font-weight-600 fl-r" href="{{ route('richmond-contact-form')}}">Read More →</a>
 						  </div>
 						</div>
 					  </div>
@@ -235,7 +235,7 @@
 							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>713-995-6266</li>
 							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>713-995-6265</li> 
 							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('company-contact-form')}}">Read More →</a>
+							<a class="text-white font-weight-600 fl-r" href="{{ route('houston-contact-form')}}">Read More →</a>
 						  </div>
 						</div>
 					  </div>
