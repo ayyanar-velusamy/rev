@@ -65,7 +65,18 @@ class PagesController extends Controller
     {
         return view('pages.waiver-program');
         
-    } 
+    }
+
+	public function find_location()
+    {
+        return view('pages.find-location');  
+        
+    }	
+	public function company_contact_form()
+    {
+        return view('pages.company-contact-form');  
+        
+    }
 	
 	public function enquiry(StoreEnquiryPost $request)
 	{ 

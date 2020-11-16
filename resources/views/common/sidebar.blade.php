@@ -13,12 +13,12 @@
 				<h5 class="fw600">Pages Management</h5>
 			</a>
 		</li>
-		<li class="left_menu_list slider_management {{ request()->is('sliders*') ? 'active' : '' }}">
+		<!--<li class="left_menu_list slider_management {{ request()->is('sliders*') ? 'active' : '' }}">
 			<a title="Slider Management" href="{{ route('sliders.index')}}"  tabindex="2">
 				<i class="icon-user"></i>
 				<h5 class="fw600">Slider Management</h5>
 			</a>
-		</li>
+		</li>-->
 		<li class="left_menu_list enquiries_management {{ request()->is('enquiries*') ? 'active' : '' }}">
 			<a title="Enquiries" href="{{ route('enquiries.index')}}"  tabindex="2">
 				<i class="icon-user"></i>

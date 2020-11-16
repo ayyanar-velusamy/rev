@@ -53,9 +53,9 @@ class PageManagementController extends BaseController
 				$action .='<a title="Edit" href="'.route('pages.edit',[encode_url($row->id)]).'" class="btn btn-lightblue">Edit</a>';
 			//}
 
-			//if($this->page->hasPermissionTo('delete_pages')){
+			if($row->default_page == 0){
 				$action .='<button type="button" title="Delete"  onclick="deletePage('."'".encode_url($row->id)."'".','."'".$row->status."'".','."'".$row->title."'".')" class="btn btn-red">Delete</button>';
-			//}	 
+			}	 
            $data[$key]['id']        		= ''; 
 		   $data[$key]['title'] 			= $row->title;
 		   $data[$key]['meta_description']	= $row->meta_description; 

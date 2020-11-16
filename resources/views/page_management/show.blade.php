@@ -19,13 +19,19 @@
 				<div class="inner-content form-all-input">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="add-page text-center"> 
-							@if($page->image != "")
-								<img width=1000 height=400 src="{{ banner_image($page->image) }}" class="img-circle" alt="Banner Image">
+							@if($page->id != "1")
+								<div class="add-page text-center"> 
+								@if($page->image != "")
+									<img width=1000 height=400 src="{{ banner_image($page->image) }}" class="img-circle" alt="Banner Image">
+								@else
+									<img width=1000 height=400 src="{{asset('images/user_profile.png') }}" class="img-circle" alt="Banner Image">
+								@endif
+								</div>
 							@else
-								<img width=1000 height=400 src="{{asset('images/user_profile.png') }}" class="img-circle" alt="Banner Image">
+								<div class="btn-footer">
+								<a href="{{ route('sliders.index') }}" class="btn-green btn">{{ __('View Slider') }}</a>
+								</div>
 							@endif
-							</div>
 						</div>
 					</div>
 					<div class="row"> 

@@ -17,6 +17,7 @@
 				</div>
 				<div class="white-content"> 
 					<div class="inner-content form-all-input">
+						@if($page->id != "1")
 						<div class="row">
 							<div class="col-md-12"> 
 								<div class="add-banner text-center">
@@ -44,6 +45,11 @@
 								</div>  
 							</div>
 						</div>
+						@else
+							<div class="btn-footer">
+							<a href="{{ route('sliders.index') }}" class="btn-green btn">{{ __('Edit slider') }}</a>
+							</div>
+						@endif	
 						<div class="row">
 							<div class="col-md-12 pad-zero">
 								<div class="row">
