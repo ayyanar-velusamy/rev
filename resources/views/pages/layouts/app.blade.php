@@ -69,7 +69,7 @@
   <div class="header-top bg-theme-color-2 sm-text-center">
     <div class="container">
       <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-6">
             <div class="widget no-border m-0">
               <ul class="list-inline">
                 <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a class="text-white" href="tel:888-225-6905">&nbsp;888-225-6905</a></li>
@@ -79,11 +79,15 @@
             </div>
         </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="widget no-border m-0">
               <ul class="list-inline text-right sm-text-center">
                 <li>
-                  <a href="#" class="text-white">Contact us today for free Consultation !</a>
+                  <a href="/home-health-care-find-an-office" class="text-white">Find an Office</a>
+                  </li>
+                <span class="text-white">|</span>
+                <li>
+                  <a href="/home-health-care-contact-us" class="text-white">Contact us today for free Consultation !</a>
                 </li>
                 
               </ul>

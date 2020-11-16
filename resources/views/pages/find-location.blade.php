@@ -170,7 +170,7 @@
         <div class="section-content">  
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Find Location</h2>  
+              <h2 class="text-uppercase mt-0">Find an Office</h2>  
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
 					  <div class="pricing table-horizontal maxwidth400">
