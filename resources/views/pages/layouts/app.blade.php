@@ -114,11 +114,11 @@
                   <a href="{{ route('our-services')}}" >Our Services</a>
                </li>
               </li>
-              <li ><a href="#home">Careers</a>
+              <li class="{{ request()->is('home-health-care-careers') ? 'active' : '' }}"><a href="{{ route('careers')}}">Careers</a>
               </li>
-              <li ><a href="#home">Resources</a>
+              <li class="{{ request()->is('home-health-care-resources') ? 'active' : '' }}"><a href="{{ route('resources')}}">Resources</a>
               </li>
-              <li ><a href="#home">Contact Us</a>
+              <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}">Contact Us</a>
               </li>
               
             </ul>
@@ -139,7 +139,7 @@
             <p class="font-16 mb-10">Revival Homecare Agency. Our agency exists to provide you and our community with health services that bring comfort in a familiar setting, your home.</p>
             <a class="font-14" href="#"><i class="fa fa-angle-double-right text-theme-colored"></i> Submit your referrals</a>
             <ul class="styled-icons icon-dark mt-20">
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="10"><a href="https://www.facebook.com/profile.php?id=100006944495423"  target="_blank" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="10"><a href="https://www.facebook.com/RevivalHHA/"  target="_blank" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" data-wow-offset="10"><a href="https://www.instagram.com/revivalhomecare/" target="_blank" data-bg-color="#02B0E8"><i class="fa fa-instagram"></i></a></li>
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s" data-wow-offset="10"><a href="https://www.linkedin.com/company/revival-homecare-agency/" target="_blank" data-bg-color="#A11312"><i class="fa fa-linkedin"></i></a></li>
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10"><a href="https://twitter.com/revivalhomecare?s=11" target="_blank" data-bg-color="#02B0E8"><i class="fa fa-twitter"></i></a></li>
