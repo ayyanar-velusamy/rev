@@ -267,7 +267,7 @@
                 
                 <div class="col-sm-12">
                   <div class="form-group">
-                    <textarea name="form_address" class="form-control required email"  placeholder="Enter Address" aria-required="true"></textarea>
+                    <textarea name="form_address" class="form-control required"  placeholder="Enter Address" aria-required="true"></textarea>
                   </div>
                 </div>
               </div>
