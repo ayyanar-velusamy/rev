@@ -3,6 +3,7 @@
 <div class="page-innerwrap">
 	<div class="page-head">
 		<ul class="list-inline breadcrumb"> 
+			<li><a>Home</a></li>  
 			<li class="active"><a>Slider Management List</a></li>  
 		</ul>
 		<div class="top_search_box">

@@ -6,10 +6,13 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail; 
+
+use App\Model\Page;  
  
 use App\Http\Requests\StoreEnquiryPost;
 
 use App\Mail\EnquiryMail;
+
   
 
 class PagesController extends Controller  
@@ -17,13 +20,14 @@ class PagesController extends Controller
     //
     public function index()
     {
-        return view('pages.index');
-        
+		$page = Page::findOrFail(1); 
+        return view('pages.index', compact('page')); 	
     }
 	
 	public function about()
     {
-        return view('pages.about');
+		$page = Page::findOrFail(2); 
+        return view('pages.about', compact('page'));  
         
     }
 	public function history()

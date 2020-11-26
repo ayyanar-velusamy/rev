@@ -33,7 +33,7 @@
                  <tr>
                     <td>
                         <div class="banner" style="position:relative;">
-							<img src="{{asset('images/template/rev_banner.png') }}" alt="rev Banner"/>
+							<img src="{{ asset('images/template/rev_banner.png') }}" alt="rev Banner"/>
 							<h1 style="color:#fff; font-size:35px; position:absolute; left:0px;right:0px; text-align:center; top:20%;"><span style="display:block; color:#bbdc00; font-size:20px; line-height:20px;height: 20px;"></span> Revival </h1>
 						<div>
                     </td>
@@ -45,15 +45,15 @@
                             <tbody>
                                 <tr>
                                     <td style="padding-bottom:25px;">
-                                        <h3 style="font-size: 24px; color:#384f98;font-weight: 400; text-align:center; padding:0 0 10px; margin:0px;">Dear {{ json_encode($enquiry) }},</h3>
+                                        <h3 style="font-size: 24px; color:#384f98;font-weight: 400; text-align:center; padding:0 0 10px; margin:0px;">Dear {{ $enquiry->name }},</h3>
                                         <span style="border-bottom:1px solid #384f98; max-width:50px; display:block; margin:0 auto;"></span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="padding-bottom:30px; ">
-                                        <span style="text-align:center; max-width:520px; display:block; margin:0 auto; font-size: 14px;color:#323232;">Your {{ env('APP_NAME','') }}  posted Enquiry.</span>
+                                        <span style="text-align:center; max-width:520px; display:block; margin:0 auto; font-size: 14px;color:#323232;">Your {{ env('APP_NAME','') }}  posted Enquiry Submitted Successfully!.</span>
                                     </td>
-                                </tr>
+                                </tr> 
 								<tr>
                                     <td style="padding-bottom:40px; ">
                                         <span style="text-align:center; max-width:520px; display:block; margin:0 auto; font-size: 14px;color:#323232;">Please contact your management for more info.</span>

@@ -60,14 +60,8 @@
       <div class="container pb-70">
         <div class="section-content">
           <div class="row">
-            <div class="col-md-8 col-sm-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Welcome To <span class="text-theme-color-2">  Revival Home Care </span></h2>
-              <p class="lead"> WE OFFER Do taking care of your responsibilities and finding time to be with your loved one prove to be 
-              a herculean task? Are you looking for a home care agency that can assist your loved one when you are away? Well, 
-              you can ease your mind from worrying too much. A home care services provider in Virginia and Maryland can help you 
-              and your family.<br><br>
-For your home care services dilemma, you can trust only one name: <b>Revival Homecare Agency</b>. Our agency exists to provide you and our community with health services that bring comfort in a familiar setting, your home. Our competent staff and employees have been serving the people of Virginia and Maryland for years. Keeping your loved one healthy and relaxed is our top priority. For more information about our services, please call us at 888-225-6905.</p>
-              
+            <div class="col-md-8 col-sm-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s"> 
+				{!! $page->content_en !!} 
             </div>
             @include('pages.common.sidebar') 
           </div>
