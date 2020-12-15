@@ -1,76 +1,23 @@
-   
-      <!-- Slider Revolution Start -->
+@extends('pages.layouts.app')
+@section('content')
+<!-- Start main-content -->
+  <div class="main-content"> 
       <div class="rev_slider_wrapper">
         <div class="rev_slider" data-version="5.0">
-          <ul>
-		@foreach ($sliders as $slider)
-			 
-		
-            <!-- SLIDE 1 -->
-            <li data-index="rs-{{$slider->id}}" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ banner_image($slider->image) }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+          <ul> 
+            <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/bg.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="{{ banner_image($slider->image) }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
-
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-{{$slider->id}}-layer-1"
-                data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['top']"
-                data-voffset="['80']" 
-                data-fontsize="['100']"
-                data-lineheight="['30']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
-
-              
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-{{$slider->id}}-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['50']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
-
-            </li>
-			@endforeach 
+				@if($page->image != "") 
+					<img src="{{ banner_image($page->image) }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+				@else
+					 <img src="{{ asset('revival/images/bg/history.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+				@endif   
+            </li> 
           </ul>
         </div>
         <!-- end .rev_slider -->
       </div>
-      <!-- end .rev_slider_wrapper -->
-      <script>
+	  <script>
         $(document).ready(function(e) {
           $(".rev_slider").revolution({
             sliderType:"standard",
@@ -91,7 +38,7 @@
                 },
               arrows: {
                 style:"zeus",
-                enable:true,
+                enable:false,
                 hide_onmobile:true,
                 hide_under:600,
                 hide_onleave:true,
@@ -131,7 +78,7 @@
             responsiveLevels: [1240, 1024, 778],
             visibilityLevels: [1240, 1024, 778],
             gridwidth: [1170, 1024, 778, 480],
-            gridheight: [600, 768, 960, 720],
+            gridheight: [500, 768, 960, 720],
             lazyType: "none",
             parallax: {
                 origo: "slidercenter",
@@ -163,4 +110,23 @@
           });
         });
       </script>
-      <!-- Slider Revolution Ends -->
+    <!-- Section: About -->
+    
+    <!-- Section: About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-content">
+          <div class="row"> 
+            <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+			 {!! $page->content_en !!}  
+            </div> 
+			@include('pages.common.sidebar') 
+          </div>
+        </div>
+      </div>
+    </section>  
+	@include('pages.common.service') 
+  </div>
+  <!-- end main-content -->
+  @endsection 
+ 

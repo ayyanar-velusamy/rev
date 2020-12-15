@@ -10,59 +10,7 @@
             <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/bg.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
               <!-- MAIN IMAGE -->
               <img src="{{ asset('revival/images/bg/home_health.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
-
-              <!-- LAYER NR. 1 
-              <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
-                data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['top']"
-                data-voffset="['30']" 
-                data-fontsize="['100']"
-                data-lineheight="['30']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
--->
               
-
-              <!-- LAYER NR. 3 
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['50']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>-->
-
             </li>
 
             
@@ -172,7 +120,8 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Home Health Aide <span class="text-theme-color-2">Services</span></h2>  
+			{!! $page->content_en !!} 
+              <!--<h2 class="text-uppercase mt-0">Home Health Aide <span class="text-theme-color-2">Services</span></h2>  
               <p>Our health aides will provide care support and services to our clients to help them feel relieved and relaxed. Without going out of your house, our employees will give your loved one with hands-on personal care to maintain their health.</p>
               <p>Our Home Health Aide Services include the following:</p>
               <ul class="list-img">
@@ -238,7 +187,7 @@
               <li><img src="{{ asset('revival/images/list-icon.png') }}">Care for houseplants
               <li><img src="{{ asset('revival/images/list-icon.png') }}">Pick up prescriptions
               </ul>
-              <p>For your concerns and further inquiries, please contact us. Our staff will immediately get back to you</p>
+              <p>For your concerns and further inquiries, please contact us. Our staff will immediately get back to you</p>-->
             </div> 
 			@include('pages.common.sidebar') 
           </div>

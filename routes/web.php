@@ -12,24 +12,23 @@
 */
 
 Route::get('/', 'PagesController@index')->name('index');
-Route::get('/home-health-care-about-us', 'PagesController@about')->name('about-us');
-Route::get('/home-health-care-history', 'PagesController@history')->name('history');
-Route::get('/home-health-care-quality-measures', 'PagesController@quality_measures')->name('quality-measures');
-
+Route::get('/home-health-care-about-us', 'PagesController@about')->name('about-us');  
+Route::get('/home-health-care-history', 'PagesController@pages')->name('history');
+Route::get('/home-health-care-quality-measures', 'PagesController@pages')->name('quality-measures'); 
 Route::get('/home-health-care-our-services', 'PagesController@our_services')->name('our-services');
-Route::get('/home-health-care-nursing-services', 'PagesController@nursing_services')->name('nursing-services');
-Route::get('/home-health-care-home-health-aide-and-home-maker-services', 'PagesController@health_aid_services')->name('health-aid-services');
-Route::get('/home-health-care-physical-occupational-and-speech-therapy', 'PagesController@physical_occupational_services')->name('physical-occupational-services');
-Route::get('/home-health-care-revival-university', 'PagesController@revival_university')->name('revival-university');
-Route::get('/home-health-care-waiver-program', 'PagesController@waiver_program')->name('waiver-program'); 
+Route::get('/home-health-care-nursing-services', 'PagesController@pages')->name('nursing-services');
+Route::get('/home-health-care-home-health-aide-and-home-maker-services', 'PagesController@pages')->name('health-aid-services');
+Route::get('/home-health-care-physical-occupational-and-speech-therapy', 'PagesController@pages')->name('physical-occupational-services');
+Route::get('/home-health-care-revival-university', 'PagesController@pages')->name('revival-university');
+Route::get('/home-health-care-waiver-program', 'PagesController@pages')->name('waiver-program'); 
 Route::get('/home-health-care-find-an-office', 'PagesController@find_location')->name('find-location');
 Route::get('/home-health-care-company-contact-form', 'PagesController@company_contact_form')->name('company-contact-form'); 
 Route::get('/home-health-care-maryland-contact-form', 'PagesController@maryland_contact_form')->name('maryland-contact-form'); 
 Route::get('/home-health-care-annandale-contact-form', 'PagesController@annandale_contact_form')->name('annandale-contact-form'); 
 Route::get('/home-health-care-richmond-contact-form', 'PagesController@richmond_contact_form')->name('richmond-contact-form'); 
 Route::get('/home-health-care-houston-contact-form', 'PagesController@houston_contact_form')->name('houston-contact-form'); 
-Route::get('/home-health-care-careers', 'PagesController@careers')->name('careers');
-Route::get('/home-health-care-resources', 'PagesController@resources')->name('resources');
+Route::get('/home-health-care-careers', 'PagesController@pages')->name('careers');
+Route::get('/home-health-care-resources', 'PagesController@pages')->name('resources');   
 Route::get('/home-health-care-contact-us', 'PagesController@contact')->name('contact'); 
 Route::post('/enquiry', 'PagesController@enquiry')->name('enquiry');
  

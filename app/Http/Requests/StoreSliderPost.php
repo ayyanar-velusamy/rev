@@ -24,7 +24,7 @@ class StoreSliderPost extends FormRequest
     public function rules()
     {
         return [
-            'name'	=> 'required|alpha_spaces|max:40', 
+            'name'	=> 'required', 
             'image'	=> 'required', 
         ];
     }
@@ -33,8 +33,6 @@ class StoreSliderPost extends FormRequest
     {
         return [
 			'name.required'	=> 'Slider Name cannot be empty',
-			'name.alpha_spaces'=> 'Slider Name should contain only alphabets',
-			'name.max'		=> 'Slider Name cannot exceed :max characters', 
 			'image.required'	=> 'Slider Image cannot be empty',
 		];
 	} 

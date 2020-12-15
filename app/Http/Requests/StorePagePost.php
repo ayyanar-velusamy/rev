@@ -24,7 +24,7 @@ class StorePagePost extends FormRequest
     public function rules()
     {
         return [
-            'title'	=> 'required|alpha_spaces|max:40', 
+            'title'	=> 'required', 
 			'content_en'	=> 'required', 
 			'content_fr'	=> 'required', 
         ];
@@ -33,9 +33,7 @@ class StorePagePost extends FormRequest
 	public function messages()
     {
         return [
-			'title.required'	=> 'First Name cannot be empty',
-			'title.alpha_spaces'=> 'First Name should contain only alphabets',
-			'title.max'		=> 'First Name cannot exceed :max characters', 
+			'title.required'	=> 'First Name cannot be empty', 
 			'content_ev.required'	=> 'English content cannot be empty',
 			'content_fr.required'	=> 'French content cannot be empty',
 		];

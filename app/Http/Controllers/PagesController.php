@@ -3,50 +3,60 @@
 namespace App\Http\Controllers;
 
 use \stdClass;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail; 
 
-use App\Model\Page;  
- 
+use App\Model\Page;
+use App\Model\Slider;
 use App\Http\Requests\StoreEnquiryPost;
-
 use App\Mail\EnquiryMail;
 
   
 
 class PagesController extends Controller  
 {
-    //
+    public $pathName = "";
+	
+	public function __construct(){
+		$this->pathName = Route::currentRouteName();
+	}
     public function index()
     {
-		$page = Page::findOrFail(1); 
-        return view('pages.index', compact('page')); 	
+		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
+		$sliders =  Slider::where(['status' => "active"])->select('image', 'id')->get(); 
+        return view('pages.index', compact('page', 'sliders')); 	
+    }
+	
+	public function pages()
+    {
+		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
+        return view('pages.pages', compact('page')); 
     }
 	
 	public function about()
-    {
-		$page = Page::findOrFail(2); 
-        return view('pages.about', compact('page'));  
+    {		
+		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
+        return view('pages.about', compact('page')); 
         
     }
 	public function history()
     {
-        $page = Page::findOrFail(3); 
+        $page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
         return view('pages.history', compact('page'));  
         
     }
 	public function quality_measures()
     {
-		$page = Page::findOrFail(4);  
+		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
         return view('pages.quality-measures', compact('page'));
         
     }
 	public function our_services()
     {
-		$page = Page::findOrFail(5);  
+		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
         return view('pages.our-services', compact('page'));
         
     }
@@ -58,7 +68,7 @@ class PagesController extends Controller
     }
 	public function health_aid_services()
     {
-		$page = $this->default_page_content();   
+		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
         return view('pages.health-aid-services', compact('page'));
         
     }
@@ -112,13 +122,13 @@ class PagesController extends Controller
     } 
     public function careers()
     {
-		$page = Page::findOrFail(6);   
+		$page = $this->default_page_content();   
         return view('pages.careers', compact('page'));
         
     }
     public function resources()
     {
-		$page = Page::findOrFail(7);   
+		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
         return view('pages.resources', compact('page'));
         
     }

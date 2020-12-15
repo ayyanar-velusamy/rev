@@ -43,7 +43,7 @@
 						<div class="col-md-12">
 							<div class="account-bg ">
 									<div class="add-banner text-center">
-									<img width="1000" height="250" data-src="{{asset('images/profile_picture.png') }}" src="{{asset('images/profile_picture.png') }}" class="img-circle img-responsive" alt="User Image" id="profile-adminImg">
+									<img width="1000" height="400" data-src="{{asset('images/profile_picture.png') }}" src="{{asset('images/profile_picture.png') }}" class="img-circle img-responsive" alt="User Image" id="profile-adminImg">
 									<div class="table-small-img-outer">
 										<div class="table-small-img">
 										</div>

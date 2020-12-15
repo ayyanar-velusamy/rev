@@ -265,10 +265,7 @@ $(document).on('click','#pageAddFormSubmit, #pageEditFormSubmit' ,function(){
 	jQuery("#pageAddForm, #pageEditForm").validate({
 		rules: {
 			title: {
-				required: true,
-				minlength:1,
-				maxlength: 40,
-				lettersonly:true
+				required: true, 
 			},
 			meta_description: {
 				required: true
@@ -286,9 +283,7 @@ $(document).on('click','#pageAddFormSubmit, #pageEditFormSubmit' ,function(){
 
 		messages: {
 			title: {
-				required:"Page Title cannot be empty",
-				maxlength:"Page Title cannot exceed 40 characters",
-				lettersonly:"Page Title should contain only alphabets", 
+				required:"Page Title cannot be empty", 
 			},
 			meta_description: {
 				required:"Meta Description cannot be empty", 
@@ -326,17 +321,13 @@ $(document).on('click','#sliderAddFormSubmit, #sliderEditFormSubmit' ,function()
 		rules: {
 			name: {
 				required: true,
-				minlength:1,
-				maxlength: 40,
-				lettersonly:true
+				minlength:1, 
 			}
 		},
 
 		messages: {
 			name: {
-				required:"Slider Name cannot be empty",
-				maxlength:"Slider Name cannot exceed 40 characters",
-				lettersonly:"Slider Name should contain only alphabets",  
+				required:"Slider Name cannot be empty", 
 			}
 			 		
 		},
