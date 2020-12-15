@@ -39,7 +39,7 @@ class PagesController extends Controller
 	public function about()
     {		
 		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
-        return view('pages.about', compact('page')); 
+        return view('pages.pages', compact('page')); 
         
     }
 	public function history()

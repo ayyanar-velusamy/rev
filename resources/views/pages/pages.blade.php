@@ -124,7 +124,101 @@
           </div>
         </div>
       </div>
-    </section>  
+    </section> 
+@if($page->page_name == "about-us") 
+ <!-- Divider: Reservation Form -->
+   <section>
+      <div class="container pt-0 pb-0">
+        <div class="row">
+          <div class="col-md-7 wow fadeInLeft">
+            <div class="p-40 pl-0">
+              <!-- Reservation Form Start-->
+              <form id="reservation_form" name="reservation_form" class="reservation-form" method="post" action="{{route('enquiry')}}"><h3 class="mt-0 line-bottom mb-40">Contact Us today for<span class="text-theme-color-2"> Free Consultaton!</span></h3>
+			  @csrf
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group mb-30">
+                      <input placeholder="Enter Name" type="text" id="name" name="name" required="" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <input placeholder="Email" type="text" id="email" name="email" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <input placeholder="Phone" type="text" id="phone" name="phone" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-30">
+                      <textarea placeholder="Question/Comment" rows="8" id="comment" name="comment" required="" class="form-control"></textarea>
+					  <label id="question-error" class="error" for="question"></label>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-12">
+                    <div class="form-group mb-0 mt-0">
+                      <input name="form_botcheck" class="form-control" type="hidden" value="">
+                      <button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-flat border-left-theme-color-2-4px" data-loading-text="Please wait...">Submit Now</button>
+                    </div>
+                  </div>
+                </div>
+              </form>  
+            </div>
+          </div>
+          <div class="col-md-5 wow fadeInRight">
+            <img src="{{ asset('revival/images/bg/about_contact.jpg') }}" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+@endif
+@if($page->page_name == "our-services") 
+ <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row equal-height">
+          <div class="col-sm-6 col-md-6 xs-pull-none bg-theme-colored wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="pt-60 pb-40 pl-90 pr-160 p-md-30">
+              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Why Choose Us?</h2>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none"> 
+                  <i class="fa fa-wheelchair text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">World Best Service</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-user text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Professional Staffs</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-money text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Low Cost Services</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 p-0 bg-img-cover wow fadeInRight hidden-xs" data-bg-img="{{ asset('revival/images/bg/why_choose.jpg') }}" data-wow-duration="1s" data-wow-delay="0.3s">
+          </div>
+        </div>
+      </div>
+    </section> 
+@endif
+
+	
 	@include('pages.common.service') 
   </div>
   <!-- end main-content -->

@@ -12,10 +12,10 @@
 */
 
 Route::get('/', 'PagesController@index')->name('index');
-Route::get('/home-health-care-about-us', 'PagesController@about')->name('about-us');  
+Route::get('/home-health-care-about-us', 'PagesController@pages')->name('about-us');  
 Route::get('/home-health-care-history', 'PagesController@pages')->name('history');
 Route::get('/home-health-care-quality-measures', 'PagesController@pages')->name('quality-measures'); 
-Route::get('/home-health-care-our-services', 'PagesController@our_services')->name('our-services');
+Route::get('/home-health-care-our-services', 'PagesController@pages')->name('our-services');
 Route::get('/home-health-care-nursing-services', 'PagesController@pages')->name('nursing-services');
 Route::get('/home-health-care-home-health-aide-and-home-maker-services', 'PagesController@pages')->name('health-aid-services');
 Route::get('/home-health-care-physical-occupational-and-speech-therapy', 'PagesController@pages')->name('physical-occupational-services');
