@@ -101,7 +101,7 @@ CKEDITOR.plugins.add( 'RevLI',{
       editor.addCommand( 'insertRevLI',{            
             exec : function( editor )
             {                
-               editor.insertHtml( '<li><img src="http://localhost/laravel/rev/public/revival/images/list-icon.png">dasd</li>' );
+               editor.insertHtml( '<li><img src="http://localhost/laravel/rev/public/revival/images/list-icon.png">Sample</li>' );
             }
      });
       editor.ui.addButton( 'RevLI',{         
@@ -120,6 +120,25 @@ CKEDITOR.on( 'instanceReady', function( evt ) {
       }
     }
   });
+});
+
+
+CKEDITOR.on('dialogDefinition', function(ev) { 
+    try { 
+		var dialogName = ev.data.name; 
+		var dialogDefinition = ev.data.definition; 
+		if(dialogName == 'link') {  
+			//var informationTab = dialogDefinition.getContents('target');  
+			//var targetField = informationTab.get('linkTargetType'); 
+			//targetField['default'] = '_blank'; 
+			var informationTab = dialogDefinition.getContents('advanced');  
+			var targetField = informationTab.get('advCSSClasses');
+			targetField['default'] = 'btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20' 
+		} 
+    } catch(exception) { 
+        alert('Error ' + ev.message); 
+    }
+
 });
 
  

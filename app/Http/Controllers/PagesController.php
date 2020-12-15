@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use \stdClass;
+
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
@@ -32,82 +34,98 @@ class PagesController extends Controller
     }
 	public function history()
     {
-        return view('pages.history');
+        $page = Page::findOrFail(3); 
+        return view('pages.history', compact('page'));  
         
     }
 	public function quality_measures()
     {
-        return view('pages.quality-measures');
+		$page = Page::findOrFail(4);  
+        return view('pages.quality-measures', compact('page'));
         
     }
 	public function our_services()
     {
-        return view('pages.our-services');
+		$page = Page::findOrFail(5);  
+        return view('pages.our-services', compact('page'));
         
     }
 	public function nursing_services()
     {
-        return view('pages.nursing-services');
+		$page = $this->default_page_content();   
+        return view('pages.nursing-services', compact('page'));
         
     }
 	public function health_aid_services()
     {
-        return view('pages.health-aid-services');
+		$page = $this->default_page_content();   
+        return view('pages.health-aid-services', compact('page'));
         
     }
 	public function physical_occupational_services()
     {
-        return view('pages.physical-occupational-services');
+		$page = $this->default_page_content();   
+        return view('pages.physical-occupational-services', compact('page'));
         
     }
 	public function revival_university()
     {
-        return view('pages.revival-university');
+		$page = $this->default_page_content();   
+        return view('pages.revival-university', compact('page'));
         
     }
 	public function waiver_program()
     {
-        return view('pages.waiver-program');
+		$page = $this->default_page_content();   
+        return view('pages.waiver-program', compact('page'));
         
     } 
 	public function find_location()
     {
-        return view('pages.find-location');  
+		$page = $this->default_page_content();   
+        return view('pages.find-location', compact('page'));  
         
     }	
 	public function maryland_contact_form()
     {
-        return view('pages.maryland-contact-form');  
+		$page = $this->default_page_content();   
+        return view('pages.maryland-contact-form', compact('page'));  
         
     } 
 	public function annandale_contact_form()
     {
-        return view('pages.annandale-contact-form');  
+		$page = $this->default_page_content();
+        return view('pages.annandale-contact-form', compact('page'));  
         
     } 
 	public function richmond_contact_form()
     {
-        return view('pages.richmond-contact-form');  
+		$page = $this->default_page_content();   
+        return view('pages.richmond-contact-form', compact('page'));  
         
     } 
 	public function houston_contact_form()
     {
+		$page = $this->default_page_content();   
         return view('pages.houston-contact-form');  
         
     } 
     public function careers()
     {
-        return view('pages.careers');
+		$page = Page::findOrFail(6);   
+        return view('pages.careers', compact('page'));
         
     }
     public function resources()
     {
-        return view('pages.resources');
+		$page = Page::findOrFail(7);   
+        return view('pages.resources', compact('page'));
         
     }
     public function contact()
     {
-        return view('pages.contact');
+		$page = $this->default_page_content();   
+        return view('pages.contact', compact('page'));
         
     } 
 	
@@ -132,4 +150,12 @@ class PagesController extends Controller
 		} 
         return $this->response();  
 	} 
+	
+	function default_page_content(){
+		$page = new stdClass();
+		$page->title = "Revival";
+		$page->meta_description = "Revival";
+		$page->meta_keyword = "Revival"; 
+		return $page;
+	}
 }

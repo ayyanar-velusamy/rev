@@ -25,6 +25,8 @@ class StorePagePost extends FormRequest
     {
         return [
             'title'	=> 'required|alpha_spaces|max:40', 
+			'content_en'	=> 'required', 
+			'content_fr'	=> 'required', 
         ];
     }
 	
@@ -34,6 +36,8 @@ class StorePagePost extends FormRequest
 			'title.required'	=> 'First Name cannot be empty',
 			'title.alpha_spaces'=> 'First Name should contain only alphabets',
 			'title.max'		=> 'First Name cannot exceed :max characters', 
+			'content_ev.required'	=> 'English content cannot be empty',
+			'content_fr.required'	=> 'French content cannot be empty',
 		];
 	} 
 }

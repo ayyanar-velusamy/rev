@@ -8,65 +8,8 @@
 
             <!-- SLIDE 1 -->
             <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/bg.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/quality.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
-
-              <!-- LAYER NR. 1 
-              <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
-                data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['top']"
-                data-voffset="['30']" 
-                data-fontsize="['100']"
-                data-lineheight="['30']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
--->
-              
-
-              <!-- LAYER NR. 3 
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['50']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>-->
-
+              <img src="{{ asset('revival/images/bg/quality.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>             
             </li>
-
-            
-
           </ul>
         </div>
         <!-- end .rev_slider -->
@@ -172,7 +115,8 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Quality <span class="text-theme-color-2">Measures</span></h2>  
+			{!! $page->content_en !!} 
+              <!--<h2 class="text-uppercase mt-0">Quality <span class="text-theme-color-2">Measures</span></h2>  
               <p class="rev-p"><b>Revival Homecare Agency</b> is guided by a tradition of personal, clinical, and technological excellence .We are dedicated to providing the highest quality home-based patient care with compassion and respect for each person.</p>  
 			  <p class="rev-p"><b>Revival Homecare Agency</b> recognizes the unique physical, emotional, and spiritual needs of each person receiving health care in the home. We strive to extend the highest level of courtesy, safety and service to patients, family/caregivers, visitors, and each other. We deliver state-of-the-art home health services with identified centers of excellence. We engage in a wide range of continuing education, clinical education, and other programs for professionals and the public.</p>
 			  <p class="rev-p">We strive to create an environment of teamwork and participation, where, through continuous performance improvement and open communication, health care professionals pursue excellence and take pride in their work, the organization, and their personal development. We believe that the quality of our human resources—organization personnel, physicians, and volunteers—is the key to our continued success. We provide physicians an environment that fosters high quality diagnosis and treatment. We maintain financial viability through a cost-effective operation to meet our long-term commitment to the community.</p>
@@ -184,7 +128,7 @@
 			  <h4>Why is this information important?</h4>
 			  <p class="rev-p">Normal wound healing after an operation is an important marker of good care. Patients whose wounds heal normally generally feel better and can get back to their daily activities sooner than those whose wounds don’t heal normally. After an operation, patients often go home to recover and their doctor may refer them for home health care. One way to measure the quality of care that home health agencies give is to look at how well their patients’ wounds heal after an operation.Higher percentages are better.</p>
 			  <p class="rev-p">For medicines to work properly, they need to be taken correctly. Taking too much or too little medicine can keep it from helping you feel better and, in some cases, can make you sicker, make you confused (which could affect your safety), or even cause death. Home health staff can help teach you ways to organize your medicines and take them properly. Getting better at taking your medicines correctly means the home health agency is doing a good job teaching you how to take your medicines.</p>
-			  <p class="rev-p">A home health care provider may refer a patient to emergency care when this is the best way to treat the patient’s current condition. However, some emergency care may be avoided if the home health staff is doing a good job at checking your health condition to detect problems early. They also need to check how well you are eating, drinking, and taking your medicines, and how safe your home is. Home health staff must coordinate your care. This involves communicating regularly with you, your informal caregivers, your doctor, and anyone else who provides care for you. Lower percentages are better.</p>
+			  <p class="rev-p">A home health care provider may refer a patient to emergency care when this is the best way to treat the patient’s current condition. However, some emergency care may be avoided if the home health staff is doing a good job at checking your health condition to detect problems early. They also need to check how well you are eating, drinking, and taking your medicines, and how safe your home is. Home health staff must coordinate your care. This involves communicating regularly with you, your informal caregivers, your doctor, and anyone else who provides care for you. Lower percentages are better.</p>-->
             </div> 
 			@include('pages.common.sidebar') 
           </div>

@@ -172,7 +172,7 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0"><span class="text-theme-color-2"> Resources</span></h2>  
+              <!--<h2 class="text-uppercase mt-0"><span class="text-theme-color-2"> Resources</span></h2>  
               <ul class="list-img">
                 
                 <li><img src="{{ asset('revival/images/list-icon.png') }}"><a href="http://www.dhmh.state.md.us" target="_blank">Maryland Department of Health and Mental Hygiene</a></li>
@@ -187,14 +187,9 @@
 <li><img src="{{ asset('revival/images/list-icon.png') }}"><a href="http://www.asbestos.com/" target="_blank">Asbestos – The Mesothelioma Center</a></li>
 <li><img src="{{ asset('revival/images/list-icon.png') }}"><a href="https://www.mesotheliomaveterans.org/mesothelioma/symptoms/" target="_blank">Mesothelioma Symptoms</a></li>
 
-              </ul>
-
-
-
-              
-              
-
-            
+              </ul>-->
+			  
+			  {!! $page->content_en !!}  
             </div> 
 			@include('pages.common.sidebar') 
           </div>
