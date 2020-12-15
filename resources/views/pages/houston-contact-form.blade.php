@@ -23,7 +23,7 @@
               <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
                   <div class="media-body"> <strong>OUR OFFICE LOCATION</strong>
-                    <p>3727 Greenbriar Drive, Suite 117, Stafford, TX 77477-3929</p>
+                    <p>6713 Broadway Street,Suite #H,Pearland, TX 77581</p>
                   </div>
                 </div>
               </div>

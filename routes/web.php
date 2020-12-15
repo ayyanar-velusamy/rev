@@ -32,6 +32,14 @@ Route::get('/home-health-care-careers', 'PagesController@careers')->name('career
 Route::get('/home-health-care-resources', 'PagesController@resources')->name('resources');
 Route::get('/home-health-care-contact-us', 'PagesController@contact')->name('contact'); 
 Route::post('/enquiry', 'PagesController@enquiry')->name('enquiry');
+
+Route::get('/home-health-care-schedule-an-assessment', 'PagesController@schedule_an_assessment')->name('schedule'); 
+Route::get('/home-health-care-insurance-accepted', 'PagesController@insurance_accepted')->name('insurance-accepted'); 
+Route::get('/home-health-care-meet-our-staff', 'PagesController@meet_our_staff')->name('meet-our-staff'); 
+Route::get('/home-health-care-submit-your-referrals', 'PagesController@submit_referrals')->name('submit-referrals'); 
+Route::get('/home-health-care-clients-testimonials', 'PagesController@testimonials')->name('testimonials'); 
+
+
  
 
 Route::get('/admin', function () { return redirect('login');  /*return view('welcome'); */ });

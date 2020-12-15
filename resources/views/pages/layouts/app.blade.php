@@ -83,14 +83,22 @@
             <div class="widget no-border m-0">
               <ul class="list-inline text-right sm-text-center">
                 <li>
-                  <a href="/home-health-care-find-an-office" class="text-white">Find an Office</a>
+                  <a href="{{ route('find-location')}}" class="text-white">Find an Office</a>
                   </li>
                 <span class="text-white">|</span>
                 <li>
-                  <a href="/home-health-care-contact-us" class="text-white">Contact us today for free Consultation !</a>
+                  <a href="{{ route('contact')}}" class="text-white">Contact us today for free Consultation !</a>
+                </li>
+                <li>
+                <select class="selectpicker" data-width="fit" data-style="bg-theme-color-2 text-white">
+                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                  <option  data-content='<span class="flag-icon flag-icon-es"></span> Spanish'>Spaninsh</option>
+                  <option  data-content='<span class="flag-icon flag-icon-sa"></span> Arabic'>Arabic</option>
+                </select>
                 </li>
                 
               </ul>
+                  
             </div>
           </div>
           
@@ -121,6 +129,8 @@
               <li class="{{ request()->is('home-health-care-careers') ? 'active' : '' }}"><a href="{{ route('careers')}}">Careers</a>
               </li>
               <li class="{{ request()->is('home-health-care-resources') ? 'active' : '' }}"><a href="{{ route('resources')}}">Resources</a>
+              </li>
+              <li class="{{ request()->is('home-health-care-clients-testimonials') ? 'active' : '' }}"><a href="{{ route('testimonials')}}">Testimonials</a>
               </li>
               <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}">Contact Us</a>
               </li>
@@ -220,8 +230,17 @@
 <script type="text/javascript" src="{{ asset('revival/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js') }}"></script> 
 <script type="text/javascript" src="{{ asset('revival/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js') }}"></script> 
 <script type="text/javascript" src="{{ asset('revival/js/custom.js') }}"></script> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 </body>
 
+<script>
+$(function(){
+    $('.selectpicker').selectpicker();
+});
+</script>
 
 </html>

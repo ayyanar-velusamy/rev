@@ -167,80 +167,27 @@
     <!-- Section: About -->
     <section id="about">
       <div class="container">
-        <div class="section-content">  
+        <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Find an Office</h2>  
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Maryland Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>1101 Mercantile Lane, Suite 292</li>
-							  <li class="pl-5 ml-20">Upper Marlboro, MD 20774-5360</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6994 ext – 6300</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-592-3644</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('maryland-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Annandale Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>5101 C Backlick Road, Suite 2</li>
-							  <li class="pl-5 ml-20">Annandale, VA 22003</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6905 ext – 6000</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('annandale-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Richmond Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>210 Railroad Avenue, Suite 3B</li>
-							  <li class="pl-5 ml-20">Ashland, VA 23005</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6905 ext – 6000</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('richmond-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div> 
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Houston Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>Revival Texas home Health</li>
-							  <li class="pl-5 ml-20">6713 Broadway Street,</li>
-							  <li class="pl-5 ml-20">Suite #H,Pearland, TX 77581</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>Phone: 713-995-6266</li> 
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>Fax: 713-995-6265</li> 
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('houston-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div> 
-				</div>        
+              <h2 class="text-uppercase mt-0">Insurance Accepted</h2>  
+              <p class="rev-p">Below is a list of insurance plans that are accepted by <b>Revival Homecare Agency</b></p>
+              <p class="rev-p">Insurances accepted after initial verification</p>
+             
+              <ul class="list-img">
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Medicare</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Medicaid</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Tricare</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Kaiser</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Private Pay</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Major Credit Card</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Medicaid Waiver</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">United Healthcare</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Anthem</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">BCBS</li>
+              <li><img src="{{ asset('revival/images/list-icon.png') }}">Humana</li>
+              </ul>
+              <p class="rev-p">Please check with your insurance company to make sure your plan includes <b>Revival Homecare Agency</b> service provider. For inquiries, please contact us.</p>
             </div> 
 			@include('pages.common.sidebar') 
           </div>

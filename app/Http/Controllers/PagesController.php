@@ -14,6 +14,11 @@ use App\Mail\EnquiryMail;
 
 class PagesController extends Controller  
 {
+
+    public function __construct(){
+    
+    }
+
     //
     public function index()
     {
@@ -104,6 +109,31 @@ class PagesController extends Controller
     public function contact()
     {
         return view('pages.contact');
+        
+    } 
+    public function schedule_an_assessment()
+    {
+        return view('pages.schedule_an_assessment');
+        
+    } 
+    public function insurance_accepted()
+    {
+        return view('pages.insurance-accepted');
+        
+    } 
+    public function meet_our_staff()
+    {
+        return view('pages.meet-our-staff');
+        
+    } 
+    public function submit_referrals()
+    {
+        return view('pages.submit-referrals');
+        
+    } 
+    public function testimonials()
+    {
+        return view('pages.testimonials');
         
     } 
 	

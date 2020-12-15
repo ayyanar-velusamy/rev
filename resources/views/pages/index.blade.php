@@ -19,7 +19,7 @@
                   <div class="p-10">
                     <h4 class="text-uppercase text-white mt-0">Schedule an ASSESSMENT</h4>
                     <p class="text-white">Improve your lifestyle now. Schedule your health assessment with us. home health care home health</p>
-                    <a href="#" class="btn btn-border btn-circled btn-transparent btn-sm">Click Here</a>
+                    <a href="{{route('schedule')}}" class="btn btn-border btn-circled btn-transparent btn-sm">Click Here</a>
                   </div>
                 </div>
               </div>
@@ -31,7 +31,7 @@
                   <div class="p-10">
                     <h4 class="text-uppercase text-white mt-0">Insurance ACCEPTED</h4>
                     <p class="text-white">Does your insurance company cover our services? Click on the link to find out. Medicare, Medicaid, Optum Health, BCBS, KAISER and more</p>
-                    <a href="#" class="btn btn-border btn-circled btn-transparent btn-sm">Click Here</a>
+                    <a href="{{route('insurance-accepted')}}" class="btn btn-border btn-circled btn-transparent btn-sm">Click Here</a>
                   </div>
                 </div>
               </div>
@@ -43,7 +43,7 @@
                   <div class="p-10">
                     <h4 class="text-uppercase text-white mt-0">Meet Our STAFF</h4>
                     <p class="text-white">We make sure the people attending to your loved ones are competent and trustworthy.</p>
-                    <a href="#" class="btn btn-border btn-circled btn-transparent btn-sm">Click Here</a>
+                    <a href="{{route('meet-our-staff')}}" class="btn btn-border btn-circled btn-transparent btn-sm">Click Here</a>
                   </div>
                 </div>
               </div>
@@ -135,8 +135,9 @@ For your home care services dilemma, you can trust only one name: <b>Revival Hom
                       <div class="ml-70 ml-sm-0">
                         <h4 class="icon-box-title mt-15 mb-5">Houston Office</h4>
                         <p>Revival Texas home Health
-                          3727 Greenbriar Drive, Suite 117
-                          Stafford, TX 77477-3929
+                          6713 Broadway Street,
+                          Suite #H,
+                          Pearland, TX 77581
                           Phone: 713-995-6266
                           Fax: 713-995-6265</p>
                       </div>
@@ -190,6 +191,12 @@ For your home care services dilemma, you can trust only one name: <b>Revival Hom
         </div>
       </div>
     </section>
+
+    
+
+
+
+    
 
 
     <!-- Section: Experts -->

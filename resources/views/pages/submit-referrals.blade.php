@@ -38,30 +38,7 @@
 
               
 
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['50']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
+    
 
             </li>
 
@@ -167,80 +144,12 @@
     <!-- Section: About -->
     <section id="about">
       <div class="container">
-        <div class="section-content">  
+        <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Find an Office</h2>  
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Maryland Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>1101 Mercantile Lane, Suite 292</li>
-							  <li class="pl-5 ml-20">Upper Marlboro, MD 20774-5360</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6994 ext – 6300</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-592-3644</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('maryland-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Annandale Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>5101 C Backlick Road, Suite 2</li>
-							  <li class="pl-5 ml-20">Annandale, VA 22003</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6905 ext – 6000</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('annandale-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Richmond Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>210 Railroad Avenue, Suite 3B</li>
-							  <li class="pl-5 ml-20">Ashland, VA 23005</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6905 ext – 6000</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('richmond-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div> 
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Houston Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>Revival Texas home Health</li>
-							  <li class="pl-5 ml-20">6713 Broadway Street,</li>
-							  <li class="pl-5 ml-20">Suite #H,Pearland, TX 77581</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>Phone: 713-995-6266</li> 
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>Fax: 713-995-6265</li> 
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('houston-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div> 
-				</div>        
+              <h2 class="text-uppercase mt-0">Submit your Referrals</h2>  
+              <p class="rev-p"><b>Do you know a friend or a family that needs our help? Please refer them to us. Kindly fill the form below.</p>
+              <iframe id="myframe" src="http://www.revivalhc.com/wp-content/themes/revivalhca/forms/referralForm.php" style="width:100%; border:0; overflow:hidden; height: 500px;"></iframe>
             </div> 
 			@include('pages.common.sidebar') 
           </div>

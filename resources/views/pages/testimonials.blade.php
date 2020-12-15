@@ -2,17 +2,17 @@
 @section('content')
 <!-- Start main-content -->
   <div class="main-content"> 
-     <div class="rev_slider_wrapper">
+      <div class="rev_slider_wrapper">
         <div class="rev_slider" data-version="5.0">
           <ul>
 
             <!-- SLIDE 1 -->
             <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/bg.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/history.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <img src="{{ asset('revival/images/bg/resources.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
               <!-- LAYERS -->
 
-              <!-- LAYER NR. 1 -->
+              <!-- LAYER NR. 1 
               <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
                 id="rs-1-layer-1"
                 data-x="['left']"
@@ -35,10 +35,10 @@
                 data-responsive_offset="on"
                 style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
               </div>
-
+-->
               
 
-              <!-- LAYER NR. 3 -->
+              <!-- LAYER NR. 3 
               <div class="tp-caption tp-resizeme text-white" 
                 id="rs-1-layer-3"
 
@@ -61,7 +61,7 @@
                 data-splitout="none" 
                 data-responsive_offset="on"
                 style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
+              </div>-->
 
             </li>
 
@@ -165,88 +165,77 @@
         });
       </script>
     <!-- Section: About -->
+    
+    <!-- Section: About -->
     <section id="about">
       <div class="container">
-        <div class="section-content">  
+        <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Find an Office</h2>  
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Maryland Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>1101 Mercantile Lane, Suite 292</li>
-							  <li class="pl-5 ml-20">Upper Marlboro, MD 20774-5360</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6994 ext – 6300</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-592-3644</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('maryland-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Annandale Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>5101 C Backlick Road, Suite 2</li>
-							  <li class="pl-5 ml-20">Annandale, VA 22003</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6905 ext – 6000</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('annandale-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Richmond Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>210 Railroad Avenue, Suite 3B</li>
-							  <li class="pl-5 ml-20">Ashland, VA 23005</li>
-							  <li class="pl-5"><i class="fa fa-phone font-20 mr-5"></i>888-225-6905 ext – 6000</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>888-801-4714</li>
-							  <li class="pl-5"><i class="fa fa-globe font-20 mr-5"></i><a href="www.revivalhc.com" class="text-white">www.revivalhc.com</a></li>
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('richmond-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div> 
-					<div class="col-xs-12 col-sm-6 col-md-6 mb-30">
-					  <div class="pricing table-horizontal maxwidth400">
-						<div class="row"> 
-						  <div class="col-md-12 p-30 pl-sm-50">
-							<h4 class="mt-0 mb-5"><a href="#" class="text-white">Houston Office</a></h4>
-							<ul class="mb-5 text-white">
-							  <li class="pl-5 "><i class="fa fa-map-marker font-20 mr-5"></i>Revival Texas home Health</li>
-							  <li class="pl-5 ml-20">6713 Broadway Street,</li>
-							  <li class="pl-5 ml-20">Suite #H,Pearland, TX 77581</li>
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>Phone: 713-995-6266</li> 
-							  <li class="pl-5"><i class="fa fa-fax font-15 mr-5"></i>Fax: 713-995-6265</li> 
-							</ul> 
-							<a class="text-white font-weight-600 fl-r" href="{{ route('houston-contact-form')}}">Read More →</a>
-						  </div>
-						</div>
-					  </div>
-					</div> 
-				</div>        
+              <h2 class="text-uppercase mt-0"><span class="text-theme-color-2"> Client's testimonials</span></h2>  
+            <p class="rev-p">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+              
+
+
+
+              
+              
+
+            
             </div> 
 			@include('pages.common.sidebar') 
           </div>
         </div>
       </div>
     </section>  
+
+    <section class="divider parallax layer-overlay overlay-theme-color-sky" data-bg-img="{{ asset('revival/images/bg/revival.jpg') }}">
+      <div class="container pt-60 pb-70">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="text-uppercase text-white line-bottom-center mt-0">What Our Client's <span class="text-theme-color-2">Say</span></h2>
+              <div class="title-flaticon">
+                <i class="flaticon-charity-alms"></i>
+              </div>
+              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem<br> voluptatem obcaecati!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel-3col  style2 dots-white" data-dots="false">
+              <div class="item">
+                <div class="testimonial bg-theme-color-2 p-30 pb-20 mt-50">
+                  <h4 class="author text-white mt-0 mb-0">Olusula Obinne</h4>
+                  <h6 class="title text-white mt-0 mb-15">Manager</h6> 
+                  <div class="thumb content mt-30"><img class="img-circle" alt="" src="{{ asset('revival/images/testimonials/1.jpg') }}"></div>
+                  <p class="font-15 pl-0 text-white"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque.</em></p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial bg-theme-color-2 p-30 pb-20 mt-50">
+                  <h4 class="author text-white mt-0 mb-0">Akram Elzend</h4>
+                  <h6 class="title text-white mt-0 mb-15">Doctor</h6> 
+                  <div class="thumb content mt-30"><img class="img-circle" alt="" src="{{ asset('revival/images/testimonials/2.jpg') }}"></div>
+                  <p class="font-15 pl-0 text-white"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque.</em></p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial bg-theme-color-2 p-30 pb-20 mt-50">
+                  <h4 class="author text-white mt-0 mb-0">Kishma Kelly</h4>
+                  <h6 class="title text-white mt-0 mb-15">Designer</h6> 
+                  <div class="thumb content mt-30"><img class="img-circle" alt="" src="{{ asset('revival/images/testimonials/3.jpg') }}"></div>
+                  <p class="font-15 pl-0 text-white"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque.</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 	@include('pages.common.service') 
   </div>
   <!-- end main-content -->

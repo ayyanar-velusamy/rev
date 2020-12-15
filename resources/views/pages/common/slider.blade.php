@@ -58,7 +58,7 @@
                 data-splitin="none" 
                 data-splitout="none" 
                 data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
+                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="{{route('submit-referrals')}}">Submit your Referrals</a> 
               </div>
 
             </li>
