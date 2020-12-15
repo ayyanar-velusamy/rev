@@ -82,7 +82,7 @@
                   </div>
                   <div class="col-sm-12">
                     <div class="form-group mb-30">
-                      <textarea placeholder="Question/Comment" id="comment" name="comment" required="" class="form-control"></textarea>
+                      <textarea placeholder="Question/Comment" rows="8" id="comment" name="comment" required="" class="form-control"></textarea>
 					  <label id="question-error" class="error" for="question"></label>
                     </div>
                   </div> 

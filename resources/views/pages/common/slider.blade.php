@@ -3,16 +3,18 @@
       <div class="rev_slider_wrapper">
         <div class="rev_slider" data-version="5.0">
           <ul>
-
+		@foreach ($sliders as $slider)
+			 
+		
             <!-- SLIDE 1 -->
-            <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/bg.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+            <li data-index="rs-{{$slider->id}}" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ banner_image($slider->image) }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/bg.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+              <img src="{{ banner_image($slider->image) }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
               <!-- LAYERS -->
 
               <!-- LAYER NR. 1 -->
               <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
+                id="rs-{{$slider->id}}-layer-1"
                 data-x="['left']"
                 data-hoffset="['0']"
                 data-y="['top']"
@@ -38,7 +40,7 @@
 
               <!-- LAYER NR. 3 -->
               <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
+                id="rs-{{$slider->id}}-layer-3"
 
                 data-x="['left']"
                 data-hoffset="['35']"
@@ -62,233 +64,7 @@
               </div>
 
             </li>
-
-            <!-- SLIDE 2 -->
-            <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/revival_bg1.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/revival_bg3.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
- <!-- LAYER NR. 1 -->
- <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
-				data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['middle']"
-                data-voffset="['30']" 
-                data-fontsize="['100']"
-                data-lineheight="['110']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
-
-              
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['150']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
-            </li>
-<!-- SLIDE 3 -->
-<li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/revival_bg4.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
- <!-- LAYER NR. 1 -->
- <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
-				data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['middle']"
-                data-voffset="['30']" 
-                data-fontsize="['100']"
-                data-lineheight="['110']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
-
-              
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['150']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
-            </li>
-<!-- SLIDE 4 -->
-<li data-index="rs-4" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/revival_bg5.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
- <!-- LAYER NR. 1 -->
- <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
-				data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['middle']"
-                data-voffset="['30']" 
-                data-fontsize="['100']"
-                data-lineheight="['110']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
-
-              
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['150']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
-            </li>
-<!-- SLIDE 5 -->
-<li data-index="rs-5" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/revival_bg6.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
- <!-- LAYER NR. 1 -->
- <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
-				data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['middle']"
-                data-voffset="['30']" 
-                data-fontsize="['100']"
-                data-lineheight="['110']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
-
-              
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['150']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
-            </li>
-           
-
+			@endforeach 
           </ul>
         </div>
         <!-- end .rev_slider -->

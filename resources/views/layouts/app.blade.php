@@ -167,14 +167,10 @@
 <script src="{{ asset('js/highcharts.js') }}"></script> 
 <script src="{{ asset('js/custom.js') }}"></script> 
 <script src="{{ asset('js/validation.js') }}"></script> 
-<script src="{{ asset('plugins/ckeditor/ckeditor.js') }}"></script> 
+<script src="{{ asset('plugins/ckeditor-standard/ckeditor.js') }}"></script>  
+ 
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        //$('.ckeditor').ckeditor();
-    });
-	
-</script>
+ 
 
 <script type="text/javascript">
 

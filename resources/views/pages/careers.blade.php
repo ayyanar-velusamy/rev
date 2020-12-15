@@ -172,10 +172,11 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase mt-0">Career<span class="text-theme-color-2"> Oppurtunities</span></h2>  
+			 {!! $page->content_en !!} 
+              <!--<h2 class="text-uppercase mt-0">Career<span class="text-theme-color-2"> Oppurtunities</span></h2>  
               <p>Lorem ipsum dolor sit amet conse ctetur lorem ipsum dolor sit amet conse ctetur.</p>
               <p>gorem ipsum dolor sit amet conse ctetur lorem ipsum dolor sit amet conse ctetur</p>
-              <p><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" target="_blank" href="https://revival-homecare-agency.breezy.hr/">Click here to apply for current openings</a> </p>
+              <p><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" target="_blank" href="https://revival-homecare-agency.breezy.hr/">Click here to apply for current openings</a> </p>-->
 
             
             </div> 

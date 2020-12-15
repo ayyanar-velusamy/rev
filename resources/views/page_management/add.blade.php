@@ -50,7 +50,7 @@
 									<div class="col-md-12 left-pad ">
 										<div class="form-group">
 											<label for="inputFirstName">{{ __('Title') }} <span class="required">*</span></label>
-											<input type="text" name="title" class="form-control" maxlength="40" id="title" value="{{old('title')}}" placeholder="Enter Page Title" autofocus />
+											<input type="text" name="title" class="form-control" id="title" value="{{old('title')}}" placeholder="Enter Page Title" autofocus />
 										</div>
 									</div> 
 								</div> 

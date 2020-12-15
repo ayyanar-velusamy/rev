@@ -2,71 +2,17 @@
 @section('content')
 <!-- Start main-content -->
   <div class="main-content"> 
-    <div class="rev_slider_wrapper">
+      <div class="rev_slider_wrapper">
         <div class="rev_slider" data-version="5.0">
-          <ul>
-
-            <!-- SLIDE 1 -->
+          <ul> 
             <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('revival/images/bg/bg.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="{{ asset('revival/images/bg/about_us.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-              <!-- LAYERS -->
-
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
-                id="rs-1-layer-1"
-                data-x="['left']"
-                data-hoffset="['0']"
-                data-y="['top']"
-                data-voffset="['30']" 
-                data-fontsize="['100']"
-                data-lineheight="['30']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1000" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 7; white-space: nowrap; font-weight:700;"><img src="{{ asset('revival/images/complogo.png') }}">
-              </div>
-
-              
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme text-white" 
-                id="rs-1-layer-3"
-
-                data-x="['left']"
-                data-hoffset="['35']"
-                data-y="['middle']"
-                data-voffset="['50']"
-                data-fontsize="['16']"
-                data-lineheight="['28']"
-                data-width="none"
-                data-height="none"
-                data-whitespace="nowrap"
-                data-transform_idle="o:1;s:500"
-                data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                data-start="1400" 
-                data-splitin="none" 
-                data-splitout="none" 
-                data-responsive_offset="on"
-                style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="#">Submit your Referrals</a> 
-              </div>
-
-            </li>
-
-            
-
+				@if($page->image != "") 
+					<img src="{{ banner_image($page->image) }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+				@else
+					 <img src="{{ asset('revival/images/bg/history.jpg') }}"  alt=""  data-bgposition="center 60%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+				@endif   
+            </li> 
           </ul>
         </div>
         <!-- end .rev_slider -->
@@ -165,33 +111,22 @@
         });
       </script>
     <!-- Section: About -->
+    
+    <!-- Section: About -->
     <section id="about">
       <div class="container">
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-			{!! $page->content_en !!} 
-              <!--<h2 class="text-uppercase mt-0">About <span class="text-theme-color-2">Us</span></h2> 
-			  <ul class="list-img">
-				<li><img src="{{ asset('revival/images/list-icon.png') }}"><a href="#">Our Brochure</a></li>
-				<li><img src="{{ asset('revival/images/list-icon.png') }}"><a href="#">Our Flyer</a></li>
-			  </ul> 
-              <p class="rev-p">What is Home Health Care?<br>It is a manner of care delivery that is ideal for most homebound patients. Care can be provided to individuals of any age with conditions that require continuing care by a medical professional, structured treatment or nursing care instruction.<br>Services range from high-tech medical procedures to basic personal care which are provided with the aim to:</p>
-              <ul class="list-img">
-				<li><img src="{{ asset('revival/images/list-icon.png') }}">reduce the strain caused by long-term hospitalization</li>
-				<li><img src="{{ asset('revival/images/list-icon.png') }}">lessen nursing home bills during an illness or disability</li>
-				<li><img src="{{ asset('revival/images/list-icon.png') }}">create more flexible home-based care options for the patient and the family</li>
-			  </ul>
-			  <p class="rev-p">Staying at home enables one to maintain social ties and involvement with community, friends, and family. This preserves a sense of independence and security for the patient. In many cases, the consistency of home health care can eliminate the need for hospitalization altogether.<br>We have the ability to provide appropriate medical and non-medical care to you and your family. If you prefer remaining in the home rather than in institutional settings, <b>Revival Homecare Agency</b> is here to help. We are dedicated to providing the highest quality of healthcare in the comfort of your own home. With a team approach to address your needs, we offer holistic care plans that consider your physical, psychological and spiritual needs as a patient.</p>-->
-            </div>
-             @include('pages.common.sidebar') 
+			 {!! $page->content_en !!}  
+            </div> 
+			@include('pages.common.sidebar') 
           </div>
         </div>
       </div>
     </section> 
-	
-	@include('pages.common.service') 	
-   <!-- Divider: Reservation Form -->
+@if($page->page_name == "about-us") 
+ <!-- Divider: Reservation Form -->
    <section>
       <div class="container pt-0 pb-0">
         <div class="row">
@@ -239,8 +174,53 @@
         </div>
       </div>
     </section>
+@endif
+@if($page->page_name == "our-services") 
+ <section id="mission">
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row equal-height">
+          <div class="col-sm-6 col-md-6 xs-pull-none bg-theme-colored wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="pt-60 pb-40 pl-90 pr-160 p-md-30">
+              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Why Choose Us?</h2>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none"> 
+                  <i class="fa fa-wheelchair text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">World Best Service</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-user text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Professional Staffs</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-money text-white font-60"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Low Cost Services</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 p-0 bg-img-cover wow fadeInRight hidden-xs" data-bg-img="{{ asset('revival/images/bg/why_choose.jpg') }}" data-wow-duration="1s" data-wow-delay="0.3s">
+          </div>
+        </div>
+      </div>
+    </section> 
+@endif
 
+	
+	@include('pages.common.service') 
   </div>
   <!-- end main-content -->
   @endsection 
-  
+ 

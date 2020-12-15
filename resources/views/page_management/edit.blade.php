@@ -78,7 +78,7 @@
 									<div class="col-md-12 left-pad">
 										<div class="form-group"> 
 											<label for="inputContentEn">{{ __('Content English') }} <span class="required">*</span></label>
-											<textarea name="content_en" class="ckeditor  form-control" id="content_en" placeholder="Enter Content English" >{{$page->content_en}}</textarea>
+											<textarea name="content_en" class="ckeditor  form-control" id="content_en sddsd" placeholder="Enter Content English" >{{$page->content_en}}</textarea>
 										</div>
 									</div>
 								</div>
