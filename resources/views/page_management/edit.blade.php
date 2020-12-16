@@ -24,7 +24,7 @@
 									@if($page->image != "")
 										<img width=1000 height=400 src="{{ banner_image($page->image) }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
 									@else
-										<img width=1000 height=400 src="{{asset('images/user_profile.png') }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
+										<img width=1000 height=400 src="{{asset('images/banner_picture.png') }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
 									@endif 
 									<div class="table-small-img-outer">
 										<div class="table-small-img">
@@ -74,6 +74,23 @@
 										</div>
 									</div>
 								</div>
+								@if($page->default_page != "1")
+								<div class="row">
+									<div class="col-md-12 left-pad ">
+										<div class="form-group">
+										<label for="inputFirstName">Parent Menu<span class="required">*</span></label>
+										<select name="parent_menu" id="parent_menu" class="form-control select2">
+											<option value="">Select Menu</option>
+											@foreach($menus as $id=>$nav)
+											<option {{ $page->parent_menu == $nav->id ? 'Selected' : '' }} value="{{ $nav->id }}">{{ $nav->menu }}</option>
+											@endforeach
+										</select> 
+									</div>
+									</div> 
+								</div>
+								@else
+								<input type="hidden" value="0" name="parent_menu" >
+								@endif		
 								<div class="row"> 
 									<div class="col-md-12 left-pad">
 										<div class="form-group"> 
@@ -96,8 +113,9 @@
 										<div class="form-group checkbox_status">
 											<label class="check_label">Status</label>
 											<label class="switch round">
-												<input id="userStatusHidden" type="hidden" value="active" name="status" >
-												<input {{$page->status == 'active' ? 'checked' :''}} type="checkbox" />
+												<input id="userStatusHidden" type="hidden" value="inactive" name="status" >
+												<input type="hidden" value="{{$page->page_name}}" name="route" >
+												<input {{$page->status == 'active' ? 'checked' :''}}  name="status" value="active" type="checkbox" />
 												<span class="slider round"></span>
 											</label>
 										</div>

@@ -14,7 +14,7 @@
 			<div class="inner_box">
 				<img src="{{ asset('images/link_page404_img.png')}}" />
 				<p>Sorry! The page you requested could not be found</p>
-				<a href="{{ route('dashboard.index')}}" class="btn btn-green">go back to dashboard</a>
+				<a href="{{ route('index')}}" class="btn btn-green">go back to home</a>
 			</div>
 			<p class="copyrights">© 2020 Revival</p>
 		</div>

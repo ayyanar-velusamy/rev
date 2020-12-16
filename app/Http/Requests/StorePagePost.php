@@ -25,6 +25,7 @@ class StorePagePost extends FormRequest
     {
         return [
             'title'	=> 'required', 
+			'parent_menu'	=> 'required', 
 			'content_en'	=> 'required', 
 			'content_fr'	=> 'required', 
         ];
@@ -34,6 +35,7 @@ class StorePagePost extends FormRequest
     {
         return [
 			'title.required'	=> 'First Name cannot be empty', 
+			'parent_menu.required'	=> 'Please select parent menu', 
 			'content_ev.required'	=> 'English content cannot be empty',
 			'content_fr.required'	=> 'French content cannot be empty',
 		];

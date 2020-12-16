@@ -24,7 +24,7 @@
 								@if($page->image != "")
 									<img width=1000 height=400 src="{{ banner_image($page->image) }}" class="img-circle" alt="Banner Image">
 								@else
-									<img width=1000 height=400 src="{{asset('images/user_profile.png') }}" class="img-circle" alt="Banner Image">
+									<img width=1000 height=400 src="{{asset('images/banner_picture.png') }}" class="img-circle" alt="Banner Image">
 								@endif
 								</div>
 							@else
@@ -44,6 +44,21 @@
 									</div>
 								</div> 
 							</div>
+							@if($page->default_page != "1")
+							<div class="row">
+									<div class="col-md-12 left-pad ">
+										<div class="form-group">
+										<label for="inputFirstName">Parent Menu  <span class="required">*</span></label>
+										<select name="parent_menu" id="parent_menu" class="form-control select2" disabled>
+											<option value="">Select Menu</option>
+											@foreach($menus as $id=>$nav)
+											<option {{ $page->parent_menu == $nav->id ? 'Selected' : '' }} value="{{ $nav->id }}">{{ $nav->menu }}</option>
+											@endforeach
+										</select> 
+									</div>
+									</div> 
+								</div>
+							@endif	
 							<div class="row">
 								<div class="col-md-6 left-pad pdr-45">
 									<div class="form-group">

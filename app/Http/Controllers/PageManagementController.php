@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 use App\Authorizable;  
 use App\Http\Requests\StorePagePost;   
 use App\Model\Page;  
+use App\Model\Menu;
 
 class PageManagementController extends BaseController  
 {
@@ -79,7 +80,8 @@ class PageManagementController extends BaseController
 	//Output : render view
 	public function create()
 	{ 
-		return view('page_management.add');
+		$menus = Menu::where(['status' => "1", 'parent_menu'=> 0, 'type' => "1"])->select('*')->get(); 
+		return view('page_management.add', compact('menus'));
 	}
 
 	//Function to create/store the app page
@@ -93,13 +95,23 @@ class PageManagementController extends BaseController
         $page->meta_keyword   	= $request->meta_keyword;
         $page->content_en   	= $request->content_en;
         $page->content_fr   	= $request->content_fr;
-        $page->status   	= $request->status;
-        
+        $page->status   	    = $request->status;
+		$page->parent_menu 		= $request->parent_menu;
+        $page->page_name     	= str_replace(" ","_",strtolower($request->title));
+		
+        $menu = new Menu();
+		$menu->menu = $request->title;
+		$menu->route = $page->page_name;
+		$menu->link = config('app.url')."/revival/".$page->page_name;
+		$menu->type = 2;
+		$menu->parent_menu = $request->parent_menu;
+		$page->status = ($request->status == "active")? 1 : 2; 
+		
         if ($request->hasFile('image')) {
             $page->image = $this->bannerUpload($request);
         }
               
-        if($page->save()){  
+        if($page->save() && $menu->save()){  
 			$this->response['status']   = true;
 			$this->response['message']  = str_replace("{page}",$request->title,__('message.page_create_success'));
 			$this->response['redirect'] = route('pages.index');  
@@ -116,7 +128,8 @@ class PageManagementController extends BaseController
 	public function show($id)
     {
         $page = Page::findOrFail(decode_url($id)); 
-        return view('page_management.show', compact('page'));
+		$menus = Menu::where(['status' => "1", 'parent_menu'=> 0, 'type' => "1"])->select('*')->get(); 
+        return view('page_management.show', compact('page', 'menus'));
     }
 
 	//Function to render the app page edit page
@@ -124,8 +137,9 @@ class PageManagementController extends BaseController
 	//Output : render edit page
 	public function edit($id)
 	{
+		$menus = Menu::where(['status' => "1", 'parent_menu'=> 0, 'type' => "1"])->select('*')->get();  
 		$page = Page::findOrFail(decode_url($id));  
-        return view('page_management.edit', compact('page'));
+        return view('page_management.edit', compact('page', 'menus'));
 	}
 
 	//Function to update the app page
@@ -139,12 +153,18 @@ class PageManagementController extends BaseController
         $page->content_en   	= $request->content_en;
         $page->content_fr   	= $request->content_fr;
         $page->status   		= $request->status; 
+		$page->parent_menu 		= $request->parent_menu;
        
         if ($request->hasFile('image')) {
             $page->image = $this->bannerUpload($request);
         } 
 		 
 		if($page->save()){  
+			$menu = Menu::where('route', '=', $request->route)->firstOrFail();
+			$menu->status = ($request->status == "active")? 1 : 2; 
+			$menu->parent_menu 		= $request->parent_menu;
+			$menu->save();
+			
 			$this->response['status']   = true;
 			$this->response['message']  = str_replace("{page}",$request->title,__('message.page_update_success'));
 			$this->response['redirect'] = route('pages.index');
@@ -162,6 +182,7 @@ class PageManagementController extends BaseController
 	{
 		$page = Page::findOrFail(decode_url($id)); 
 		if(Page::find($page->id)->delete() ) { 
+		   $deleteMenu = Menu::where('route',$page->page_name)->delete();
 			$this->response['status']   = true;
 			$this->response['message']  = str_replace("{page}",$page->title,__('message.page_delete_success'));
 			$this->response['redirect'] = route('pages.index');

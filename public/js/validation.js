@@ -273,14 +273,16 @@ $(document).on('click','#pageAddFormSubmit, #pageEditFormSubmit' ,function(){
 			meta_keyword: {
 				required: true
 			},
+			parent_menu: {
+				required: true
+			},
 			content_en: {
 				required: true
 			},
 			content_fr: {
 				required: true
 			},			
-		},
-
+		}, 
 		messages: {
 			title: {
 				required:"Page Title cannot be empty", 
@@ -290,7 +292,10 @@ $(document).on('click','#pageAddFormSubmit, #pageEditFormSubmit' ,function(){
 			},
 			meta_keyword: {
 				required:"Meta Keyword cannot be empty", 
-			}, 
+			},
+			parent_menu: {
+				required:"Please select parent menu", 
+			},
 			content_en: {
 				required:"content cannot be empty",  
 			},

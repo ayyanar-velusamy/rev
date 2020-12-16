@@ -21,7 +21,7 @@
 						<div class="col-md-12">
 							<div class="account-bg ">
 									<div class="add-banner text-center">
-									<img width="1000" height="250" data-src="{{asset('images/profile_picture.png') }}" src="{{asset('images/profile_picture.png') }}" class="img-circle img-responsive" alt="User Image" id="profile-adminImg">
+									<img width="1000" height="400" data-src="{{asset('images/banner_picture.png') }}" src="{{asset('images/banner_picture.png') }}" class="img-circle img-responsive" alt="User Image" id="profile-adminImg">
 									<div class="table-small-img-outer">
 										<div class="table-small-img">
 										</div>
@@ -52,6 +52,19 @@
 											<label for="inputFirstName">{{ __('Title') }} <span class="required">*</span></label>
 											<input type="text" name="title" class="form-control" id="title" value="{{old('title')}}" placeholder="Enter Page Title" autofocus />
 										</div>
+									</div> 
+								</div>
+								<div class="row">
+									<div class="col-md-12 left-pad ">
+										<div class="form-group">
+										<label for="inputFirstName">Parent Menu  <span class="required">*</span></label>
+										<select name="parent_menu" id="parent_menu" class="form-control select2">
+											<option value="">Select Menu</option>
+											@foreach($menus as $id=>$nav)
+											<option value="{{ $nav->id }}">{{ $nav->menu }}</option>
+											@endforeach
+										</select> 
+									</div>
 									</div> 
 								</div> 
 								<div class="row">
@@ -104,7 +117,7 @@
 			</div>
 			<div class="btn-footer">
 				<button type="button" id="clearForm" class="btn btn-grey">{{ __('Clear') }}</button>
-				<a href="{{route('users.index')}}" class="btn btn-green">{{ __('Back') }}</a>
+				<a href="{{route('pages.index')}}" class="btn btn-green">{{ __('Back') }}</a>
 				<button type="submit" id="pageAddFormSubmit" class="btn btn-blue">{{ __('Save') }}</button>
 			</div>
 		</form>

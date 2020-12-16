@@ -113,10 +113,28 @@
           <nav id="menuzord-right" class="menuzord default">
             <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
               <img src="{{ asset('revival/images/logo-wide.png') }}" alt="">
+				  
             </a>
+			
             <ul class="menuzord-menu">
-			<li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}">Home</a> </li>
-              <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
+				@foreach ($menus as $nav) 
+				  <li class="{{ ($nav->isActive)  ? 'active' : '' }}"><a href="{{ route($nav->route)}}">{{$nav->menu}}</a> 
+				  @if($nav->submenu) 
+				   <ul class="dropdown">
+				    @foreach ($nav->submenu as $subnav) 
+						@if($subnav->type == '1') 
+							 <li><a href="{{ route($subnav->route)}}" class="{{ request()->is($subnav->link) ? 'active' : '' }}">{{$subnav->menu}}</a></li>
+						@else
+							<li><a href="{{$subnav->link}}">{{$subnav->menu}}</a></li> 
+						@endif	 
+					  @endforeach 
+					</ul>
+				 @endif	
+				  </li>
+				 
+				@endforeach 
+			  
+             <!-- <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
                 <ul class="dropdown">
                   <li><a href="{{ route('history')}}" class="{{ request()->is('home-health-care-history') ? 'active' : '' }}">History</a></li>
                   <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('home-health-care-quality-measures') ? 'active' : '' }}" href="#">Quality Measures</a></li>
@@ -135,7 +153,7 @@
               <li class="{{ request()->is('home-health-care-clients-testimonials') ? 'active' : '' }}"><a href="{{ route('testimonials')}}">Testimonials</a>
               </li>
               <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}">Contact Us</a>
-              </li>
+              </li>-->
               
             </ul>
           </nav>
