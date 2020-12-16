@@ -1,18 +1,7 @@
-<?php
-
+<?php 
+//EN
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Authentication Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines are used during authentication for various
-    | messages that we need to display to the user. You are free to modify
-    | these language lines according to your application's requirements.
-    |
-    */
-
-    'my_self' => 'Me'
-
+	"Find an Office"=>	"Find an Office",
+	"Contact us today for free Consultation !" => "Contact us today for free Consultation !",
+	
 ];

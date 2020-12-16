@@ -71,7 +71,7 @@
   <div class="header-top bg-theme-color-2 sm-text-center">
     <div class="container">
       <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="widget no-border m-0">
               <ul class="list-inline">
                 <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a class="text-white" href="tel:888-225-6905">&nbsp;888-225-6905</a></li>
@@ -81,21 +81,21 @@
             </div>
         </div>
 
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div class="widget no-border m-0">
               <ul class="list-inline text-right sm-text-center">
                 <li>
-                  <a href="{{ route('find-location')}}" class="text-white">Find an Office</a>
+                  <a href="{{ route('find-location')}}" class="text-white"><?php echo __('lang.Find an Office');?></a>
                   </li>
                 <span class="text-white">|</span>
                 <li>
-                  <a href="{{ route('contact')}}" class="text-white">Contact us today for free Consultation !</a>
+                  <a href="{{ route('contact')}}" class="text-white"><?php echo __('lang.Contact us today for free Consultation !')?></a>
                 </li>
-                <li>
-                <select class="selectpicker" data-width="fit" data-style="bg-theme-color-2 text-white">
-                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-                  <option  data-content='<span class="flag-icon flag-icon-es"></span> Spanish'>Spaninsh</option>
-                  <option  data-content='<span class="flag-icon flag-icon-sa"></span> Arabic'>Arabic</option>
+				<li>
+				<select class="selectpicker" data-width="fit" data-style="bg-theme-color-2 text-white">
+                  <option <?php echo ((App::getLocale()=="en")?"selected":"");?> data-content='<span class="flag-icon flag-icon-us"></span> English'>en</option>
+                  <option <?php echo ((App::getLocale()=="es")?"selected":"");?> data-content='<span class="flag-icon flag-icon-es"></span> Spanish'>es</option>
+                  <option <?php echo ((App::getLocale()=="ar")?"selected":"");?> data-content='<span class="flag-icon flag-icon-sa"></span> Arabic'>ar</option>
                 </select>
                 </li>
                 
@@ -115,26 +115,26 @@
               <img src="{{ asset('revival/images/logo-wide.png') }}" alt="">
             </a>
             <ul class="menuzord-menu">
-			<li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}">Home</a> </li>
-              <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
+			<li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}"><?php echo __('menu.Home');?></a> </li>
+              <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}"><?php echo __('menu.About Us');?></a>
                 <ul class="dropdown">
-                  <li><a href="{{ route('history')}}" class="{{ request()->is('home-health-care-history') ? 'active' : '' }}">History</a></li>
-                  <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('home-health-care-quality-measures') ? 'active' : '' }}" href="#">Quality Measures</a></li>
+                  <li><a href="{{ route('history')}}" class="{{ request()->is('home-health-care-history') ? 'active' : '' }}"><?php echo __('menu.History');?></a></li>
+                  <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('home-health-care-quality-measures') ? 'active' : '' }}" href="#"><?php echo __('menu.Quality Measures');?></a></li>
                 </ul>
               </li>
 			  
               <li class="{{ (request()->is('home-health-care-our-services') || request()->is('home-health-care-nursing-services') || request()->is('home-health-care-home-health-aide-and-home-maker-services') || request()->is('home-health-care-physical-occupational-and-speech-therapy') || request()->is('home-health-care-revival-university') || request()->is('home-health-care-waiver-program'))
                             ? 'active' : '' }}">
-                  <a href="{{ route('our-services')}}" >Our Services</a>
+                  <a href="{{ route('our-services')}}" ><?php echo __('menu.Our Services');?></a>
                </li>
               </li>
-              <li class="{{ request()->is('home-health-care-careers') ? 'active' : '' }}"><a href="{{ route('careers')}}">Careers</a>
+              <li class="{{ request()->is('home-health-care-careers') ? 'active' : '' }}"><a href="{{ route('careers')}}"><?php echo __('menu.Careers');?></a>
               </li>
-              <li class="{{ request()->is('home-health-care-resources') ? 'active' : '' }}"><a href="{{ route('resources')}}">Resources</a>
+              <li class="{{ request()->is('home-health-care-resources') ? 'active' : '' }}"><a href="{{ route('resources')}}"><?php echo __('menu.Resources');?></a>
               </li>
-              <li class="{{ request()->is('home-health-care-clients-testimonials') ? 'active' : '' }}"><a href="{{ route('testimonials')}}">Testimonials</a>
+              <li class="{{ request()->is('home-health-care-clients-testimonials') ? 'active' : '' }}"><a href="{{ route('testimonials')}}"><?php echo __('menu.Testimonials');?></a>
               </li>
-              <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}">Contact Us</a>
+              <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}"><?php echo __('menu.Contact Us');?></a>
               </li>
               
             </ul>
@@ -242,6 +242,9 @@
 <script>
 $(function(){
     $('.selectpicker').selectpicker();
+	$('.selectpicker').on('change', function(e){
+		location.href="setlocale/"+$(this).val();
+	});
 });
 </script>
 
