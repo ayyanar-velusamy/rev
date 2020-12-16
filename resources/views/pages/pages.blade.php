@@ -118,7 +118,7 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-			 {!! $page->content_en !!}  
+			 {!! $page->content !!}  
             </div> 
 			@include('pages.common.sidebar') 
           </div>

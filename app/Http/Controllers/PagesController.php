@@ -15,21 +15,23 @@ use App\Model\Menu;
 use App\Http\Requests\StoreEnquiryPost;
 use App\Mail\EnquiryMail; 
 use View; 
-
+use Lang; 
+use Session; 
+use App;
 class PagesController extends Controller  
 {
     public $pathName = "";
-    public $menus = [];
-   
+    public $menus = []; 
 	
 	public function __construct(){ 
 		$this->pathName = Route::currentRouteName(); 
 		$this->menus = Menu::where(['status' => "1"])->select('*')->get(); 
 		$menu_list = [];  
+		$this->lang = Session::get('locale');
 		foreach($this->menus as $key=>$nav){
 			  $menu = new stdClass();
-			  $menu->id = $nav->id;
-			  $menu->menu = $nav->menu;
+			  $menu->id = $nav->id; 
+			  $menu->menu = ($nav->{'menu_'.$this->lang} == "")? $nav->menu_en: $nav->{'menu_'.$this->lang};
 			  $menu->type = $nav->type;
 			  $menu->link = $nav->link;
 			  $menu->route = $nav->route;
@@ -55,7 +57,7 @@ class PagesController extends Controller
 	
 	 
     public function index()
-    {
+    { 
 		$page = Page::where('page_name', '=', $this->pathName)->firstOrFail(); 
 		$sliders =  Slider::where(['status' => "active"])->select('image', 'id')->get(); 
         return view('pages.index', compact('page', 'sliders')); 	
@@ -64,6 +66,7 @@ class PagesController extends Controller
 	public function pages()
     {
 		$page = Page::where(['page_name' => $this->pathName, 'status' => "active"])->firstOrFail(); 
+		$page->content = ($page->{'content_'.$this->lang} == "")? $page->content_en: $page->{'content_'.$this->lang};
         return view('pages.pages', compact('page')); 
     }
 	

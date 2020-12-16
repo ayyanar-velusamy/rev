@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'PagesController@index')->name('index');
+Route::group(['middleware'=>'language'],function ()
+{
+    Route::get('/', 'PagesController@index')->name('index');
 Route::get('/home-health-care-about-us', 'PagesController@pages')->name('about-us');  
 Route::get('/home-health-care-history', 'PagesController@pages')->name('history');
 Route::get('/home-health-care-quality-measures', 'PagesController@pages')->name('quality-measures'); 
@@ -40,6 +42,8 @@ Route::get('/home-health-care-clients-testimonials', 'PagesController@pages')->n
 
 Route::any('/revival/{route}', 'PagesController@dynamic_pages');
  
+});
+
 
 Route::get('/admin', function () { return redirect('login');  /*return view('welcome'); */ });
 Auth::routes(['register'=>false]);
@@ -83,5 +87,10 @@ Route::group(['middleware'=>'auth'], function(){
 	//Role management
 	Route::get('/role_list', 'RoleController@ajax_list')->name('role_list');
 	Route::resource('roles', 'RoleController'); 
+});
+
+Route::get('setlocale/{locale}',function($lang){
+       \Session::put('locale',$lang);
+       return redirect()->back();   
 });
 

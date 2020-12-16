@@ -61,12 +61,32 @@
 										<select name="parent_menu" id="parent_menu" class="form-control select2">
 											<option value="">Select Menu</option>
 											@foreach($menus as $id=>$nav)
-											<option value="{{ $nav->id }}">{{ $nav->menu }}</option>
+											<option value="{{ $nav->id }}">{{ $nav->menu_en }}</option>
 											@endforeach
 										</select> 
 									</div>
 									</div> 
 								</div> 
+								<div class="row">
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu English') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_en" class="form-control" id="menu_en" value="{{old('menu_en')}}" placeholder="Enter Menu English" />
+										</div>
+									</div>
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu Spanish') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_es" class="form-control" id="menu_es" value="{{old('menu_es')}}" placeholder="Enter Menu Spanish" />
+										</div>
+									</div>	
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu Arabic') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_ar" class="form-control" id="menu_ar" value="{{old('menu_ar')}}" placeholder="Enter Menu Arabic" />
+										</div>
+									</div>										
+								</div>
 								<div class="row">
 									<div class="col-md-6 left-pad pdr-45">
 										<div class="form-group">
@@ -92,8 +112,16 @@
 								<div class="row"> 
 									<div class="col-md-12 left-pad">
 										<div class="form-group">
-											<label for="inputFirstName">{{ __('Content French') }} <span class="required">*</span></label>  
-											<textarea name="content_fr" class="ckeditor  form-control" id="content_fr" value="{{old('content_fr')}}" placeholder="Enter Meta Keyword"></textarea>
+											<label for="inputFirstName">{{ __('Content Spanish') }} <span class="required">*</span></label>  
+											<textarea name="content_es" class="ckeditor  form-control" id="content_es" value="{{old('content_es')}}" placeholder="Enter Meta Keyword"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-md-12 left-pad">
+										<div class="form-group">
+											<label for="inputFirstName">{{ __('Content Arabic') }} <span class="required">*</span></label>  
+											<textarea name="content_ar" class="ckeditor  form-control" id="content_ar" value="{{old('content_ar')}}" placeholder="Enter Meta Keyword"></textarea>
 										</div>
 									</div>
 								</div>

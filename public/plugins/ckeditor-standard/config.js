@@ -101,7 +101,7 @@ CKEDITOR.plugins.add( 'RevTitle',{
       editor.addCommand( 'insertRevLI',{            
             exec : function( editor )
             {                
-               editor.insertHtml( '<li><img src="http://localhost/laravel/rev/public/revival/images/list-icon.png">Sample</li>' );
+               editor.insertHtml( '<li><img src="http://127.0.0.1:8000/revival/images/list-icon.png">Sample</li>' );
             }
      });
       editor.ui.addButton( 'RevLI',{         

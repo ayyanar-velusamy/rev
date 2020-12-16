@@ -58,7 +58,29 @@
 									</div>
 									</div> 
 								</div>
-							@endif	
+							@endif
+							@if($page->menu_id > "0")							
+							<div class="row">
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu English') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_en" class="form-control" id="menu_en" value="{{$edit_menu->menu_en}}" placeholder="Enter Menu English" disabled />
+										</div>
+									</div>
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu Spanish') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_es" class="form-control" id="menu_es" value="{{$edit_menu->menu_es}}" placeholder="Enter Menu Spanish" disabled />
+										</div>
+									</div>	
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu Arabic') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_ar" class="form-control" id="menu_ar" value="{{$edit_menu->menu_ar}}" placeholder="Enter Menu Arabic" disabled />
+										</div>
+									</div>										
+								</div>
+								@endif
 							<div class="row">
 								<div class="col-md-6 left-pad pdr-45">
 									<div class="form-group">
@@ -82,13 +104,22 @@
 								</div>
 							</div>
 							<div class="row"> 
-								<div class="col-md-12 left-pad">
-									<div class="form-group">
-										<label for="inputContentFr">{{ __('Content French') }} <span class="required">*</span></label>
-										<textarea name="content_fr" class="ckeditor  form-control" id="content_fr" placeholder="Enter Content French" disabled>{{$page->content_fr}}</textarea>
+									<div class="col-md-12 left-pad">
+										<div class="form-group">
+											<label for="inputFirstName">{{ __('Content Spanish') }} <span class="required">*</span></label>  
+											<textarea name="content_es" class="ckeditor  form-control" id="content_es" value="{{old('content_es')}}" placeholder="Enter Meta Keyword" disabled>{{$page->content_es}}</textarea>
+										</div>
 									</div>
 								</div>
-							</div>
+								<div class="row"> 
+									<div class="col-md-12 left-pad">
+										<div class="form-group">
+											<label for="inputFirstName">{{ __('Content Arabic') }} <span class="required">*</span></label>  
+											<textarea name="content_ar" class="ckeditor  form-control" id="content_ar" value="{{old('content_ar')}}" placeholder="Enter Meta Keyword" disabled>{{$page->content_ar}}</textarea>
+										</div>
+									</div>
+								</div>
+								 
 							 
 							<div class="row">
 								<div class="col-md-6 left-pad pdr-45">
