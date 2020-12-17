@@ -24,7 +24,7 @@
 									@if($page->image != "")
 										<img width=1000 height=400 src="{{ banner_image($page->image) }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
 									@else
-										<img width=1000 height=400 src="{{asset('images/user_profile.png') }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
+										<img width=1000 height=400 src="{{asset('images/banner_picture.png') }}" class="img-circle" alt="Banner Image" id="profile-adminImg">
 									@endif 
 									<div class="table-small-img-outer">
 										<div class="table-small-img">
@@ -56,10 +56,49 @@
 									<div class="col-md-12 left-pad pdr-45">
 										<div class="form-group">
 											<label for="inputTitle">{{ __('Title') }}</label>
-											<input type="text" name="title" class="form-control" maxlength="40" id="title"   value="{{$page->title}}" />
+											<input type="text" name="title" class="form-control" maxlength="40" id="title"   value="{{$page->title}}" autofocus />
 										</div>
 									</div> 
 								</div>
+								@if($page->default_page != "1")
+								<div class="row">
+									<div class="col-md-12 left-pad ">
+										<div class="form-group">
+										<label for="inputFirstName">Parent Menu<span class="required">*</span></label>
+										<select name="parent_menu" id="parent_menu" class="form-control select2">
+											<option value="">Select Menu</option>
+											@foreach($menus as $id=>$nav)
+											<option {{ $page->parent_menu == $nav->id ? 'Selected' : '' }} value="{{ $nav->id }}">{{ $nav->menu_en }}</option>
+											@endforeach
+										</select> 
+									</div>
+									</div> 
+								</div>
+								@else
+								<input type="hidden" value="0" name="parent_menu" >
+								@endif
+								@if($page->menu_id > "0")
+								<div class="row">
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu English') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_en" class="form-control" id="menu_en" value="{{$edit_menu->menu_en}}" placeholder="Enter Menu English" />
+										</div>
+									</div>
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu Spanish') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_es" class="form-control" id="menu_es" value="{{$edit_menu->menu_es}}" placeholder="Enter Menu Spanish" />
+										</div>
+									</div>	
+									<div class="col-md-4 left-pad pdr-45">
+										<div class="form-group">
+											<label for="inputEmail">{{ __('Menu Arabic') }} <span class="required">*</span></label>
+											 <input type="text" name="menu_ar" class="form-control" id="menu_ar" value="{{$edit_menu->menu_ar}}" placeholder="Enter Menu Arabic"  />
+										</div>
+									</div>										
+								</div>
+								@endif
 								<div class="row">
 									<div class="col-md-6 left-pad pdr-45">
 										<div class="form-group">
@@ -73,7 +112,7 @@
 											 <textarea name="meta_keyword" class="form-control" id="meta_keyword" placeholder="Enter Meta Keyword" >{{$page->meta_keyword}}</textarea>
 										</div>
 									</div>
-								</div>
+								</div> 
 								<div class="row"> 
 									<div class="col-md-12 left-pad">
 										<div class="form-group"> 
@@ -85,8 +124,16 @@
 								<div class="row"> 
 									<div class="col-md-12 left-pad">
 										<div class="form-group">
-											<label for="inputContentFr">{{ __('Content French') }} <span class="required">*</span></label>
-											<textarea name="content_fr" class="ckeditor  form-control" id="content_fr" placeholder="Enter Content French" >{{$page->content_fr}}</textarea>
+											<label for="inputFirstName">{{ __('Content Spanish') }} <span class="required">*</span></label>  
+											<textarea name="content_es" class="ckeditor  form-control" id="content_es" value="{{old('content_es')}}" placeholder="Enter Meta Keyword">{{$page->content_es}}</textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-md-12 left-pad">
+										<div class="form-group">
+											<label for="inputFirstName">{{ __('Content Arabic') }} <span class="required">*</span></label>  
+											<textarea name="content_ar" class="ckeditor  form-control" id="content_ar" value="{{old('content_ar')}}" placeholder="Enter Meta Keyword">{{$page->content_ar}}</textarea>
 										</div>
 									</div>
 								</div>
@@ -96,8 +143,9 @@
 										<div class="form-group checkbox_status">
 											<label class="check_label">Status</label>
 											<label class="switch round">
-												<input id="userStatusHidden" type="hidden" value="active" name="status" >
-												<input {{$page->status == 'active' ? 'checked' :''}} type="checkbox" />
+												<input id="userStatusHidden" type="hidden" value="inactive" name="status" >
+												<input type="hidden" value="{{$page->menu_id}}" name="menu_id" >
+												<input {{$page->status == 'active' ? 'checked' :''}}  name="status" value="active" type="checkbox" />
 												<span class="slider round"></span>
 											</label>
 										</div>

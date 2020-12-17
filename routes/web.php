@@ -38,9 +38,9 @@ Route::get('/home-health-care-schedule-an-assessment', 'PagesController@schedule
 Route::get('/home-health-care-insurance-accepted', 'PagesController@insurance_accepted')->name('insurance-accepted'); 
 Route::get('/home-health-care-meet-our-staff', 'PagesController@meet_our_staff')->name('meet-our-staff'); 
 Route::get('/home-health-care-submit-your-referrals', 'PagesController@submit_referrals')->name('submit-referrals'); 
-Route::get('/home-health-care-clients-testimonials', 'PagesController@testimonials')->name('testimonials'); 
+Route::get('/home-health-care-clients-testimonials', 'PagesController@pages')->name('testimonials');   
 
-
+Route::any('/revival/{route}', 'PagesController@dynamic_pages');
  
 });
 

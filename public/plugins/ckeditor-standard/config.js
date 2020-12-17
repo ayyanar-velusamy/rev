@@ -76,7 +76,7 @@ CKEDITOR.editorConfig = function( config ) {
        ['FitWindow','ShowBlocks'],
             ['Maximize', 'ShowBlocks','-','About','RU']
    ]  */
-   config.extraPlugins = ['RevTitle','RevLI'];
+   config.extraPlugins = ['RevTitle'];
    
 };
 
@@ -96,7 +96,7 @@ CKEDITOR.plugins.add( 'RevTitle',{
    }
 });
 
-CKEDITOR.plugins.add( 'RevLI',{ 
+/* CKEDITOR.plugins.add( 'RevLI',{ 
    init: function( editor ){
       editor.addCommand( 'insertRevLI',{            
             exec : function( editor )
@@ -105,12 +105,12 @@ CKEDITOR.plugins.add( 'RevLI',{
             }
      });
       editor.ui.addButton( 'RevLI',{         
-         label: 'Revival List Tag',         
+         label: 'Revival List Tag',           
          command: 'insertRevLI',      
          icon: 'icons/list-icon.png'
       });
    }
-});
+}); */
 
 CKEDITOR.on( 'instanceReady', function( evt ) {
   evt.editor.dataProcessor.htmlFilter.addRules( {

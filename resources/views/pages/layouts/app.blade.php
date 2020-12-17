@@ -113,30 +113,51 @@
           <nav id="menuzord-right" class="menuzord default">
             <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
               <img src="{{ asset('revival/images/logo-wide.png') }}" alt="">
+				  
             </a>
-            <ul class="menuzord-menu">
-			<li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}"><?php echo __('menu.Home');?></a> </li>
-              <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}"><?php echo __('menu.About Us');?></a>
+			
+            <ul class="menuzord-menu"> 
+				@foreach ($menus as $nav) 
+				  <li class="{{ ($nav->isActive)  ? 'active' : '' }}"><a href="{{ route($nav->route)}}">{{$nav->menu}}</a> 
+				  @if($nav->submenu) 
+				   <ul class="dropdown">
+				    @foreach ($nav->submenu as $subnav) 
+						@if($subnav->type == '1') 
+							 <li><a href="{{ route($subnav->route)}}" class="{{ request()->is($subnav->link) ? 'active' : '' }}">{{$subnav->menu}}</a></li>
+						@else
+							<li><a href="{{$subnav->link}}">{{$subnav->menu}}</a></li> 
+						@endif	 
+					  @endforeach 
+					</ul>
+				 @endif	
+				  </li>
+				@endforeach  
+             <!-- <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}">About Us</a>
+
+			<li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('index')}}"><?php //echo __('menu.Home');?></a> </li>
+              <li class="{{ (request()->is('home-health-care-about-us') ||  request()->is('home-health-care-history') || request()->is('home-health-care-quality-measures')) ? 'active' : '' }}"><a href="{{ route('about-us')}}"><?php //echo __('menu.About Us');?></a>
+
                 <ul class="dropdown">
-                  <li><a href="{{ route('history')}}" class="{{ request()->is('home-health-care-history') ? 'active' : '' }}"><?php echo __('menu.History');?></a></li>
-                  <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('home-health-care-quality-measures') ? 'active' : '' }}" href="#"><?php echo __('menu.Quality Measures');?></a></li>
+                  <li><a href="{{ route('history')}}" class="{{ request()->is('home-health-care-history') ? 'active' : '' }}"><?php //echo __('menu.History');?></a></li>
+                  <li><a href="{{ route('quality-measures')}}" class="{{ request()->is('home-health-care-quality-measures') ? 'active' : '' }}" href="#"><?php //echo __('menu.Quality Measures');?></a></li>
                 </ul>
               </li>
 			  
               <li class="{{ (request()->is('home-health-care-our-services') || request()->is('home-health-care-nursing-services') || request()->is('home-health-care-home-health-aide-and-home-maker-services') || request()->is('home-health-care-physical-occupational-and-speech-therapy') || request()->is('home-health-care-revival-university') || request()->is('home-health-care-waiver-program'))
                             ? 'active' : '' }}">
-                  <a href="{{ route('our-services')}}" ><?php echo __('menu.Our Services');?></a>
+                  <a href="{{ route('our-services')}}" ><?php //echo __('menu.Our Services');?></a>
                </li>
               </li>
-              <li class="{{ request()->is('home-health-care-careers') ? 'active' : '' }}"><a href="{{ route('careers')}}"><?php echo __('menu.Careers');?></a>
+              <li class="{{ request()->is('home-health-care-careers') ? 'active' : '' }}"><a href="{{ route('careers')}}"><?php //echo __('menu.Careers');?></a>
               </li>
-              <li class="{{ request()->is('home-health-care-resources') ? 'active' : '' }}"><a href="{{ route('resources')}}"><?php echo __('menu.Resources');?></a>
+              <li class="{{ request()->is('home-health-care-resources') ? 'active' : '' }}"><a href="{{ route('resources')}}"><?php //echo __('menu.Resources');?></a>
               </li>
-              <li class="{{ request()->is('home-health-care-clients-testimonials') ? 'active' : '' }}"><a href="{{ route('testimonials')}}"><?php echo __('menu.Testimonials');?></a>
+              <li class="{{ request()->is('home-health-care-clients-testimonials') ? 'active' : '' }}"><a href="{{ route('testimonials')}}"><?php //echo __('menu.Testimonials');?></a>
               </li>
-              <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}"><?php echo __('menu.Contact Us');?></a>
+              <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}">Contact Us</a>
               </li>
-              
+              <li class="{{ request()->is('home-health-care-contact-us') ? 'active' : '' }}"><a href="{{ route('contact')}}"><?php //echo __('menu.Contact Us');?></a>-->
+              </li>
             </ul>
           </nav>
         </div>
@@ -169,12 +190,9 @@
           <div class="widget dark">
             <h5 class="">Useful Links</h5>
             <ul class="list-border">
-              <li><a href="/">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Contact Us</a></li>
+			@foreach ($menus as $nav) 
+			  <li><a href="{{ route($nav->route)}}">{{$nav->menu}}</a> </li> 
+			@endforeach 
             </ul>
           </div>
         </div>

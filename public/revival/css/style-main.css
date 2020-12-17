@@ -7174,5 +7174,11 @@ blockquote p {
 	float:right;
 }
 
+.list-img li{
+	background: url(../images/list-icon.png) no-repeat left top;
+    padding: 3px 0px 3px 20px;
+    list-style: none; 
+}
+
  
 

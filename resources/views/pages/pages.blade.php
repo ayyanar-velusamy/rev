@@ -118,7 +118,7 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-8 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-			 {!! $page->content_en !!}  
+			 {!! $page->content !!}  
             </div> 
 			@include('pages.common.sidebar') 
           </div>
@@ -217,6 +217,53 @@
       </div>
     </section> 
 @endif
+@if($page->page_name == "testimonials") 
+    <section class="divider parallax layer-overlay overlay-theme-color-sky" data-bg-img="{{ asset('revival/images/bg/revival.jpg') }}">
+      <div class="container pt-60 pb-70">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="text-uppercase text-white line-bottom-center mt-0">What Our Client's <span class="text-theme-color-2">Say</span></h2>
+              <div class="title-flaticon">
+                <i class="flaticon-charity-alms"></i>
+              </div>
+              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem<br> voluptatem obcaecati!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel-3col  style2 dots-white" data-dots="false">
+              <div class="item">
+                <div class="testimonial bg-theme-color-2 p-30 pb-20 mt-50">
+                  <h4 class="author text-white mt-0 mb-0">Olusula Obinne</h4>
+                  <h6 class="title text-white mt-0 mb-15">Manager</h6> 
+                  <div class="thumb content mt-30"><img class="img-circle" alt="" src="{{ asset('revival/images/testimonials/1.jpg') }}"></div>
+                  <p class="font-15 pl-0 text-white"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque.</em></p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial bg-theme-color-2 p-30 pb-20 mt-50">
+                  <h4 class="author text-white mt-0 mb-0">Akram Elzend</h4>
+                  <h6 class="title text-white mt-0 mb-15">Doctor</h6> 
+                  <div class="thumb content mt-30"><img class="img-circle" alt="" src="{{ asset('revival/images/testimonials/2.jpg') }}"></div>
+                  <p class="font-15 pl-0 text-white"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque.</em></p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial bg-theme-color-2 p-30 pb-20 mt-50">
+                  <h4 class="author text-white mt-0 mb-0">Kishma Kelly</h4>
+                  <h6 class="title text-white mt-0 mb-15">Designer</h6> 
+                  <div class="thumb content mt-30"><img class="img-circle" alt="" src="{{ asset('revival/images/testimonials/3.jpg') }}"></div>
+                  <p class="font-15 pl-0 text-white"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque.</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+@endif	
 
 	
 	@include('pages.common.service') 

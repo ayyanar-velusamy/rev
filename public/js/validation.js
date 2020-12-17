@@ -264,38 +264,47 @@ $(document).on('click','#userAddFormSubmit, #userEditFormSubmit' ,function(){
 $(document).on('click','#pageAddFormSubmit, #pageEditFormSubmit' ,function(){ 
 	jQuery("#pageAddForm, #pageEditForm").validate({
 		rules: {
-			title: {
-				required: true, 
-			},
-			meta_description: {
-				required: true
-			},
-			meta_keyword: {
-				required: true
-			},
-			content_en: {
-				required: true
-			},
-			content_fr: {
-				required: true
-			},			
-		},
-
+			title: { required: true, },
+			menu_en: { required: true, },
+			menu_es: { required: true, },
+			menu_ar: { required: true, },
+			meta_description: { required: true },
+			meta_keyword: { required: true },
+			parent_menu: { required: true },
+			content_en: { required: true }, 
+			content_es: { required: true }, 
+			content_ar: { required: true }, 
+		}, 
 		messages: {
 			title: {
 				required:"Page Title cannot be empty", 
+			},
+			menu_en: {
+				required:"Menu cannot be empty", 
+			},
+			menu_es: {
+				required:"Menu cannot be empty", 
+			},
+			menu_ar: {
+				required:"Menu cannot be empty", 
 			},
 			meta_description: {
 				required:"Meta Description cannot be empty", 
 			},
 			meta_keyword: {
 				required:"Meta Keyword cannot be empty", 
-			}, 
+			},
+			parent_menu: {
+				required:"Please select parent menu", 
+			},
 			content_en: {
 				required:"content cannot be empty",  
 			},
-			content_fr: {
-				required:"content Description cannot be empty", 
+			content_es: {
+				required:"content cannot be empty", 
+			},
+			content_ar: {
+				required:"content cannot be empty", 
 			}			
 		},
 		errorElement: "span",

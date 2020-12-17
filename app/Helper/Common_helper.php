@@ -216,10 +216,9 @@ function back_url($url = ""){
 	}
 	
 	function banner_image($file_name){
-		// echo storage_path().'/public/banner-uploads/'.$file_name;
-		if($file_name != "" && file_exists( storage_path().'/app/public/banner-uploads/'.$file_name)){
-	  // if($file_name != ""){
-        return asset('storage/banner-uploads/'.$file_name);
+	  // if($file_name != "" && file_exists( public_path().'/storage/user-uploads/avatar/'.$file_name)){
+	  if($file_name != ""){
+        return url('storage/app/public/banner-uploads/'.$file_name);
       }else{
          return asset('images/user_profile.png');
       }
