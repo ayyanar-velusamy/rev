@@ -13,6 +13,7 @@ use App\Model\Page;
 use App\Model\Slider;
 use App\Http\Requests\StoreEnquiryPost;
 use App\Mail\EnquiryMail;
+use Session;
 
   
 
@@ -22,6 +23,7 @@ class PagesController extends Controller
 	
 	public function __construct(){
 		$this->pathName = Route::currentRouteName();
+		
 	}
     public function index()
     {
