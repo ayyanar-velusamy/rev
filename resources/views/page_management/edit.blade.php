@@ -75,7 +75,11 @@
 									</div> 
 								</div>
 								@else
-								<input type="hidden" value="0" name="parent_menu" >
+									@if($page->id == "3" || $page->id == "4")
+										<input type="hidden" value="2" name="parent_menu" >
+									@else
+									<input type="hidden" value="0" name="parent_menu" >
+									@endif
 								@endif
 								@if($page->menu_id > "0")
 								<div class="row">
