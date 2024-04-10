@@ -184,7 +184,11 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
-         
+          <div class="widget dark">
+		  <h5 class="">Certificate Details</h5>
+            <img alt="" src="{{ asset('revival/images/certificate.jpg')}}">
+            
+          </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
